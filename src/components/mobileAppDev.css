@@ -1,0 +1,583 @@
+.mobileApp {
+    /* height: 50vh; */
+    position: relative;
+}
+
+@media (min-width: 869px) {
+    .main-text-service .title {
+        color: #E8CB80;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+    .lang-con-b {
+        text-align: center;
+        /* height: 15rem; */
+        background: linear-gradient(97deg, rgba(255, 255, 255, 0.16) -62.52%, rgba(75, 75, 75, 0.16) 99.08%);
+        border-radius: 15px;
+        width: 85%;
+        padding: 40px;
+        margin-top: 50px;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .lang-con-b:hover {
+        /* border-radius: 30px; */
+        background: linear-gradient(97deg, rgba(0, 0, 0, 0.34) -62.52%, rgba(237, 208, 128, 0.34) 99.08%);
+        /* background: linear-gradient(200deg, #F1D38D 31.61%, rgba(241, 211, 141, 0.00) 146.23%); */
+        /* height: 25vmax; */
+        transition: 1s linear !important;
+    }
+
+    .inner-content-button {
+        height: 4.2vmax;
+        width: 11vmax;
+        border-radius: 20px;
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.00) 100%);
+    }
+
+    .inner-content-button span {
+        color: #E8CB80;
+        font-size: 1vmax;
+        font-weight: 500;
+    }
+
+    .p-jour h5 {
+        color: white;
+        font-size: 2.8vmax;
+        font-weight: 700;
+    }
+
+    .p-jour p {
+        color: white;
+        font-size: 1vmax;
+        /* font-weight: 700; */
+        opacity: .8;
+    }
+}
+
+@media (max-width: 869px) {
+    .p-jour h5 {
+        color: white;
+        font-size: 3vmax;
+        font-weight: 700;
+    }
+
+    .p-jour p {
+        color: white;
+        font-size: 2vmax;
+        /* font-weight: 700; */
+        opacity: .8;
+    }
+
+    .main-text-service .title {
+        color: #E8CB80;
+        font-weight: 500;
+        font-size: 2.2rem;
+    }
+
+    .lang-con-b {
+        text-align: center;
+        /* height: 15vmax; */
+        /* background-color: rgb(35,31,25); */
+        background: linear-gradient(97deg, rgba(255, 255, 255, 0.16) -62.52%, rgba(75, 75, 75, 0.16) 99.08%);
+        border-radius: 15px;
+        /* width: 85%; */
+        margin-top: 20px;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .text-ligh {
+        font-size: 2vmax;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        color: white;
+        opacity: .8;
+
+    }
+
+    .inner-content-button {
+        height: 7vh;
+        width: 30vw;
+        border-radius: 20px;
+        background: linear-gradient(176deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.00) 100%);
+    }
+
+    .inner-content-button span {
+        color: #E8CB80;
+        font-size: 1.5vmax;
+        font-weight: 500;
+    }
+
+    .sliderT {
+        /* height: 100vh; */
+        display: grid;
+        margin: auto;
+        position: relative;
+        width: 100%;
+        place-items: center;
+        overflow: hidden;
+    }
+
+    .slide-trackT {
+        display: flex;
+        width: calc(250px * 8);
+        height: inherit;
+        margin-top: 60px;
+        position: relative;
+        animation: scrollNew 13s linear infinite;
+        /* Set this to make the absolute positioning work */
+    }
+
+    .slider-box {
+        width: 900px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 19%;
+        transform: translateX(-50%);
+        background: linear-gradient(180deg, #0000001f -0.06%, #494431e7 90.07%);
+        border-radius: 0 0 40% 40%;
+        overflow: hidden;
+    }
+
+    .slideT img {
+        transition: transform 0.5s ease;
+        /* Add a transition for smooth scaling */
+    }
+
+
+    @keyframes scrollNew {
+        0% {
+            transform: translateX(0px);
+        }
+
+        100% {
+            transform: translateX(calc(-250px * 4));
+        }
+    }
+
+    .slider-box-t {
+        width: 100% !important;
+    }
+
+
+
+    .slide-track-T {
+        animation-play-state: paused;
+    }
+}
+
+.rouded-content-b img {
+    z-index: 99 !important;
+}
+
+.lang-con {
+    text-align: center;
+    height: 15vmax;
+    /* background-color: rgb(191, 171, 113); */
+    background: linear-gradient(200deg, #F1D38D 31.61%, rgba(241, 211, 141, 0.00) 146.23%);
+    border-radius: 15px;
+    width: 85%;
+    margin-top: 50px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.lang-con-b .rouded-content-b {
+    display: flex;
+    height: 45vh;
+    width: 60%;
+    /* top: 0%; */
+    left: -35%;
+    bottom: -15%;
+    background-color: rgb(49, 47, 41);
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    opacity: .7;
+}
+
+.lang-con .rouded-content {
+    display: flex;
+    height: 45vh;
+    width: 60%;
+    /* top: 0%; */
+    left: -35%;
+    bottom: -10%;
+    background-color: rgb(111, 97, 65);
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    opacity: .7;
+}
+
+
+
+.our-work {
+    box-sizing: border-box;
+    height: 70vh;
+    width: 100%;
+    background-color: #1A1919;
+    border-radius: 30px;
+    margin-top: 20%;
+    display: flex;
+}
+
+.ow-text span {
+    font-size: 2.5vmax;
+    color: white;
+    font-weight: 500;
+    margin: 20% 0% 0% 20%;
+    display: block;
+    min-width: max-content;
+}
+
+
+
+
+
+.box-mobile {
+    justify-content: space-between;
+    width: 100%;
+    /* border: 1px solid green; */
+}
+
+@media (min-width: 869px) {
+    .h-click {
+        background: linear-gradient(90deg, rgba(40, 39, 36, 1) 0%, rgba(34, 34, 31, 1) 2%, rgba(41, 40, 38, 1) 6%, rgba(36, 35, 32, 1) 12%, rgba(0, 0, 0, 1) 100%);
+        width: 100%;
+        padding: 1% 0%;
+    }
+
+    .box-1 {
+        width: 100%;
+        height: max-content;
+        /* border: 2px solid gold; */
+        border-radius: 25px;
+        background: linear-gradient(181deg, rgba(217, 217, 217, 0.31) -111.12%, rgba(217, 217, 217, 0.00) 126.37%);
+        padding: 2%;
+    }
+
+    .box-1 p {
+        color: white;
+        font-size: 1vmax;
+        opacity: .6;
+    }
+
+    /* font-weight: 500; */
+
+    .box-1 span {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 500;
+
+    }
+
+    .box-2 span {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 500;
+
+    }
+
+    .box-3 span {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 500;
+
+    }
+
+    .box-4 span {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 500;
+
+    }
+
+    .sliderT {
+        height: 100vh;
+        display: grid;
+        margin: auto;
+        position: relative;
+        width: 100%;
+        place-items: center;
+        overflow: hidden;
+    }
+
+    .slide-trackT {
+        display: flex;
+        width: calc(600px * 8);
+        height: inherit;
+        margin-top: 60px;
+        position: relative;
+        animation: scrollNew 13s linear infinite;
+        /* Set this to make the absolute positioning work */
+    }
+
+    .slider-box {
+        width: 250px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 19%;
+        transform: translateX(-50%);
+        background: linear-gradient(180deg, #0000001f -0.06%, #494431e7 90.07%);
+        border-radius: 0 0 40% 40%;
+        overflow: hidden;
+    }
+
+    .slideT img {
+        transition: transform 0.5s ease;
+        /* Add a transition for smooth scaling */
+    }
+
+
+    @keyframes scrollNew {
+        0% {
+            transform: translateX(0px);
+        }
+
+        100% {
+            transform: translateX(calc(-600px * 4));
+        }
+    }
+
+    .slider-box-t {
+        width: 100% !important;
+    }
+
+
+
+    .slide-track-T {
+        animation-play-state: paused;
+    }
+}
+
+@media (max-width: 869px) {
+    .h-click {
+        background: linear-gradient(90deg, rgba(40, 39, 36, 1) 0%, rgba(34, 34, 31, 1) 2%, rgba(41, 40, 38, 1) 6%, rgba(36, 35, 32, 1) 12%, rgba(0, 0, 0, 1) 100%);
+        width: 100%;
+        padding: 5% 0%;
+    }
+
+    .box-1 {
+        width: 100%;
+        height: max-content;
+        /* border: 2px solid gold; */
+        border-radius: 25px;
+        /* background: linear-gradient(181deg, rgba(217, 217, 217, 0.31) -111.12%, rgba(217, 217, 217, 0.00) 126.37%); */
+        /* padding: 2%; */
+    }
+
+    .box-1 p {
+        color: white;
+        font-size: 2vmax;
+        /* font-weight: 500; */
+        opacity: .6;
+    }
+
+    .box-1 span {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 500;
+
+    }
+}
+
+/* .box-1:hover {
+    width: 24%;
+    height: max-content;
+    border: 1px solid gold;
+    border-radius: 25px;
+    background-color: linear-gradient(181deg, rgba(217, 217, 217, 0.31) -111.12%, rgba(217, 217, 217, 0.00) 126.37%);
+    background: transparent;
+
+    padding: 2%;
+} */
+
+.tec-we-use {
+    background: linear-gradient(90deg, rgba(255, 226, 156, 0.10) 0%, rgba(226, 226, 226, 0.00) 107.87%);
+    width: 100%;
+    padding: 3% 2.5%;
+    margin-top: 10%;
+}
+
+.tec-we-use .contents {
+    /* background: linear-gradient(90deg, rgba(255, 226, 156, 0.10) 0%, rgba(226, 226, 226, 0.00) 107.87%); */
+    width: 90%;
+    margin-top: 5%;
+    padding: 6% 15%;
+}
+
+.tec-we-use h3 {
+    color: white;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.tec-we-use span {
+    color: gold;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.tec-we-use p {
+    color: white;
+    opacity: .5;
+    font-size: 1rem;
+}
+
+.tec-we-use img {
+    width: 70%;
+    object-fit: cover;
+}
+.whyChooseUs{
+    border-radius: 40px;
+    background: #1A1919;
+    height: 300px;
+    width: 100%;
+    padding: 0%;
+}
+.error {
+    color: red !important;
+    line-height: 30px !important;
+    margin: 0 !important;
+    font-size: .8rem !important;
+
+}
+
+#form-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999 !important;
+}
+
+#form-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#form-modal {
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1D1D1D;
+    padding: 6% 6%;
+    border-radius: 20px;
+    width: 75%;
+    height: 740px;
+    z-index: 9999999;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+#form-modal h2 {
+    color: black;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+#form-modal img {
+    position: absolute;
+    top: 4%;
+    right: 5%;
+    cursor: pointer;
+}
+#form-modal p {
+    color: black;
+}
+#form-modal button {
+    color: rgb(0, 0, 0);
+    background-color: #E8CB80;
+    border-radius: 10px;
+    width: 20%;
+    padding: 1% 2%;
+
+}
+#form-modal Form input {
+    border-radius: 25px;
+    background-color: rgba(75, 75, 75, 0.25);
+    margin-top: 12px;
+    padding: 3% 0% 3% 12% !important;
+    width: 95%;
+    padding: 2%;
+    color: white;
+    border: none;
+}
+
+#form-modal Form textarea {
+    border-radius: 25px;
+    background-color: rgba(75, 75, 75, 0.25);
+    margin-top: 12px;
+    padding: 4% 5% !important;
+    width: 98%;
+    /* padding: 2%; */
+    border: none;
+    color: white;
+    resize: none;
+}
+#form-modal .email img{
+    position: absolute;
+    top: 4.5%;
+    left: 53%;
+}
+#form-modal .message img{
+    position: absolute;
+    top: 65%;
+    left: 4%;
+}
+#form-modal .mobileSec img{
+    position: absolute;
+    top: 15%;
+    left: 4%;
+}
+#form-modal .Name img{
+    position: absolute;
+    top: 4.5%;
+    left: 4%;
+}
+#form-modal h5 {
+   
+    color: white;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.modalButton button{
+    color: rgb(0, 0, 0);
+    background-color: #E8CB80;
+    border-radius: 10px;
+    width: 20%;
+    padding: 1% 2%;
+}
+.hireform-radio label{
+    color: white;
+    opacity: .8;
+}
+.hireform-radio h5{
+    color: white;
+    font-size: 1.2rem !important;
+    line-height: 32px;
+}

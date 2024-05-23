@@ -1,0 +1,14 @@
+.p-head {
+    margin-top: 10%;
+}
+.p-header{
+    /* min-height: 40vh; */
+    width: 100%;
+}
+.goals-container {
+    min-width: 100%;
+    height: max-content;
+    background: rgb(40, 39, 36);
+    background: linear-gradient(90deg, rgba(40, 39, 36, 1) 0%, rgba(34, 34, 31, 1) 2%, rgba(41, 40, 38, 1) 6%, rgba(36, 35, 32, 1) 12%, rgba(0, 0, 0, 1) 100%);
+    margin: 7% 0;
+}

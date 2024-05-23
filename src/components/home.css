@@ -1,0 +1,53 @@
+.h-100vh{
+    /* height: calc(100vh - 50px); */
+}
+.range-value {
+    position: absolute;
+    background-image: url(http://localhost:5100/static/media/Group%20833.a87c5a4c3eef3f75f699.png);
+    width: 25px;
+    height: 25px;
+    top: -5px;
+    left: 7px;
+    z-index: 999999999;
+    background-color: white;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.c-container {
+    margin: 10%;
+    position: relative;
+}
+.c-btn {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 10px #888;
+    margin: 0;
+    padding: 0;
+    cursor: grab;
+}
+.industries-swiper .indus-swiper-content span{
+    color: #F2CE71;
+    font-size: 1.2rem !important;
+    font-weight: 500;
+    line-height: 0px !important;
+    text-align: center;
+}
+.industries-swiper .indus-swiper-content p{
+    color: white;
+    text-align: center;
+    margin: 0px !important;
+    line-height: 20px !important;
+    /* font-size: 1.1rem !important; */
+}
+.industries-swiper .indus-swiper-content{
+    width: 80%;
+}
+.industries-swiper .indus-swiper-img{
+    width: 25%;
+}

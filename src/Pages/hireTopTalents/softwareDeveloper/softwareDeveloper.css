@@ -1,0 +1,103 @@
+.hire-section{
+    cursor: pointer;
+}
+.hire-section .beforeLogo,
+.hire-section .beforeContent,
+.hire-section .beforeArrow {
+    display: block;
+}
+
+.hire-section .afterLogo,
+.hire-section .afterContent,
+.hire-section .afterArrow {
+    display: none;
+}
+
+.hire-section.hover .beforeLogo,
+.hire-section.hover .beforeContent,
+.hire-section.hover .beforeArrow {
+    display: none;
+}
+
+.hire-section.hover .afterLogo,
+.hire-section.hover .afterContent,
+.hire-section.hover .afterArrow {
+    display: block;
+}
+
+.hire-section.lang-con-b {
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+    height: 12rem;
+}
+
+.hire-section.hover.lang-con-b {
+    height: 24rem;
+}
+
+.card {
+    border-radius: 40px;
+    background: #1A1919;
+    /* padding: 10px; */
+}
+
+.why-choose-section h3 {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.why-choose-section p {
+    color: white;
+    /* font-size: 2.2rem; */
+    opacity: .8;
+    /* font-weight: 600; */
+}
+
+.card-section h5 {
+    color: white;
+    /* font-size: 1.5rem; */
+    font-weight: 500;
+}
+.card-section-r h5 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.why-choose-section .card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.why-choose-section .card-section-r {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-choose-section .card-section-full {
+    height: 300px;
+}
+
+.why-choose-section .card-section-full-c {
+    height: 300px;
+    background: linear-gradient(180deg, #444 0%, rgba(68, 68, 68, 0.00) 100%);
+}
+.why-choose-section .border-radius {
+    border-radius: 0px 39px 0px 0px;
+}
+
+.why-choose-section .card-section-full-b {
+    height: 300px;
+    background: linear-gradient(182deg, rgba(222, 192, 121, 0.50) -21.31%, rgba(0, 0, 0, 0.50) 116.27%);
+}
+
+.why-choose-section .card-section-half {
+    height: 150px;
+}
+
+.why-choose-section .card-section-half-c {
+    height: 150px;
+    background: linear-gradient(180deg, #444 0%, rgba(68, 68, 68, 0.00) 100%);
+}

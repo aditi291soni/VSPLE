@@ -1,0 +1,76 @@
+.sitemap-head{
+    margin-top: 10%;
+}
+.links-boxes{
+    margin-top: 5%;
+}
+.links-boxes .sitemaps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    width: 94%;
+}
+
+.link-box {
+    background-color: rgba(75, 75, 75, 0.25);
+    width: calc(50% - 10px);
+    border-radius: 15px;
+    padding: 4% 6%;
+}
+.link-bo{
+    width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 15px;
+}
+.internal-link-box{
+    background-color: rgba(75, 75, 75, 0.25);
+    width: 100%;
+    border-radius: 15px;
+    padding: 8% 8%;
+}
+.internal-link-box ul li{
+    text-decoration: none;
+    color: white;
+    line-height: 46px;
+    list-style-type: none;
+    /* margin-left: 20px; */
+    font-size: 1.4rem;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.link-box ul li{
+    text-decoration: none;
+    color: white;
+    line-height: 46px;
+    list-style-type: none;
+    /* margin-left: 20px; */
+    font-size: 1.4rem;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 1px;
+    
+}
+.link-box ul .active ,.internal-link-box ul .active {
+    color: #e8cb80 ;
+    font-weight: 500;
+}
+.link-box ul li a ,.internal-link-box ul li a {
+    text-decoration: none;
+    color: white;
+}
+.link-box ul li a:hover ,.internal-link-box ul li a:hover {
+    color: #e8cb80;
+}
+@media screen and (max-width: 767px) {
+    .link-box {
+        width: calc(100% - 0px); /* Full width for each box with 20px gap */
+    }
+    .link-bo {
+        width: calc(100% - 0px); /* Full width for each box with 20px gap */
+    }
+}

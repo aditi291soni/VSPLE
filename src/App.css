@@ -1,0 +1,137 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap'); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Lora', serif!important; */
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important; */
+}
+
+body {
+  box-sizing: border-box;
+  /* font-family: 'Inter', sans-serif !important; */
+  /* font-family: 'Lora', serif !important; */
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.spinner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.spinner .design-spinner{
+  animation: App-logo-spin 3s linear;
+}
+/* h1, h2, h3 , h4 , h5 ,span{
+  font-family: 'Inter', sans-serif !important;
+} */
+p {
+  font-size: 1.1rem !important;
+  line-height: 26px !important;
+  /* opacity: .7 !important; */
+}
+h2{
+  line-height: 32px !important;
+  margin-top: 1% !important;
+  margin-bottom: 1% !important;
+}
+/* p{
+  line-height: 1.5rem !important;
+  font-size: 1.1rem !important;
+  letter-spacing: .02em !important;
+  opacity: .7 !important;
+} */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+/* .App-header {
+  min-height: 100vh;
+} */
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-rapper {
+  max-width: 1500px;
+}
+
+.why-choose-container {
+  border-radius: 40px;
+  background: #1A1919;
+  height: 500px;
+}
+
+.why-choose-boxes {
+  float: right !important;
+  width: 75%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.third-boxes {
+  width: 33%;
+}
+
+.second-boxes {
+  width: 33%;
+}
+
+.first-boxes {
+  width: 33%;
+}
+
+.third-boxes .mobile-app,
+.third-boxes .devops-dev {
+  height: 50%;
+  width: 100%;
+  border-radius: 0px 39px 0px 0px;
+  background: linear-gradient(180deg, #444 0%, rgba(68, 68, 68, 0.00) 100%);
+}
+
+.getin-button-in-hire {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.getin-button-in-hire .see-button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  background: linear-gradient(176deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+@media (min-width: 996px) {
+  .portfolioImg {
+    margin-top: 35%;
+  }
+}

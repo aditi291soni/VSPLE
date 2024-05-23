@@ -1,0 +1,22 @@
+.qa-anime {
+    animation: fluctuate 2s linear infinite;
+}
+.key-text{
+    width: 95%;
+}
+@keyframes fluctuate {
+    0% {
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+        transform: translateX(0);
+
+    }
+}
