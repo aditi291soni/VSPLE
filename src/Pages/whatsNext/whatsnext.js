@@ -7,7 +7,7 @@ import frame5 from "../../assest/main-icons/Frame (5).png";
 import ai from "../../assest/gifs/ai.gif";
 import m from "../../assest/main-icons/image 24868.png";
 import vrcam from "../../assest/main-icons/Group 1000004827.png";
-import augmentedReality from "../../assest/main-icons/whatsNext/Group 1000005572.png";
+import augmentedReality from "../../assest/main-icons/whatsNext/AR.png";
 import virtualReality from "../../assest/main-icons/whatsNext/Group 1000004826.png";
 import cyberSecurity from "../../assest/main-icons/whatsNext/Group 1000004821.png";
 import iot from "../../assest/main-icons/whatsNext/Group 1000004828.png";
@@ -174,7 +174,7 @@ const WhatsnextComponent = () => {
           <img id="h5" src={vrcam} width={"80%"} alt="" />
         </div>
       </div>
-      <div className="w-100 mt-5">
+      <div className="w-100 mt-5 ">
         <div className="container">
           <div className="row">
             <div className=" col-md-12 col-sm-12 col-lg-6 d-flex justify-content-center align-items-start mt-4">
@@ -186,18 +186,18 @@ const WhatsnextComponent = () => {
                   Today
                 </h2>
                 <p>
-                  At Vsple Technologies, we believe in the transformative power of
-                  AI. Artificial Intelligence is no longer a vision of the future;
-                  it's here, and it's changing the way businesses operate. We are
-                  committed to being at the forefront of this AI revolution and
-                  helping our clients leverage its potential.
+                  At Vsple Technologies, we believe in the transformative power
+                  of AI. Artificial Intelligence is no longer a vision of the
+                  future; it's here, and it's changing the way businesses
+                  operate. We are committed to being at the forefront of this AI
+                  revolution and helping our clients leverage its potential.
                 </p>
                 <p>
                   The age of Artificial Intelligence is upon us, and the
-                  possibilities are endless. With Vsple Technologies by your side,
-                  you can navigate this exciting journey with confidence. Get in
-                  touch with us to explore the incredible world of AI and unlock
-                  new opportunities for your business.
+                  possibilities are endless. With Vsple Technologies by your
+                  side, you can navigate this exciting journey with confidence.
+                  Get in touch with us to explore the incredible world of AI and
+                  unlock new opportunities for your business.
                 </p>
               </div>
             </div>
@@ -207,10 +207,12 @@ const WhatsnextComponent = () => {
           </div>
         </div>
       </div>
-      <div className="container my-5">
-        <div className="gameparent mx-auto">
+      <div className="container  my-5">
+        <div className="gameparent  mx-auto">
           <div className="gameBox p-5">
-            <img src={augmentedReality} width={"100%"} alt="" />
+            <div className="text-center">
+              <img src={augmentedReality} width={"60%"} alt="" />
+            </div>
             <h5>Augmented Reality</h5>
             <p>
               The world of Augmented Reality is expanding, and we're at the
@@ -233,9 +235,7 @@ const WhatsnextComponent = () => {
             </p>
           </div>
         </div>
-        <div
-          className="gameparent mt-5 mx-auto"
-        >
+        <div className="gameparent mx-auto">
           <div className="gameBox p-5">
             <div className="text-center">
               <img src={cyberSecurity} width={"70%"} alt="" />
