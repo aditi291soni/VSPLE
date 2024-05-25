@@ -576,14 +576,11 @@
     padding: 0 0 !important;
 }
 .start-journey{
-    /* background-color: ; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
-    /* height: 250vh; */
-    /* width: 100vw; */
 }
 .frame21-icon{
     width: 38px;
@@ -596,31 +593,21 @@
     padding-top: 1vmax;
 }
 
-
 .vector{
     width: 100%;
     margin-left: 1.5vmax;
     padding-top: 1vmax;
 }
-.vector-curve-icon-2 {
-    width: 78%;
-    margin-left: 10.15vmax;
-    margin-top: -.15vmax;
-}
-.vector-curve-icon-3 {
-    margin-top: -0.1vmax;
-    width: 2.8vmax;
-}
+
 .txt-2024 {
     margin-top: 2vmax;
     color: #F7DD8A;
-    padding-right: 3vmax;
+    padding-right: 4.5vmax;
 }
 .journey-s{
     display: flex;
     justify-content: center;
     margin-top: 5vmax;
-    /* gap: 1vmax; */
 }
 .left-side-journey {
     margin-top: 15vmax;
@@ -697,6 +684,7 @@
     justify-content: center;
     width: 100%;
     height: 13.3%;
+    gap: 5vmax;
 }
 .journey-overlay-right {
     display: flex;
@@ -704,6 +692,7 @@
     justify-content: center;
     width: 100%;
     height: 13.3%;
+    gap: 5vmax;
 }
 
 .journey-overlay-cnt {
@@ -715,39 +704,9 @@
     gap: 0.1vmax;
     margin-top: 20.1vmax;
 }
-.vector4-cnt{
-    width: 10.7vmax;
-    margin-top: 1vmax;
-    margin-left: -1vmax;
-}
-.vector5-cnt{
-    width: 10.7vmax;
-    margin-left: -1vmax;
-}
-.vector6-cnt{
-    width: 10.7vmax;
-    margin-top: -1vmax;
-    margin-left: -1vmax;
-}
-.vector7-cnt {
-    width: 11.7vmax;
-    margin-top: 0.5vmax;
-    margin-left: 3vmax;
-}
-.vector8-cnt {
-    width: 11.7vmax;
-    margin-top: -0.5vmax;
-    margin-left: 3vmax;
-}
-.vector9-cnt {
-    width: 13.7vmax;
-    margin-top: -0.5vmax;
-    margin-left: 4vmax;
-}
+
 .span-cnt {
     width: 282px;
-    position: relative;
-    left: -6vmax;
     color:#FFFFFF;
     text-align: left;
     font-size: 15px !important;
@@ -755,53 +714,13 @@
 }
 .span-cnt-right {
     width: 282px;
-    position: relative;
-    left: 7vmax;
     color:#FFFFFF;
     text-align: right;
     font-size: 15px !important;
     line-height: 1.2 !important;
 }
-.group-106-cnt{
-    position: relative;
-    left: -9vmax;
-}
-.group-107-cnt{
-    position: relative;
-    left: -9vmax;
-}
-.group-108-cnt{
-    position: relative;
-    left: -9vmax;
-}
-.group-109-cnt{
-    position: relative;
-    left: 12vmax;
-}
-.group-110-cnt{
-    position: relative;
-    left: 12vmax;
-}
-.group-111-cnt {
-    position: relative;
-    left: 13.3vmax;
-}
-@media screen and (max-width:1400px) {
-    .journey-overlay-left {
-        margin-left: 2.5vmax;
-    }
-    .journey-overlay-right {
-        margin-left: -1vmax;
-    }
-    .vector8-cnt {
-        width: 12.7vmax;
-        margin-top: -1vmax;
-    }
-    .vector7-cnt {
-        width: 12.7vmax;
-        margin-top: 0.9vmax;
-    }
-}
+
+
 @media screen and (max-width:1200px) {
     .span-cnt{
         width: 223px;
@@ -816,7 +735,7 @@
     }
     
 }
-@media screen  and (max-width: 821px) {
+@media screen  and (max-width: 900px) {
     
     .span-cnt{
         width: 223px;
@@ -825,6 +744,9 @@
     .span-cnt-right{
         width: 223px;
         font-size: 10px !important;
+    }
+    .width-28{
+        width: 20%;
     }
 }
 @media screen  and (max-width: 768px) {
@@ -838,7 +760,7 @@
         font-size: 10px !important;
     }
 }
-@media screen  and (max-width: 415px) {
+@media screen  and (max-width: 553px) {
     
     .span-cnt{
         width: 223px;
@@ -848,32 +770,12 @@
         width: 223px;
         font-size: 8px !important;
     }
-}
-@media screen and (max-width: 620px) {
     .left-side-journey{
         display: none;
     }
     .right-side-journey{
         display: none;
     }
-    .journey-overlay-cnt{
-        margin-top: 25.1vmax;
-    }
-    .vector4-cnt,.vector5-cnt, .vector6-cnt {
-        width: 12.7vmax;
-    }
-    .vector7-cnt,.vector8-cnt, .vector9-cnt {
-        width: 15.7vmax;
-    }
-    .journey-overlay-left{
-        margin-left: 1.4vmax;
-    }
-    .journey-overlay-right{
-        margin-left: 1vmax;
-    }
 }
-
-
-
 
 

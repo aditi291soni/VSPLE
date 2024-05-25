@@ -44,10 +44,10 @@ import vector6 from "../assest/icons/Vector6.png";
 import group108 from "../assest/icons/Group 108.png";
 import vector7 from "../assest/icons/Vector7.png";
 import group109 from "../assest/icons/Group 109.png";
-import vector8 from "../assest/icons/Vector8.png";
 import group110 from "../assest/icons/Group 110.png";
 import vector9 from "../assest/icons/Vector9.png";
 import group111 from "../assest/icons/Group 111.png";
+import group112 from "../assest/icons/Group 112.png";
 
 import { mainimg, leader, frame6, progress } from "../common/images";
 
@@ -246,9 +246,7 @@ const AboutComponent = () => {
         <div className="start-journey">
           <div className="journey-overlay-cnt">
             <div className="journey-overlay-left">
-              <div className="vector4-cnt">
-                <img src={vector4} width={"100%"} className="" alt="" />
-              </div>
+              
               <div className="group-106-cnt width-28">
                 <img src={group106} width={"100%"} className="" alt="" />
               </div>
@@ -273,14 +271,10 @@ const AboutComponent = () => {
               <div className="group-109-cnt width-28">
                 <img src={group109} width={"100%"} className="" alt="" />
               </div>
-              <div className="vector7-cnt">
-                <img src={vector7} width={"100%"} className="" alt="" />
-              </div>
+              
             </div>
             <div className="journey-overlay-left">
-              <div className="vector5-cnt">
-                <img src={vector5} width={"100%"} className="" alt="" />
-              </div>
+              
               <div className="group-107-cnt width-28">
                 <img src={group107} width={"100%"} className="" alt="" />
               </div>
@@ -306,14 +300,10 @@ const AboutComponent = () => {
               <div className="group-110-cnt width-28">
                 <img src={group110} width={"100%"} className="" alt="" />
               </div>
-              <div className="vector8-cnt">
-                <img src={vector8} width={"100%"} className="" alt="" />
-              </div>
+              
             </div>
             <div className="journey-overlay-left">
-              <div className="vector6-cnt">
-                <img src={vector6} width={"100%"} className="" alt="" />
-              </div>
+              
               <div className="group-107-cnt width-28">
                 <img src={group108} width={"100%"} className="" alt="" />
               </div>
@@ -340,26 +330,24 @@ const AboutComponent = () => {
               <div className="group-111-cnt width-28">
                 <img src={group111} width={"110%"} className="" alt="" />
               </div>
-              <div className="vector9-cnt">
-                <img src={vector9} width={"100%"} className="" alt="" />
-              </div>
+              
             </div>
           </div>
-          <div className="frame21-icon">
+          {/* <div className="frame21-icon">
             <img src={frame21} width={"100%"} className="mb-1" alt="" />
-          </div>
+          </div> */}
           <div className="vector-curve-icon vector">
-            <img src={vector} width={"100%"} className="" alt="" />
+            <img src={group112} width={"100%"} className="" alt="" />
           </div>
-          <div className="vector-curve-icon-2">
+          {/* <div className="vector-curve-icon-2">
             <img src={vector2} width={"100%"} className="" alt="" />
           </div>
           <div className="vector-curve-icon-3">
             <img src={vector3} width={"100%"} className="" alt="" />
-          </div>
-          <div className="frame22-icon">
+          </div> */}
+          {/* <div className="frame22-icon">
             <img src={frame22} width={"100%"} className="" alt="" />
-          </div>
+          </div> */}
           <div className="txt-2024">
             <h1 className="">2024</h1>
           </div>
