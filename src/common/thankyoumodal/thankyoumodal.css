@@ -1,0 +1,32 @@
+.modal{
+    position: fixed;
+    top:5% !important;
+    left:25% !important;
+    display: block !important;
+    height: 600px !important;
+    width: 50% !important;
+    padding: 2% 10%;
+    border-radius: 6%;
+}
+.modal .modal-content{
+    border: none !important;
+}
+.modal h5{
+    color: black !important;
+    text-align: center;
+    margin: 5% 0%;
+}
+.modal p{
+    color: black;
+    text-align: center;
+    margin-top: 6%;
+    opacity: .6 !important;
+}
+.modal span{
+    border: .1px solid black;
+    border-radius: 10px;
+    padding: 2% 20%;
+    cursor: pointer;
+    display: block;
+    margin-top: 10%;
+}

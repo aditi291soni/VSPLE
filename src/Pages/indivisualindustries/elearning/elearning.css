@@ -1,0 +1,22 @@
+@media (min-width: 869px) {
+    .elearning-top {
+        background-image: url('../../../assest/web-icons/elearning/output-onlinepngtools (3).png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #e8cb8066;
+        height: 90vh;
+        padding-top: 10%;
+    }
+}
+
+@media (max-width: 869px) {
+    .elearning-top {
+        background-image: url('../../../assest/web-icons/elearning/output-onlinepngtools (3).png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #e8cb8066;
+        /* height: 90vh; */
+    }
+}

@@ -1,0 +1,19 @@
+.loadMore2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.loadMore2 .load-btn{
+    width: 20%;
+    height: 4vmax;
+    border: 2px solid rgba(97, 96, 96, 0.832);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.loadMore2 .load-btn span{
+    color: rgba(97, 96, 96, 0.832);
+    font-weight: 500;
+}

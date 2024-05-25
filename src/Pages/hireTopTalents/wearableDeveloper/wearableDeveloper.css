@@ -1,0 +1,129 @@
+.--watch {
+    margin-top: -5%;
+    margin-bottom: 5%;
+    /* width: 70%; */
+    text-align: center;
+    
+}
+
+.--watch-wearable {
+    margin-top: -5%;
+    margin-bottom: -10%;
+    text-align: center;
+}
+.--watch-website {
+    /* margin-top: -25%;
+    margin-bottom: -25%; */
+    text-align: center;
+}
+
+
+.p-h {
+    margin-top: 8%;
+    max-height: fit-content;
+}
+
+.--employee-process {
+    /* margin-top: -20%; */
+    padding: 5% 5%;
+    background: radial-gradient(261.88% 144.8% at 50% -4.85%, rgba(255, 226, 156, 0.17) 0%, rgba(255, 214, 115, 0.00) 100%);
+}
+.-boxes{
+    display: flex;
+    gap: 2rem;
+}
+.-box {
+    padding: 5%;
+    /* height: 250px;
+    width: 500px; */
+    border-radius: 10px;
+    border: 1px solid #ffffff52;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+.main-boxes-w {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+.main-boxes-w .b {
+    width: calc(25% - 20px);
+    margin-right: 20px;
+    box-sizing: border-box;
+    padding: 1% 2%;
+    border-radius: 18px;
+    background: linear-gradient(180deg, #232323 0%, rgba(35, 35, 35, 0.00) 100%);
+  }
+  @media screen and (max-width: 1100px) {
+    .main-boxes-w .b {
+        width: calc(48% - 15px);
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-boxes-w .b {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+  .main-text-service ul{
+    width: 100% !important;
+  }
+  .main-text-service ul li{
+    color: white;
+    opacity: .8;
+    margin-top: 5%;
+    /* width: 75%; */
+  }
+  .slideN-wearable {
+    /* height: max-content; */
+    /* height: 40vh; */
+    /* width: 2000px; */
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    perspective: 100px;
+}
+  .service-box-slider-wearable {
+    width: 90%;
+    /* height: 30vh; */
+    /* background: linear-gradient(178deg, rgba(217, 217, 217, 0.31) -105.98%, rgba(217, 217, 217, 0.00) 162.88%); */
+    border-radius: 47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+    /* margin: 20% 0%; */
+    /* overflow: hidden; */
+  }
+  .sliderS-wearable {
+    display: grid;
+    margin: auto;
+    position: relative;
+    /* width: 90%; */
+    place-items: center;
+    overflow: hidden;
+  }
+  .slide-trackN-wearable:hover {
+    animation-play-state: paused;
+}
+@keyframes scrollNew {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+.slide-trackN-wearable {
+    display: flex;
+    width: calc(500px * 9);
+    height: inherit;
+    animation: scrollNew 40s linear infinite;
+    animation-direction: reverse;
+}
