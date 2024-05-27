@@ -27,6 +27,7 @@ import webdev from "../assest/navi-icons/web-development (1) 1.png";
 import testing from "../assest/main-icons/approval (1) 1 (1).png";
 import staffAug from "../assest/main-icons/staff (1) 1.png";
 import devops from "../assest/main-icons/devops (1) 1.png";
+import devop from "../assest/main-icons/services/gameServices/gameIcon.png";
 import uiux from "../assest/main-icons/ux-design (2) 1.png";
 import ecom from "../assest/main-icons/computer (1) 1.png";
 import game from "../assest/main-icons/coding (3) 1.png";
@@ -254,7 +255,7 @@ const handleMouseLeave = ()=>{
                     <div className="row mt-5">
                       <div className="col-md-4 hoverEff ">
                         <h5 className="megamenu-text">
-                          <img src={devops} width={'6%'} alt="" />
+                          <img src={devop} width={'6%'} alt="" />
                           &nbsp; Game Development
                         </h5>
                         <p
