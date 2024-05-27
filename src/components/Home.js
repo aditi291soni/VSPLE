@@ -85,6 +85,7 @@ import dating from "../assest/main-icons/Group 1000005573.png";
 import logistic from "../assest/main-icons/Group 1000005574.png";
 import fintech from "../assest/main-icons/Group 1000005575.png";
 // import "./style.css";
+
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./contactus.css";
+import Card from "react-bootstrap/Card";
 import "../common/thankyoumodal/thankyoumodal.css";
 import Modal from "../common/thankyoumodal/thankyoumodal";
+import thanks from "../assest/main-icons/icons/Thankyou.png";
 import "react-toastify/dist/ReactToastify.css";
 
 // import location from "../assest/main-icons/Group 611.png";
@@ -170,18 +172,28 @@ const ContactusComponent = () => {
                   </div>
                 </form>
                 {showModal && (
-                 <Modal id="modal" isOpen={showModal} >
-                 <div className="text-center">
-
-                   <h5>Thankyou!</h5>
-                   <p>Thank you for reaching out to us at Vsple. We appreciate your interest and value your inquiry.</p>
-                   <p>Our team is actively reviewing your message and will respond to your inquiry as soon as possible. We strive to address all inquiries as soon as possible.</p>
-                   <p>In the meantime, we invite you to explore our website for more information about our services and our company values. If your matter requires urgent attention, please feel free to contact us directly at +91 9009797197</p>
-                   <span onClick={closeModal}>Close</span>
-                 </div>
-               </Modal>
+                  <Modal id="modal" isOpen={showModal}>
+                    <div className="text-center">
+                      <h5>Thankyou!</h5>
+                      <p>
+                        Thank you for reaching out to us at Vsple. We appreciate
+                        your interest and value your inquiry.
+                      </p>
+                      <p>
+                        Our team is actively reviewing your message and will
+                        respond to your inquiry as soon as possible. We strive
+                        to address all inquiries as soon as possible.
+                      </p>
+                      <p>
+                        In the meantime, we invite you to explore our website
+                        for more information about our services and our company
+                        values. If your matter requires urgent attention, please
+                        feel free to contact us directly at +91 9009797197
+                      </p>
+                      <span onClick={closeModal}>Close</span>
+                    </div>
+                  </Modal>
                 )}
-                
               </div>
             </div>
           </div>
@@ -205,7 +217,7 @@ const ContactusComponent = () => {
           <span className="head m-0">Contact Us</span>
           <span className="title">Get In Touch</span>
           <p className="des">
-          At VSPLE, we're eager to connect with you. Whether you have
+            At VSPLE, we're eager to connect with you. Whether you have
             inquiries, project ideas, <br /> or simply want to say hello, our
             dedicated team is ready to listen and assist.
           </p>
@@ -315,6 +327,38 @@ const ContactusComponent = () => {
             title="map"
           ></iframe>
         </div>
+      </div>
+      <div>
+        {/* <Card className="thankyou bg-white">
+          <Card.Body>
+            <div className="center-x">
+              <Card.Img variant="top" style={{ width: "5rem" }} src={thanks} />
+              <Card.Title className="mx-auto ">
+                <h2 className="custom-title"> Thankyou!</h2>
+              </Card.Title>
+            </div>
+            <div class="text-center mx-auto">
+              <Card.Text>
+                Thank you for reaching out to us at Vsple. We appreciate your
+                interest and value your inquiry.
+              </Card.Text>
+              <Card.Text>
+                Our team is actively reviewing your message and will respond to
+                your inquiry as soon as possible. We strive to address all
+                inquiries as soon as possible.
+              </Card.Text>
+              <Card.Text>
+                In the meantime, we invite you to explore our website for more
+                information about our services and our company values. If your
+                matter requires urgent attention, please feel free to contact us
+                directly at
+                <a className="black" href="http://" target="_blank" rel="noopener noreferrer">
+                  +91 9009797197
+                </a>
+              </Card.Text>
+            </div>
+          </Card.Body>
+        </Card> */}
       </div>
       {/* <div className="side-box">
       <div className="tx-cox d-flex">

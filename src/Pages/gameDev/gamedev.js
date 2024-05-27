@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import FAQ from "../../components/Faq";
 // import { carousel3 } from "../../common/images";
 import sf from "../../assest/main-icons/Group 1000004981.png";
-import group2315 from "../../assest/main-icons/Group 1000002315.png";
+import group2315 from "../../assest/main-icons/services/gameServices/Game1.png";
 import group5369 from "../../assest/web-icons/gamedev/Group 1000005588.png";
 import apps from "../../assest/main-icons/services/gameServices/Group 1000002346.png";
 import gameQa from "../../assest/main-icons/services/gameServices/Frame.png";
