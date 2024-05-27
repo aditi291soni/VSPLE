@@ -37,8 +37,6 @@ const ContactusComponent = () => {
     Subject: "Dummy",
   });
 
-
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({
@@ -46,38 +44,83 @@ const ContactusComponent = () => {
       [name]: value,
     }));
   };
-
+  const [thankyouToggle, setthankyouToggle] = useState(false);
 
   const handleSubmit = async (e) => {
-
+    setthankyouToggle(true);
     e.preventDefault();
-    if (1) {
-      try {
-        const response = await fetch("http://localhost:3000/send_email.php", {
-          method: "POST",
-          body: JSON.stringify(state),
-        });
-        if (response.ok) {
-          setShowModal(true);
-          const modalId = document.getElementById("modal");
-          modalId.style.display = "block";
-          setLoading(true);
-          setTimeout(() => {
-            setLoading(false);
-          }, 2500);
-        } else {
-          console.error("Form submission failed");
-        }
-      } catch (error) {
-        console.error("Error submitting form:", error);
-      }
-    } else {
-      console.error("Form validation failed");
-    }
+    console.log(state)
+    // if (1) {
+    //   try {
+    //     const response = await fetch("http://localhost:3000/send_email.php", {
+    //       method: "POST",
+    //       body: JSON.stringify(state),
+    //     });
+    //     if (response.ok) {
+    //       setShowModal(true);
+    //       const modalId = document.getElementById("modal");
+    //       modalId.style.display = "block";
+    //       setLoading(true);
+    //       setTimeout(() => {
+    //         setLoading(false);
+    //       }, 2500);
+    //     } else {
+    //       console.error("Form submission failed");
+    //     }
+    //   } catch (error) {
+    //     console.error("Error submitting form:", error);
+    //   }
+    // } else {
+    //   console.error("Form validation failed");
+    // }
   };
 
   return (
     <>
+      {thankyouToggle && (
+        <div
+          style={{ zIndex: 10}}
+          onClick={() => setthankyouToggle(false)}
+          className="bg-black bg-opacity-75 w-100 h-100 position-fixed translate-middle top-50 start-50"
+        ></div>
+      )}
+      {thankyouToggle && (
+        <Card className="position-fixed translate-middle opacity-100 top-50 start-50 thankyou bg-white">
+          <Card.Body>
+            <div className="center-x">
+              <Card.Img variant="top" style={{ width: "5rem" }} src={thanks} />
+              <Card.Title className="mx-auto ">
+                <h2 className="custom-title"> Thankyou!</h2>
+              </Card.Title>
+            </div>
+            <div class="text-center mx-auto">
+              <Card.Text>
+                Thank you for reaching out to us at Vsple. We appreciate your
+                interest and value your inquiry.
+              </Card.Text>
+              <Card.Text>
+                Our team is actively reviewing your message and will respond to
+                your inquiry as soon as possible. We strive to address all
+                inquiries as soon as possible.
+              </Card.Text>
+              <Card.Text>
+                In the meantime, we invite you to explore our website for more
+                information about our services and our company values. If your
+                matter requires urgent attention, please feel free to contact us
+                directly at
+                <a
+                  className="black"
+                  href="http://"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  +91 9009797197
+                </a>
+              </Card.Text>
+            </div>
+          </Card.Body>
+        </Card>
+      )}
       <div className="contact-page container web">
         <div className="contact-page text-start">
           <img src={contactMail} width={"2%"} alt="" />
@@ -328,38 +371,7 @@ const ContactusComponent = () => {
           ></iframe>
         </div>
       </div>
-      <div>
-        {/* <Card className="thankyou bg-white">
-          <Card.Body>
-            <div className="center-x">
-              <Card.Img variant="top" style={{ width: "5rem" }} src={thanks} />
-              <Card.Title className="mx-auto ">
-                <h2 className="custom-title"> Thankyou!</h2>
-              </Card.Title>
-            </div>
-            <div class="text-center mx-auto">
-              <Card.Text>
-                Thank you for reaching out to us at Vsple. We appreciate your
-                interest and value your inquiry.
-              </Card.Text>
-              <Card.Text>
-                Our team is actively reviewing your message and will respond to
-                your inquiry as soon as possible. We strive to address all
-                inquiries as soon as possible.
-              </Card.Text>
-              <Card.Text>
-                In the meantime, we invite you to explore our website for more
-                information about our services and our company values. If your
-                matter requires urgent attention, please feel free to contact us
-                directly at
-                <a className="black" href="http://" target="_blank" rel="noopener noreferrer">
-                  +91 9009797197
-                </a>
-              </Card.Text>
-            </div>
-          </Card.Body>
-        </Card> */}
-      </div>
+      <div></div>
       {/* <div className="side-box">
       <div className="tx-cox d-flex">
         <img src={contact} width={"18%"} alt="" />

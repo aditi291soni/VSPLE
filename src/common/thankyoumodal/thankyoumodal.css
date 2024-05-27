@@ -32,8 +32,8 @@
 }
 .thankyou {
   width: 38rem;
- 
   padding: 49px;
+  z-index: 11;
 }
 .center-x {
     display: flex;

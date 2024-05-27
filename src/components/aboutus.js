@@ -6,12 +6,12 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import smile from "../assest/icons/vsple_website_design_5/happy 1.png";
-import review from "../assest/icons/vsple_website_design_5/review 2.png";
-import smile2 from "../assest/icons/vsple_website_design_5/happy 2.png";
-import like from "../assest/icons/vsple_website_design_5/like (1) 1.png";
-import like1 from "../assest/icons/vsple_website_design_5/like 1.png";
-import like2 from "../assest/icons/vsple_website_design_5/like 2.png";
+import smile from "../assest/icons/vsple website design (5)/happy 1.png";
+import review from "../assest/icons/vsple website design (5)/review 2.png";
+import smile2 from "../assest/icons/vsple website design (5)/happy 2.png";
+import like from "../assest/icons/vsple website design (5)/like (1) 1.png";
+import like1 from "../assest/icons/vsple website design (5)/like 1.png";
+import like2 from "../assest/icons/vsple website design (5)/like 2.png";
 import left from "../assest/left.png";
 import right from "../assest/right.png";
 import avatar from "../assest/web-icons/global-icon/Screenshot_2024-02-01_at_5.16 1.png";
@@ -31,6 +31,23 @@ import nextIcon from "../assest/web-icons/hireqadev/Group 670.png";
 import prevIcon from "../assest/web-icons/hireqadev/Group 670 (1).png";
 import disnextIcon from "../assest/web-icons/hireqadev/Group 1057 (1).png";
 import disprevIcon from "../assest/web-icons/hireqadev/Group 1057 (2).png";
+import frame21 from "../assest/icons/Frame.png";
+import vector from "../assest/icons/Vector.png";
+import frame22 from "../assest/icons/Frame22.png";
+import vector2 from "../assest/icons/Vector2.png";
+import vector3 from "../assest/icons/Vector3.png";
+import vector4 from "../assest/icons/Vector4.png";
+import group106 from "../assest/icons/Group 106.png";
+import vector5 from "../assest/icons/Vector5.png";
+import group107 from "../assest/icons/Group 107.png";
+import vector6 from "../assest/icons/Vector6.png";
+import group108 from "../assest/icons/Group 108.png";
+import vector7 from "../assest/icons/Vector7.png";
+import group109 from "../assest/icons/Group 109.png";
+import group110 from "../assest/icons/Group 110.png";
+import vector9 from "../assest/icons/Vector9.png";
+import group111 from "../assest/icons/Group 111.png";
+import group112 from "../assest/icons/Group 112.png";
 
 import { mainimg, leader, frame6, progress } from "../common/images";
 
@@ -210,8 +227,141 @@ const AboutComponent = () => {
           </p>
         </div>
       </div>
-      <div className="text-center container">
-        <img src={progress} width={"100%"} alt="" />
+      <div className="text-center container journey-s">
+        <div className="left-side-journey">
+          <p className="yr-2018 yr">
+            <h2 className="first-txt">2018</h2>
+            <span className="second-txt">THE GENESIS</span>
+          </p>
+          <p className="yr-2020 yr">
+            <h2 className="first-txt clr-gold">2020</h2>
+            <span className="second-txt">THRIVING IN ADVERSITY</span>
+          </p>
+          <p className="yr-2022 yr">
+            <h2 className="first-txt clr-gold-extra">2022</h2>
+            <span className="second-txt">THE BOLD LEAP</span>
+          </p>
+        </div>
+
+        <div className="start-journey">
+          <div className="journey-overlay-cnt">
+            <div className="journey-overlay-left">
+              <div className="group-106-cnt width-28">
+                <img src={group106} width={"100%"} className="" alt="" />
+              </div>
+              <p className="span-cnt">
+                <span>
+                  In the dawn of 2018, our visionary Founder embarked on a solo
+                  quest, transforming his home into the incubator of dreams.
+                  With just one intern, the VSPLE journey commenced, like a
+                  single star shining in the night sky.
+                </span>
+              </p>
+            </div>
+            <div className="journey-overlay-right">
+              <p className="span-cnt-right">
+                <span>
+                  A year later, with a growing team, we outgrew the cozy home
+                  nest and ventured into a vibrant co-working space. Our client
+                  family was small but growing, and we embraced the LLP status,
+                  marking a step forward in our evolution.
+                </span>
+              </p>
+              <div className="group-109-cnt width-28">
+                <img src={group109} width={"100%"} className="" alt="" />
+              </div>
+            </div>
+            <div className="journey-overlay-left">
+              <div className="group-107-cnt width-28">
+                <img src={group107} width={"100%"} className="" alt="" />
+              </div>
+              <p className="span-cnt">
+                <span>
+                  As the world grappled with challenges, we adapted and thrived.
+                  Our client base expanded to a formidable level, and we
+                  welcomed new talent into our family. VSple was a beacon of
+                  hope in the face of adversity.
+                </span>
+              </p>
+            </div>
+            <div className="journey-overlay-right">
+              <p className="span-cnt-right">
+                <span>
+                  The year 2021 was our metamorphosis. VSPLE Technologies Pvt.
+                  Ltd. emerged, and our first office became a hub of innovation.
+                  Our team grew, including our first non-developer management
+                  member. We expanded our client base and embarked on new tech
+                  endeavors, igniting the spark of creativity.
+                </span>
+              </p>
+              <div className="group-110-cnt width-28">
+                <img src={group110} width={"100%"} className="" alt="" />
+              </div>
+            </div>
+            <div className="journey-overlay-left">
+              <div className="group-107-cnt width-28">
+                <img src={group108} width={"100%"} className="" alt="" />
+              </div>
+              <p className="span-cnt">
+                <span>
+                  VSPLE is an IT services, consulting and business solutions
+                  organization that has been partnering with many of the world’s
+                  largest VSPLE is an IT services, consulting and business
+                  solutions organization that has been partnering
+                </span>
+              </p>
+            </div>
+            <div className="journey-overlay-right">
+              <div className="span-cnt-right">
+                <span>
+                  The year 2023 was nothing short of a fairy tale. We moved into
+                  a luxury office in the heart of the corporate world. With a
+                  formidable team and a foray into diverse domains, we stood
+                  tall. Our client base reached a significant level, and our few
+                  crowning glories , marked a brilliant chapter in the VSPLE
+                  saga.
+                </span>
+              </div>
+              <div className="group-111-cnt width-28">
+                <img src={group111} width={"110%"} className="" alt="" />
+              </div>
+            </div>
+          </div>
+          {/* <div className="frame21-icon">
+            <img src={frame21} width={"100%"} className="mb-1" alt="" />
+          </div> */}
+          <div className="vector-curve-icon vector">
+            <img src={group112} width={"100%"} className="" alt="" />
+          </div>
+          {/* <div className="vector-curve-icon-2">
+            <img src={vector2} width={"100%"} className="" alt="" />
+          </div>
+          <div className="vector-curve-icon-3">
+            <img src={vector3} width={"100%"} className="" alt="" />
+          </div> */}
+          {/* <div className="frame22-icon">
+            <img src={frame22} width={"100%"} className="" alt="" />
+          </div> */}
+          <div className="txt-2024">
+            <h1 className="">2024</h1>
+          </div>
+        </div>
+
+        <div className="right-side-journey">
+          <p className="yr-2019 yr align-left">
+            <h2 className="first-txt">2019</h2>
+            <span className="second-txt">CO-WORKING CHRONICLES</span>
+          </p>
+          <p className="yr-2021 yr align-left">
+            <h2 className="first-txt clr-gold">2021</h2>
+            <span className="second-txt">THE EVOLUTION UNVEILED</span>
+          </p>
+          <p className="yr-2023 yr align-left margin-l">
+            <img src={frame17} width={"15%"} className="pad" alt="" />
+            <h2 className="first-txt clr-gold-extra">2023</h2>
+            <span className="second-txt">THE GRAND UNVEILING</span>
+          </p>
+        </div>
       </div>
       <div className="h-leader">
         <div className="h-leader-row row p-5">
