@@ -208,7 +208,7 @@ const WhatsnextComponent = () => {
         </div>
       </div>
       <div className="container  my-5">
-        <div className="gameparent  mx-auto">
+        <div className="gameparent mx-auto mb-5">
           <div className="gameBox p-5">
             <div className="text-center">
               <img src={augmentedReality} width={"60%"} alt="" />
@@ -235,7 +235,7 @@ const WhatsnextComponent = () => {
             </p>
           </div>
         </div>
-        <div className="gameparent mx-auto">
+        <div className="gameparent mx-auto mb-n5">
           <div className="gameBox p-5">
             <div className="text-center">
               <img src={cyberSecurity} width={"70%"} alt="" />

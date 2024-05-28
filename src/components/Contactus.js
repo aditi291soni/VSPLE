@@ -79,7 +79,7 @@ const ContactusComponent = () => {
     <>
       {thankyouToggle && (
         <div
-          style={{ zIndex: 10}}
+          style={{ zIndex: 10 }}
           onClick={() => setthankyouToggle(false)}
           className="bg-black bg-opacity-75 w-100 h-100 position-fixed translate-middle top-50 start-50"
         ></div>
@@ -284,6 +284,7 @@ const ContactusComponent = () => {
                       onChange={handleInputChange}
                       placeholder="Name"
                       autocomplete="off"
+                      required
                     />
                   </div>
                   <div className="email">
@@ -296,6 +297,7 @@ const ContactusComponent = () => {
                       onChange={handleInputChange}
                       placeholder="Email"
                       autocomplete="off"
+                      required
                     />
                   </div>
                   <div className="mobile">
@@ -308,6 +310,7 @@ const ContactusComponent = () => {
                       onChange={handleInputChange}
                       placeholder="Mobile Number"
                       autocomplete="off"
+                      required
                     />
                   </div>
                   <div className="message">
@@ -322,6 +325,7 @@ const ContactusComponent = () => {
                       onChange={handleInputChange}
                       placeholder="Message"
                       autocomplete="off"
+                      required
                     />
                   </div>
                   <div className="button text-center">
