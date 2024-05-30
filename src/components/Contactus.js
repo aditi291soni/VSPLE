@@ -47,6 +47,7 @@ const ContactusComponent = () => {
   const [thankyouToggle, setthankyouToggle] = useState(false);
 
   const handleSubmit = async (e) => {
+    console.log(e)
     setthankyouToggle(true);
     e.preventDefault();
     console.log(state)
@@ -157,7 +158,7 @@ const ContactusComponent = () => {
                       name="name"
                       value={state.name}
                       onChange={handleInputChange}
-                      placeholder="Name"
+                      placeholder="* Name"
                       autocomplete="off"
                       required
                     />
@@ -167,11 +168,11 @@ const ContactusComponent = () => {
                   <div className="email">
                     <img width={"6%"} src={email} alt="" />
                     <input
-                      type="email"
+                      type="email"swd
                       name="email"
                       value={state.email}
                       onChange={handleInputChange}
-                      placeholder="Email"
+                      placeholder="* Email"
                       autocomplete="off"
                       required
                     />
@@ -186,7 +187,8 @@ const ContactusComponent = () => {
                       value={state.phone}
                       autocomplete="off"
                       onChange={handleInputChange}
-                      placeholder="Mobile Number"
+                      placeholder="* Mobile Number"
+                      required
                     />
                     {/* {errors.phone && (
                       <p className="error">{errors.phone}</p>
@@ -203,7 +205,7 @@ const ContactusComponent = () => {
                       value={state.message}
                       autocomplete="off"
                       onChange={handleInputChange}
-                      placeholder="Message"
+                      placeholder="* Message"
                       required
                     />
                     {/* {errors.message && (
@@ -282,7 +284,7 @@ const ContactusComponent = () => {
                       name="name"
                       value={state.name}
                       onChange={handleInputChange}
-                      placeholder="Name"
+                      placeholder="* Name"
                       autocomplete="off"
                       required
                     />
@@ -295,7 +297,7 @@ const ContactusComponent = () => {
                       name="email"
                       value={state.email}
                       onChange={handleInputChange}
-                      placeholder="Email"
+                      placeholder="* Email"
                       autocomplete="off"
                       required
                     />
@@ -308,7 +310,7 @@ const ContactusComponent = () => {
                       name="phone"
                       value={state.phone}
                       onChange={handleInputChange}
-                      placeholder="Mobile Number"
+                      placeholder="* Mobile Number"
                       autocomplete="off"
                       required
                     />
@@ -323,7 +325,7 @@ const ContactusComponent = () => {
                       name="message"
                       value={state.message}
                       onChange={handleInputChange}
-                      placeholder="Message"
+                      placeholder="* Message"
                       autocomplete="off"
                       required
                     />
