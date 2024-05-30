@@ -223,7 +223,8 @@ const ContactusComponent = () => {
                         your interest and value your inquiry.
                       </p>
                       <p>
-                        Our team is actively reviewing your message and will
+                        Our team is actively 
+                        reviewing your message and will
                         respond to your inquiry as soon as possible. We strive
                         to address all inquiries as soon as possible.
                       </p>
