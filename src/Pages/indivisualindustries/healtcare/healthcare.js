@@ -281,8 +281,9 @@ const HealthIndustriesComponent = () => {
                           name="name"
                           value={state.name}
                           onChange={handleInputChange}
-                          placeholder="Name"
+                          placeholder="* Name"
                           autoComplete="off"
+                          required
                         />
                       </div>
                     </div>
@@ -296,8 +297,9 @@ const HealthIndustriesComponent = () => {
                           name="email"
                           value={state.email}
                           onChange={handleInputChange}
-                          placeholder="Email"
+                          placeholder="* Email"
                           autoComplete="off"
+                          required
                         />
                       </div>
                     </div>
@@ -342,8 +344,9 @@ const HealthIndustriesComponent = () => {
                       name="phone"
                       value={state.password}
                       onChange={handleInputChange}
-                      placeholder="Mobile Number"
+                      placeholder="* Mobile Number"
                       autoComplete="off"
+                      required
                     />
                   </div>
                   <div className="message">
@@ -356,8 +359,9 @@ const HealthIndustriesComponent = () => {
                       name="message"
                       value={state.message}
                       onChange={handleInputChange}
-                      placeholder="Message"
+                      placeholder="* Message"
                       autoComplete="off"
+                      required
                     />
                     <div className="button text-end">
                       <button type="submit">Send</button>
