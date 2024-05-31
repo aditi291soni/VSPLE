@@ -177,7 +177,7 @@ const GamedevComponent = () => {
             <img src={group2315} width={"100%"} alt="" />
           </div>
         </div>
-        <div className="services-page hidden container mt-5">
+        <div className="services-page hidden container mt-2 ">
           <img className="mb-2" src={webdev} width={20} alt="" />
           <br />
           <span className="mb-0">Introduction</span>
@@ -218,7 +218,7 @@ const GamedevComponent = () => {
               </p>
             </div>
           </div>
-          <div className="hidden gameparent mx-auto mt-5">
+          <div className="hidden gameparent mx-auto ">
             <div className="gameBox">
               <img src={rec2424} width={"100%"} alt="" />
               <h5>Virtual Reality (VR) Game Development</h5>

@@ -3,7 +3,7 @@
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.197) 0%, rgba(51, 51, 51, 0.00) 100%);
     /* width: 45vw; */
     padding: 4%;
-    margin-top: -70px;
+    margin-top: -20px;
 }
 .gameBox img {
     border-radius: 40px;
@@ -161,3 +161,9 @@
 }
 
 
+/* @media (min-widt:869px) {
+    .gameBox{
+        margin-top: 10px;
+        background-color: red;
+    }
+} */

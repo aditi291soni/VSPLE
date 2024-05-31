@@ -142,9 +142,9 @@
 }
 
 .service-box h5 {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     color: white;
-    font-weight: 500;
+    font-weight: 800;
     /* line-height: 1 !important; */
     /* letter-spacing: 0em; */
     margin-top: 2%;
@@ -178,9 +178,9 @@
 }
 
 .technology-box .service-title {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     color: white;
-    font-weight: 500;
+    font-weight: 800;
     line-height: 1 !important;
     letter-spacing: 0em;
     margin-top: 2%;
@@ -209,8 +209,8 @@
 
 .flip-card {
     background-color: transparent;
-    width: 14vmax;
-    height: 20vmax;
+    width: 12vmax;
+    height: 16vmax;
     perspective: 900px;
 }
 
