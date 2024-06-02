@@ -5,23 +5,24 @@
 
   .contacts form {
     position: relative;
+    color:white;
   }
 
   .contacts form .Name img {
     position: absolute;
-    top: 7%;
+    top: 6%;
     left: 5%;
   }
 
   .contacts form .email img {
     position: absolute;
-    top: 22%;
+    top: 21%;
     left: 5%;
   }
 
   .contacts form .mobileSec img {
     position: absolute;
-    top: 37%;
+    top: 36%;
     left: 5%;
   }
 
@@ -167,25 +168,25 @@
 
   .contacts form .Name img {
     position: absolute;
-    top: 7%;
+    top: 6.5%;
     left: 6%;
   }
 
   .contacts form .email img {
     position: absolute;
-    top: 22%;
+    top: 21.5%;
     left: 6%;
   }
 
   .contacts form .mobile img {
     position: absolute;
-    top: 37%;
+    top: 36.5%;
     left: 6%;
   }
 
   .contacts form .message img {
     position: absolute;
-    top: 56%;
+    top: 55.5%;
     left: 6%;
   
   }

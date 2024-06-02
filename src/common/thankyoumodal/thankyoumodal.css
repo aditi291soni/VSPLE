@@ -47,3 +47,16 @@
 .black{
     color: black;
 }
+
+@media (max-width:550px) {
+    .thankyou{
+        width: 28rem;
+        padding: 1px;
+    }
+}
+@media (max-width:380px) {
+    .thankyou{
+        width: 24rem;
+        padding: 1px;
+    }
+}

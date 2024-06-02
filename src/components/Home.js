@@ -425,7 +425,7 @@ const HoComponent = () => {
   // }, []);
   const handleAvatarClick = (clientId) => {
     const internalImg = document.querySelector(".testimonial img");
-    internalImg.classList.add("active");
+    internalImg.classList.add("active"); 
     setSelectedClient(clientId);
     setAnimate(true);
   };
@@ -847,7 +847,7 @@ const HoComponent = () => {
                 <span className="service-name d-block my-2">
                   Premium Service
                 </span>
-                <h5>
+                <h5 className="">
                   Mobile App
                   <br />
                   Development
@@ -1788,6 +1788,7 @@ const HoComponent = () => {
                 onClick={() => handleAvatarClick(client.id)}
                 className={selectedClient === client.id ? "selected" : ""}
               />
+              
             ))}
             <img src={smile} alt="" />
             <img src={smile2} alt="" />
@@ -1805,6 +1806,7 @@ const HoComponent = () => {
               <>
                 <h5 className={animate ? "slide-in" : ""}>
                   {clients[selectedClient - 1].name}
+                  {/* {clients.name.charAt(0)} */}
                 </h5>
                 <p className={` ${animate ? "slide-in" : ""}`}>
                   <img src={left} alt="" className="mb-4" />
