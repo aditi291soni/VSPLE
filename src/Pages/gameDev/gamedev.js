@@ -170,7 +170,7 @@ const GamedevComponent = () => {
                 redefine gaming. Elevate your entertainment with our innovative
                 gaming solutions!
               </p>
-              <img className="" src={apps} width={"60%"} alt="" />
+              <img className="" src={apps} width={"90%"} alt="" />
             </div>
           </div>
           <div className="col-md-6 d-flex justify-content-center">
