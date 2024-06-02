@@ -168,7 +168,7 @@ form .email img {
 
 form .mobileSec img {
     position: absolute;
-    top: 42%;
+    top: 39%;
     left: 6%;
 }
 
@@ -187,7 +187,7 @@ form .message img {
 .why label{
 color: white;
 opacity: .8;
-margin-left: -3%;
+margin-left: -7%;
 }
 .why input{
 margin: 6px !important;
