@@ -1,6 +1,7 @@
 import "./home.css";
 import React, { useState, useEffect, useRef } from "react";
 import "./home1.css";
+import Testimonials from "./Testimonials";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -1710,7 +1711,7 @@ const HoComponent = () => {
              
                   </div>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
@@ -1769,58 +1770,7 @@ const HoComponent = () => {
             </div>
           </div>
         </div>
-        <div className="web-model testimonial mt-5">
-          <div className="avatars">
-            {clients.map((client) => (
-              //   <img
-              //     key={client.id}
-              //     src={
-              //       selectedClient === client.id
-              //         ? client.avatar
-              //         : client.selectedAvatar
-              //     }
-              //     alt=""
-              //     onClick={() => handleAvatarClick(client.id)}
-              //     className={}
-              //   />
-              <div
-                onClick={() => handleAvatarClick(client.id)}
-                className={
-                  selectedClient === client.id
-                    ? "active selected d-flex align-items-center justify-content-center text-white"
-                    : " d-flex align-items-center justify-content-center text-white"
-                }
-              >
-                {client.name[0]}
-              </div>
-            ))}
-            <img src={smile} alt="" />
-            <img src={smile2} alt="" />
-            <img src={like} alt="" />
-            <img src={like1} alt="" />
-            <img src={like2} alt="" />
-            {/* <img src={like2} alt="" />
-          <img src={smile2} alt="" /> */}
-          </div>
-          <div className="testimonial-text text-center">
-            <img width={25} src={review} alt="" />
-
-            <h2 className="slide-i">Testimonial</h2>
-            {selectedClient !== null && (
-              <>
-                <h5 className={animate ? "slide-in" : ""}>
-                  {clients[selectedClient - 1].name}
-                  {/* {clients.name.charAt(0)} */}
-                </h5>
-                <p className={` ${animate ? "slide-in" : ""}`}>
-                  <img src={left} alt="" className="mb-4" />
-                  {clients[selectedClient - 1].description}
-                  <img src={right} alt="" />
-                </p>
-              </>
-            )}
-          </div>
-        </div>
+        <Testimonials/>
         <div className="mobile-model mobile-swiper container">
           <Swiper
             spaceBetween={30}
