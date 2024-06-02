@@ -205,7 +205,7 @@ const UnboundedComponent = () => {
               </p>
               <img
                 className="portfolioImg mb-3"
-                src={four}
+                src={five}
                 width={"44px"}
                 alt=""
               />
@@ -230,7 +230,7 @@ const UnboundedComponent = () => {
               {/* <img src={mobile} width={"100%"} alt="" /> */}
             </div>
             <div className="col-md-12 col-lg-3">
-              <img className="mb-3" src={five} width={"44px"}alt="" />
+              <img className="mb-3" src={four} width={"44px"}alt="" />
               <h5 className="">Reminders</h5>
               <p>
                 Set reminders to establish a consistent meditation routine,

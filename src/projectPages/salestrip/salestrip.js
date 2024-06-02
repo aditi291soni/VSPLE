@@ -189,7 +189,7 @@ const SalestripComponent = () => {
               </p>
               <img
                 className="portfolioImg mb-3"
-                src={four}
+                src={five}
                 width={"44px"}
                 alt=""
               />
@@ -213,7 +213,7 @@ const SalestripComponent = () => {
               {/* <img src={mobile} width={"100%"} alt="" /> */}
             </div>
             <div className="col-md-12 col-lg-3">
-              <img className="mb-3" src={five} width={"44px"} alt="" />
+              <img className="mb-3" src={four} width={"44px"} alt="" />
               <h5 className="">Streamlined Appointment Scheduling</h5>
               <p>
                 Manage retail visits and doctor appointments efficiently.
@@ -359,7 +359,7 @@ const SalestripComponent = () => {
                   <img src={appleLogo} width={"20%"} alt="" />
                   <img className="ms-2" src={storeLogo} width={"20%"} alt="" />
                 </div>
-                <img src={hobbyist} width={"100%"} alt="" />
+                <img className="mt-4" src={hobbyist} width={"100%"} alt="" />
               </div>
               <div className="tab-text1">
                 <span>Hobbyist</span>

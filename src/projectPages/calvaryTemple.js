@@ -768,7 +768,7 @@ const CalvaryComponent = () => {
                           alt=""
                         /> */}
                 </div>
-                <img src={salestrip} width={"100%"} alt="" />
+                <img className="mt-4" src={salestrip} width={"100%"} alt="" />
               </div>
               <div className="tab-text1">
                 <span>Salestrip CLM</span>
