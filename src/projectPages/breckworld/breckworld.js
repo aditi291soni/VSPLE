@@ -228,7 +228,7 @@ const BreckworldComponent = () => {
               </p>
               <img
                 className="portfolioImg mb-3"
-                src={four}
+                src={five}
                 width={"44px"}
                 alt=""
               />
@@ -252,7 +252,7 @@ const BreckworldComponent = () => {
               {/* <img src={mobile} width={"100%"} alt="" /> */}
             </div>
             <div className="col-md-12 col-lg-3">
-              <img className="mb-3" src={five} width={"44px"} alt="" />
+              <img className="mb-3" src={four} width={"44px"} alt="" />
               <h5 className="">
                 Free Rewards <br /> and Discounts
               </h5>
@@ -330,12 +330,12 @@ const BreckworldComponent = () => {
                   <img src={appleLogo} width={"20%"} alt="" />
                   <img className="ms-2" src={storeLogo} width={"20%"} alt="" />
                 </div>
-                <img src={salestrip} width={"100%"} alt="" />
+                <img className="mt-4" src={salestrip} width={"100%"} alt="" />
               </div>
               <div className="tab-text1">
                 <span>Salestrip Clm</span>
                 <p>Mobile App Development</p>
-                <a href="/calvary-app-development">Case Study</a>
+                <a href="/calvary-app-development">Case Study<img width={"10%"} src={arrow} alt="" /></a>
               </div>
             </div>
           </div>

@@ -283,7 +283,8 @@ const LogisticsIndustriesComponent = () => {
                           name="name"
                           value={state.name}
                           onChange={handleInputChange}
-                          placeholder="Name"
+                          placeholder="* Name"
+                          required
                         />
                       </div>
                     </div>
@@ -296,7 +297,8 @@ const LogisticsIndustriesComponent = () => {
                           name="email"
                           value={state.email}
                           onChange={handleInputChange}
-                          placeholder="Email"
+                          placeholder="* Email"
+                          required
                         />
                       </div>
                     </div>
@@ -367,7 +369,8 @@ const LogisticsIndustriesComponent = () => {
                       name="phone"
                       value={state.password}
                       onChange={handleInputChange}
-                      placeholder="Mobile Number"
+                      placeholder="* Mobile Number"
+                      required
                     />
                   </div>
                   <div className="message">
@@ -380,7 +383,8 @@ const LogisticsIndustriesComponent = () => {
                       name="message"
                       value={state.message}
                       onChange={handleInputChange}
-                      placeholder="Message"
+                      placeholder="* Message"
+                      required
                     />
                     <div className="button text-end">
                       <button type="submit">Send</button>

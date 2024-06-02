@@ -200,7 +200,7 @@ const ChatieComponent = () => {
               <img
 
                 className=" portfolioImg mb-3"
-                src={four}
+                src={five}
                 width={"50px"}
                 alt=""
               />
@@ -223,7 +223,7 @@ const ChatieComponent = () => {
 
             </div>
             <div className="col-md-12 col-lg-3">
-              <img className="mb-3" src={five} width={"50px"} alt="" />
+              <img className="mb-3" src={four} width={"50px"} alt="" />
               <h5>Subscription Module by <br /> In-App Purchase</h5>
               <p>
                 Chatie offers a seamless subscription module through in-app purchases, providing users with access to premium features and an enhanced experience.

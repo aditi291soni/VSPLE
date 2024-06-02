@@ -213,7 +213,7 @@ const CrossoComponent = () => {
               <img
                 className="mb-3"
                 style={{ marginTop: "40%" }}
-                src={four}
+                src={five}
                 width={"44px"}
                 alt=""
               />
@@ -236,7 +236,7 @@ const CrossoComponent = () => {
             {/* <img src={mobile} width={"100%"} alt="" /> */}
           </div>
             <div className="col-md-12 col-lg-3">
-              <img className="mb-3" src={five} width={"44px"} alt="" />
+              <img className="mb-3" src={four} width={"44px"} alt="" />
               <h5 className="">Winning Sound</h5>
               <p>
                 The inclusion of a winning sound effect enhances user
