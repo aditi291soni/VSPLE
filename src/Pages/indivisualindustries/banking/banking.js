@@ -47,6 +47,7 @@ import {
   integrationScalability,
   implementationIntegration,
 } from "../../../common/images";
+import TechnologiesWeUse from "../../../components/TechnologiesWeUse";
 const BankingIndustriesComponent = () => {
   const [loading, setLoading] = useState(false);
   const [commentor, setCommentor] = useState(false);
@@ -281,7 +282,6 @@ const BankingIndustriesComponent = () => {
                       </div>
                     </div>
                     <div className="w-100">
-
                       <div className="email">
                         <img width={"5%"} src={email} alt="" />
                         {/* <label>Password</label> */}
@@ -300,37 +300,63 @@ const BankingIndustriesComponent = () => {
                   <div className="why">
                     <h5>How Did You Hear About Us?</h5>
                     <div className="d-flex justify-content-start">
-                      <input name="why" type="radio" value="Google"
+                      <input
+                        name="why"
+                        type="radio"
+                        value="Google"
                         checked={state.why === "Google"}
-                        onChange={handleInputChange} />
+                        onChange={handleInputChange}
+                      />
                       <label> Google</label>
-                      <input name="why" type="radio" value="LinkedIn"
+                      <input
+                        name="why"
+                        type="radio"
+                        value="LinkedIn"
                         checked={state.why === "LinkedIn"}
-                        onChange={handleInputChange} />
-                      <label > LinkedIn</label>
-                      <input name="why" type="radio" value="Facebook"
+                        onChange={handleInputChange}
+                      />
+                      <label> LinkedIn</label>
+                      <input
+                        name="why"
+                        type="radio"
+                        value="Facebook"
                         checked={state.why === "Facebook"}
-                        onChange={handleInputChange} />
+                        onChange={handleInputChange}
+                      />
                       <label> Facebook</label>
-                      <input className="web-model" name="why" type="radio" value="Instagram"
+                      <input
+                        className="web-model"
+                        name="why"
+                        type="radio"
+                        value="Instagram"
                         checked={state.why === "Instagram"}
-                        onChange={handleInputChange} />
-                      <label className="web-model" > Instagram</label>
+                        onChange={handleInputChange}
+                      />
+                      <label className="web-model"> Instagram</label>
                     </div>
                     <div className="d-flex justify-content-start">
-                      <input className="mobile-model" name="why" type="radio" value="Instagram"
+                      <input
+                        className="mobile-model"
+                        name="why"
+                        type="radio"
+                        value="Instagram"
                         checked={state.why === "Instagram"}
-                        onChange={handleInputChange} />
-                      <label className="mobile-model" > Instagram</label>
-                      <input name="why" type="radio" value="Other"
+                        onChange={handleInputChange}
+                      />
+                      <label className="mobile-model"> Instagram</label>
+                      <input
+                        name="why"
+                        type="radio"
+                        value="Other"
                         checked={state.why === "Other"}
-                        onChange={handleInputChange} />
+                        onChange={handleInputChange}
+                      />
                       <label> Others</label>
                     </div>
                   </div>
                   <div className="mobileSec">
                     {/* <label>Password</label> */}
-                    <img width={"4%"}  src={telephone} alt="" />
+                    <img width={"4%"} src={telephone} alt="" />
                     <input
                       type="number"
                       name="phone"
@@ -678,10 +704,10 @@ const BankingIndustriesComponent = () => {
         <div className="row container my-5 ">
           <div className="col-md-12 col-lg-8">
             <p style={{ textAlign: "left" }}>
-            Ready to revolutionize your Banking experience?
+              Ready to revolutionize your Banking experience?
               <br />
               <span className="inner-join">
-              Connect with Vsple to embark on a journey!
+                Connect with Vsple to embark on a journey!
               </span>
             </p>
           </div>
@@ -724,106 +750,7 @@ const BankingIndustriesComponent = () => {
           <h5>Technologies We Use</h5>
         </div>
       </div>
-      <div className="tab-content hidden container web-model">
-        <Tabs defaultActiveKey={activeTab} onSelect={handleTabChange}>
-          <Tab eventKey="all" title="All">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Frontend" title="Frontend">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Backend" title="Backend">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="IOS" title="IOS">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Android" title="Android">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Cloud" title="Cloud">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-        </Tabs>
-      </div>
+      <TechnologiesWeUse />
       <div className="h-journey d-flex justify-content-center text-center">
         <div className="p-journey web-model">
           {/* <img src={frame5} width={"5%"} className="mb-1" alt="" />

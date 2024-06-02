@@ -47,6 +47,7 @@ import {
   integrationScalability,
   implementationIntegration,
 } from "../../../common/images";
+import TechnologiesWeUse from "../../../components/TechnologiesWeUse";
 
 const LogisticsIndustriesComponent = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -287,7 +288,6 @@ const LogisticsIndustriesComponent = () => {
                       </div>
                     </div>
                     <div className="w-100">
-
                       <div className="email">
                         <img width={"5%"} src={email} alt="" />
                         {/* <label>Password</label> */}
@@ -305,31 +305,57 @@ const LogisticsIndustriesComponent = () => {
                   <div className="why">
                     <h5>How Did You Hear About Us?</h5>
                     <div className="d-flex justify-content-start">
-                      <input name="why" type="radio" value="Google"
+                      <input
+                        name="why"
+                        type="radio"
+                        value="Google"
                         checked={state.why === "Google"}
-                        onChange={handleInputChange} />
+                        onChange={handleInputChange}
+                      />
                       <label> Google</label>
-                      <input name="why" type="radio" value="LinkedIn"
+                      <input
+                        name="why"
+                        type="radio"
+                        value="LinkedIn"
                         checked={state.why === "LinkedIn"}
-                        onChange={handleInputChange} />
-                      <label > LinkedIn</label>
-                      <input name="why" type="radio" value="Facebook"
+                        onChange={handleInputChange}
+                      />
+                      <label> LinkedIn</label>
+                      <input
+                        name="why"
+                        type="radio"
+                        value="Facebook"
                         checked={state.why === "Facebook"}
-                        onChange={handleInputChange} />
+                        onChange={handleInputChange}
+                      />
                       <label> Facebook</label>
-                      <input className="web-model" name="why" type="radio" value="Instagram"
+                      <input
+                        className="web-model"
+                        name="why"
+                        type="radio"
+                        value="Instagram"
                         checked={state.why === "Instagram"}
-                        onChange={handleInputChange} />
-                      <label className="web-model" > Instagram</label>
+                        onChange={handleInputChange}
+                      />
+                      <label className="web-model"> Instagram</label>
                     </div>
                     <div className="d-flex justify-content-start">
-                      <input className="mobile-model" name="why" type="radio" value="Instagram"
+                      <input
+                        className="mobile-model"
+                        name="why"
+                        type="radio"
+                        value="Instagram"
                         checked={state.why === "Instagram"}
-                        onChange={handleInputChange} />
-                      <label className="mobile-model" > Instagram</label>
-                      <input name="why" type="radio" value="Other"
+                        onChange={handleInputChange}
+                      />
+                      <label className="mobile-model"> Instagram</label>
+                      <input
+                        name="why"
+                        type="radio"
+                        value="Other"
                         checked={state.why === "Other"}
-                        onChange={handleInputChange} />
+                        onChange={handleInputChange}
+                      />
                       <label> Others</label>
                     </div>
                   </div>
@@ -395,7 +421,7 @@ const LogisticsIndustriesComponent = () => {
           <div className="miniportfolio col-md-7 col-sm-12 col-lg-7">
             <div className="parent">
               <div className="child1">
-                <img src={supplychain} width={"44px"}  alt="" />
+                <img src={supplychain} width={"44px"} alt="" />
                 <br />
                 <span>Supply Chain Visibility and Transparency</span>
                 <p>
@@ -406,7 +432,7 @@ const LogisticsIndustriesComponent = () => {
                 </p>
               </div>
               <div className="child1">
-                <img src={warehouse} width={"44px"}  alt="" />
+                <img src={warehouse} width={"44px"} alt="" />
                 <br />
                 <span>Warehouse Optimization</span>
                 <p>
@@ -419,7 +445,7 @@ const LogisticsIndustriesComponent = () => {
             </div>
             <div className="parent">
               <div className="child1">
-                <img src={lastmile} width={"44px"}  alt="" />
+                <img src={lastmile} width={"44px"} alt="" />
                 <br />
                 <span>Last-Mile Delivery</span>
                 <p>
@@ -429,7 +455,7 @@ const LogisticsIndustriesComponent = () => {
                 </p>
               </div>
               <div className="child1">
-                <img src={Sustainability} width={"44px"}  alt="" />
+                <img src={Sustainability} width={"44px"} alt="" />
                 <br />
                 <span>Sustainability</span>
                 <p>
@@ -516,7 +542,7 @@ const LogisticsIndustriesComponent = () => {
       <div className="main-boxes container hidden">
         <div className="row">
           <div className="b">
-            <img className="my-4" src={customLogistic} width={"44px"}  alt="" />
+            <img className="my-4" src={customLogistic} width={"44px"} alt="" />
             <h5>Customized Logistics Software Solutions</h5>
             <p>
               We specialize in crafting bespoke software solutions tailored to
@@ -527,7 +553,7 @@ const LogisticsIndustriesComponent = () => {
             </p>
           </div>
           <div className="b">
-            <img className="my-4" src={smartAutomation} width={"44px"}  alt="" />
+            <img className="my-4" src={smartAutomation} width={"44px"} alt="" />
             <h5>Smart Automation and Integration</h5>
             <p>
               Leveraging the power of automation, we integrate intelligent
@@ -538,7 +564,7 @@ const LogisticsIndustriesComponent = () => {
             </p>
           </div>
           <div className="b">
-            <img className="my-4" src={realTime} width={"44px"}  alt="" />
+            <img className="my-4" src={realTime} width={"44px"} alt="" />
             <h5>Real-time Tracking and Analytics</h5>
             <p>
               Gain real-time visibility into your logistics operations with our
@@ -551,7 +577,7 @@ const LogisticsIndustriesComponent = () => {
             <img
               className="my-4"
               src={enchancedCustomer}
-              width={"44px"} 
+              width={"44px"}
               alt=""
             />
             <h5>Enhanced Supply Chain Management</h5>
@@ -564,7 +590,7 @@ const LogisticsIndustriesComponent = () => {
             </p>
           </div>
           <div className="b">
-            <img className="my-4" src={scalability} width={"44px"}  alt="" />
+            <img className="my-4" src={scalability} width={"44px"} alt="" />
             <h5>Scalability and Flexibility</h5>
             <p>
               Our agile development approach ensures that our solutions grow
@@ -577,7 +603,7 @@ const LogisticsIndustriesComponent = () => {
             <img
               className="my-4"
               src={futureReadySollution}
-              width={"44px"} 
+              width={"44px"}
               alt=""
             />
             <h5>Future-ready Solutions</h5>
@@ -629,7 +655,7 @@ const LogisticsIndustriesComponent = () => {
       <div className="main-boxes container hidden">
         <div className="row">
           <div className="b">
-            <img className="my-4" src={web} width={"44px"}  alt="" />
+            <img className="my-4" src={web} width={"44px"} alt="" />
             <h5>Web</h5>
             <p>
               Our expertise in web development encompasses robust logistics
@@ -643,7 +669,7 @@ const LogisticsIndustriesComponent = () => {
             <img
               className="my-4"
               src={mobileApplication}
-              width={"44px"} 
+              width={"44px"}
               alt=""
             />
             <h5>Mobile Application</h5>
@@ -656,7 +682,7 @@ const LogisticsIndustriesComponent = () => {
             </p>
           </div>
           <div className="b">
-            <img className="my-4" src={wearables} width={"44px"}  alt="" />
+            <img className="my-4" src={wearables} width={"44px"} alt="" />
             <h5>Wearables</h5>
             <p>
               Enter the realm of cutting-edge logistics management with our
@@ -718,6 +744,7 @@ const LogisticsIndustriesComponent = () => {
           <h5>Technologies We Use</h5>
         </div>
       </div>
+      <TechnologiesWeUse />
     </div>
   );
 };

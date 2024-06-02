@@ -47,6 +47,7 @@ import {
   integrationScalability,
   implementationIntegration,
 } from "../../../common/images";
+import TechnologiesWeUse from "../../../components/TechnologiesWeUse";
 const DatingIndustriesComponent = () => {
   const [loading, setLoading] = useState(false);
   const [commentor, setCommentor] = useState(false);
@@ -287,7 +288,6 @@ const DatingIndustriesComponent = () => {
                       </div>
                     </div>
                     <div className="w-100">
-
                       <div className="email">
                         <img width={"5%"} src={email} alt="" />
                         {/* <label>Password</label> */}
@@ -305,31 +305,57 @@ const DatingIndustriesComponent = () => {
                   <div className="why">
                     <h5>How Did You Hear About Us?</h5>
                     <div className="d-flex justify-content-start">
-                      <input name="why" type="radio" value="Google"
+                      <input
+                        name="why"
+                        type="radio"
+                        value="Google"
                         checked={state.why === "Google"}
-                        onChange={handleInputChange} />
+                        onChange={handleInputChange}
+                      />
                       <label> Google</label>
-                      <input name="why" type="radio" value="LinkedIn"
+                      <input
+                        name="why"
+                        type="radio"
+                        value="LinkedIn"
                         checked={state.why === "LinkedIn"}
-                        onChange={handleInputChange} />
-                      <label > LinkedIn</label>
-                      <input name="why" type="radio" value="Facebook"
+                        onChange={handleInputChange}
+                      />
+                      <label> LinkedIn</label>
+                      <input
+                        name="why"
+                        type="radio"
+                        value="Facebook"
                         checked={state.why === "Facebook"}
-                        onChange={handleInputChange} />
+                        onChange={handleInputChange}
+                      />
                       <label> Facebook</label>
-                      <input className="web-model" name="why" type="radio" value="Instagram"
+                      <input
+                        className="web-model"
+                        name="why"
+                        type="radio"
+                        value="Instagram"
                         checked={state.why === "Instagram"}
-                        onChange={handleInputChange} />
-                      <label className="web-model" > Instagram</label>
+                        onChange={handleInputChange}
+                      />
+                      <label className="web-model"> Instagram</label>
                     </div>
                     <div className="d-flex justify-content-start">
-                      <input className="mobile-model" name="why" type="radio" value="Instagram"
+                      <input
+                        className="mobile-model"
+                        name="why"
+                        type="radio"
+                        value="Instagram"
                         checked={state.why === "Instagram"}
-                        onChange={handleInputChange} />
-                      <label className="mobile-model" > Instagram</label>
-                      <input name="why" type="radio" value="Other"
+                        onChange={handleInputChange}
+                      />
+                      <label className="mobile-model"> Instagram</label>
+                      <input
+                        name="why"
+                        type="radio"
+                        value="Other"
                         checked={state.why === "Other"}
-                        onChange={handleInputChange} />
+                        onChange={handleInputChange}
+                      />
                       <label> Others</label>
                     </div>
                   </div>
@@ -400,7 +426,10 @@ const DatingIndustriesComponent = () => {
                 <br />
                 <span>Data Security and Privacy</span>
                 <p>
-                With the digitalization of dating profiles and sensitive user information, ensuring the security and privacy of this data has become paramount. Heartbreaks are hard; data breaches shouldn't make them harder.
+                  With the digitalization of dating profiles and sensitive user
+                  information, ensuring the security and privacy of this data
+                  has become paramount. Heartbreaks are hard; data breaches
+                  shouldn't make them harder.
                 </p>
               </div>
               <div className="child1">
@@ -408,25 +437,40 @@ const DatingIndustriesComponent = () => {
                 <br />
                 <span>Compatibility and Match Algorithms</span>
                 <p>
-                The dating industry often grapples with the seamless exchange of compatibility information between different platforms and systems.
+                  The dating industry often grapples with the seamless exchange
+                  of compatibility information between different platforms and
+                  systems.
                 </p>
               </div>
             </div>
             <div className="parent">
               <div className="child1">
-                <img src={regulatoryCompliance} width={"44px"} className="mb-2" alt="" />
+                <img
+                  src={regulatoryCompliance}
+                  width={"44px"}
+                  className="mb-2"
+                  alt=""
+                />
                 <br />
                 <span>Virtual Dating and Remote Connections</span>
                 <p>
-                In an era marked by the need for social distancing, the demand for virtual dating and remote connection solutions has surged.
+                  In an era marked by the need for social distancing, the demand
+                  for virtual dating and remote connection solutions has surged.
                 </p>
               </div>
               <div className="child1">
-                <img src={fintechDisruption} width={"44px"} className="mb-2" alt="" />
+                <img
+                  src={fintechDisruption}
+                  width={"44px"}
+                  className="mb-2"
+                  alt=""
+                />
                 <br />
                 <span>Profile Management and Authenticity</span>
                 <p>
-                The challenge of managing profiles effectively and ensuring the authenticity of user information is crucial in fostering genuine connections.
+                  The challenge of managing profiles effectively and ensuring
+                  the authenticity of user information is crucial in fostering
+                  genuine connections.
                 </p>
               </div>
             </div>
@@ -494,7 +538,15 @@ const DatingIndustriesComponent = () => {
           <span>Perks Of Hiring VSPLE</span>
           <h5>How can VSPLE assist?</h5>
           <p className="mt-3">
-          Vsple is your trusted partner in revolutionizing your dating platform. Our expert team combines state-of-the-art technology with a deep understanding of the dating landscape to create innovative solutions. We specialize in AI-driven matchmaking, virtual dating experiences, and ensuring the highest standards of data privacy. With Vsple, you'll benefit from a personalized and secure dating journey, putting the fun back in finding love. Let us empower your dating vision with our expertise and commitment to creating meaningful connections.
+            Vsple is your trusted partner in revolutionizing your dating
+            platform. Our expert team combines state-of-the-art technology with
+            a deep understanding of the dating landscape to create innovative
+            solutions. We specialize in AI-driven matchmaking, virtual dating
+            experiences, and ensuring the highest standards of data privacy.
+            With Vsple, you'll benefit from a personalized and secure dating
+            journey, putting the fun back in finding love. Let us empower your
+            dating vision with our expertise and commitment to creating
+            meaningful connections.
           </p>
         </div>
       </div>
@@ -504,43 +556,70 @@ const DatingIndustriesComponent = () => {
             <img className="my-4" src={customized} width={"13%"} alt="" />
             <h5>Customized Dating Platform Development</h5>
             <p>
-            At Vsple, we specialize in crafting bespoke dating platforms tailored to your unique vision. Our team harnesses the latest IT trends to develop intuitive, user-friendly interfaces that captivate your audience and enhance their dating experience.
+              At Vsple, we specialize in crafting bespoke dating platforms
+              tailored to your unique vision. Our team harnesses the latest IT
+              trends to develop intuitive, user-friendly interfaces that
+              captivate your audience and enhance their dating experience.
             </p>
           </div>
           <div className="b">
             <img className="my-4" src={collabration} width={"13%"} alt="" />
-            <h5>Advanced Matching
-Algorithms</h5>
+            <h5>Advanced Matching Algorithms</h5>
             <p>
-            Experience the power of cutting-edge algorithms. We design and implement sophisticated matching algorithms driven by AI and machine learning, ensuring accurate and meaningful connections between users based on their preferences and behavior.
+              Experience the power of cutting-edge algorithms. We design and
+              implement sophisticated matching algorithms driven by AI and
+              machine learning, ensuring accurate and meaningful connections
+              between users based on their preferences and behavior.
             </p>
           </div>
           <div className="b">
-            <img className="my-4" src={mobileOptimization} width={"13%"} alt="" />
+            <img
+              className="my-4"
+              src={mobileOptimization}
+              width={"13%"}
+              alt=""
+            />
             <h5>Mobile Optimization and App Development</h5>
             <p>
-            In an era dominated by mobile usage, we prioritize mobile optimization. Our expertise in app development ensures that your dating platform seamlessly transitions to mobile devices, offering users a convenient and engaging experience on-the-go.
+              In an era dominated by mobile usage, we prioritize mobile
+              optimization. Our expertise in app development ensures that your
+              dating platform seamlessly transitions to mobile devices, offering
+              users a convenient and engaging experience on-the-go.
             </p>
           </div>
           <div className="b">
-            <img className="my-4" src={securityandprivacy} width={"13%"} alt="" />
+            <img
+              className="my-4"
+              src={securityandprivacy}
+              width={"13%"}
+              alt=""
+            />
             <h5>Security and Privacy Assurance</h5>
             <p>
-            Trust is the foundation of any successful dating platform. Rest assured, we implement robust security measures to safeguard user data, prioritizing privacy and compliance with industry standards to instill confidence among your users.
+              Trust is the foundation of any successful dating platform. Rest
+              assured, we implement robust security measures to safeguard user
+              data, prioritizing privacy and compliance with industry standards
+              to instill confidence among your users.
             </p>
           </div>
           <div className="b">
             <img className="my-4" src={scalableInfra} width={"13%"} alt="" />
             <h5>Scalable Infrastructure</h5>
             <p>
-            As your platform grows, scalability becomes crucial. Our IT solutions are designed with scalability in mind, ensuring your dating platform can effortlessly accommodate an expanding user base without compromising performance or user experience.
+              As your platform grows, scalability becomes crucial. Our IT
+              solutions are designed with scalability in mind, ensuring your
+              dating platform can effortlessly accommodate an expanding user
+              base without compromising performance or user experience.
             </p>
           </div>
           <div className="b">
             <img className="my-4" src={analytics} width={"13%"} alt="" />
             <h5>Analytics and Insights</h5>
             <p>
-            Track and analyze user behavior, engagement patterns, and success rates with our comprehensive analytics tools. Gain valuable insights that empower informed decisions, helping you fine-tune your platform for optimum performance.
+              Track and analyze user behavior, engagement patterns, and success
+              rates with our comprehensive analytics tools. Gain valuable
+              insights that empower informed decisions, helping you fine-tune
+              your platform for optimum performance.
             </p>
           </div>
         </div>
@@ -552,7 +631,13 @@ Algorithms</h5>
               <h5 className="text">Dating Market</h5>
               <h2 className="">Future of Healthcare Application Development</h2>
               <p>
-              The future of dating app development is marked by a revolution in user experience, driven by AI-powered matchmaking and interactive features. Virtual dating and remote connection capabilities will be seamlessly integrated, while advanced security measures ensure a safe online dating environment. User engagement and authenticity will be central, offering a holistic approach to the journey of finding love.
+                The future of dating app development is marked by a revolution
+                in user experience, driven by AI-powered matchmaking and
+                interactive features. Virtual dating and remote connection
+                capabilities will be seamlessly integrated, while advanced
+                security measures ensure a safe online dating environment. User
+                engagement and authenticity will be central, offering a holistic
+                approach to the journey of finding love.
               </p>
               <span>Connecting Hearts, One Swipe at a Time.</span>
             </div>
@@ -569,18 +654,25 @@ Algorithms</h5>
           <span>Dating Project Development</span>
           <h5>Our solutions</h5>
           <p className="mt-3">
-          Dating applications are deployed across various platforms, including:
+            Dating applications are deployed across various platforms,
+            including:
           </p>
         </div>
       </div>
-      
+
       <div className="main-boxes container hidden">
         <div className="row">
           <div className="b">
             <img className="my-4" src={web} width={"13%"} alt="" />
             <h5>Web</h5>
             <p>
-            Empower your online presence with our web development solutions designed for the Dating and Relationship sector. We create responsive websites that offer a seamless experience for profile management, match discovery, and interactive user engagement. Our web solutions prioritize security, compliance, and scalability, ensuring your online love hub is at the forefront of the digital dating evolution.
+              Empower your online presence with our web development solutions
+              designed for the Dating and Relationship sector. We create
+              responsive websites that offer a seamless experience for profile
+              management, match discovery, and interactive user engagement. Our
+              web solutions prioritize security, compliance, and scalability,
+              ensuring your online love hub is at the forefront of the digital
+              dating evolution.
             </p>
           </div>
           <div className="b">
@@ -592,14 +684,24 @@ Algorithms</h5>
             />
             <h5>Application</h5>
             <p>
-            Elevate your dating platform with our app development solutions tailored for the Dating industry. We specialize in crafting user-friendly, engaging apps that provide seamless access to profiles, chat features, and interactive dating experiences. Our app solutions prioritize security, user experience, and real-time connectivity, ensuring your platform stands out in the digital love revolution.
+              Elevate your dating platform with our app development solutions
+              tailored for the Dating industry. We specialize in crafting
+              user-friendly, engaging apps that provide seamless access to
+              profiles, chat features, and interactive dating experiences. Our
+              app solutions prioritize security, user experience, and real-time
+              connectivity, ensuring your platform stands out in the digital
+              love revolution.
             </p>
           </div>
           <div className="b">
             <img className="my-4" src={wearables} width={"13%"} alt="" />
             <h5>Wearables</h5>
             <p>
-            Stay ahead in the dating industry by harnessing wearable technology. Our innovative approach extends to wearable app development, enabling your platform to tap into the growing market of smartwatches and other wearable devices for enhanced user experiences.
+              Stay ahead in the dating industry by harnessing wearable
+              technology. Our innovative approach extends to wearable app
+              development, enabling your platform to tap into the growing market
+              of smartwatches and other wearable devices for enhanced user
+              experiences.
             </p>
           </div>
         </div>
@@ -608,10 +710,10 @@ Algorithms</h5>
         <div className="row container my-5 ">
           <div className="col-md-12 col-lg-8">
             <p style={{ textAlign: "left" }}>
-            Ready to revolutionize your Dating experience?
+              Ready to revolutionize your Dating experience?
               <br />
               <span className="inner-join">
-              Connect with Vsple to embark on a journey!
+                Connect with Vsple to embark on a journey!
               </span>
             </p>
           </div>
@@ -654,106 +756,7 @@ Algorithms</h5>
           <h5>Technologies We Use</h5>
         </div>
       </div>
-      <div className="tab-content hidden container web-model">
-        <Tabs defaultActiveKey={activeTab} onSelect={handleTabChange}>
-          <Tab eventKey="all" title="All">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Frontend" title="Frontend">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Backend" title="Backend">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="IOS" title="IOS">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Android" title="Android">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Cloud" title="Cloud">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-        </Tabs>
-      </div>
+      <TechnologiesWeUse />
       <div className="h-journey d-flex justify-content-center text-center">
         <div className="p-journey web-model">
           {/* <img src={frame5} width={"5%"} className="mb-1" alt="" />

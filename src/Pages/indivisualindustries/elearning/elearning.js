@@ -45,6 +45,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import horse from "../../../assest/main-icons/strategy (2) 1.png";
+import TechnologiesWeUse from "../../../components/TechnologiesWeUse";
 
 const ElearningIndustriesComponent = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -275,7 +276,6 @@ const ElearningIndustriesComponent = () => {
                       </div>
                     </div>
                     <div className="w-100">
-
                       <div className="email">
                         <img width={"5%"} src={email} alt="" />
                         {/* <label>Password</label> */}
@@ -293,31 +293,57 @@ const ElearningIndustriesComponent = () => {
                   <div className="why">
                     <h5>How Did You Hear About Us?</h5>
                     <div className="d-flex justify-content-start">
-                      <input name="why" type="radio" value="Google"
+                      <input
+                        name="why"
+                        type="radio"
+                        value="Google"
                         checked={state.why === "Google"}
-                        onChange={handleInputChange} />
+                        onChange={handleInputChange}
+                      />
                       <label> Google</label>
-                      <input name="why" type="radio" value="LinkedIn"
+                      <input
+                        name="why"
+                        type="radio"
+                        value="LinkedIn"
                         checked={state.why === "LinkedIn"}
-                        onChange={handleInputChange} />
-                      <label > LinkedIn</label>
-                      <input name="why" type="radio" value="Facebook"
+                        onChange={handleInputChange}
+                      />
+                      <label> LinkedIn</label>
+                      <input
+                        name="why"
+                        type="radio"
+                        value="Facebook"
                         checked={state.why === "Facebook"}
-                        onChange={handleInputChange} />
+                        onChange={handleInputChange}
+                      />
                       <label> Facebook</label>
-                      <input className="web-model" name="why" type="radio" value="Instagram"
+                      <input
+                        className="web-model"
+                        name="why"
+                        type="radio"
+                        value="Instagram"
                         checked={state.why === "Instagram"}
-                        onChange={handleInputChange} />
-                      <label className="web-model" > Instagram</label>
+                        onChange={handleInputChange}
+                      />
+                      <label className="web-model"> Instagram</label>
                     </div>
                     <div className="d-flex justify-content-start">
-                      <input className="mobile-model" name="why" type="radio" value="Instagram"
+                      <input
+                        className="mobile-model"
+                        name="why"
+                        type="radio"
+                        value="Instagram"
                         checked={state.why === "Instagram"}
-                        onChange={handleInputChange} />
-                      <label className="mobile-model" > Instagram</label>
-                      <input name="why" type="radio" value="Other"
+                        onChange={handleInputChange}
+                      />
+                      <label className="mobile-model"> Instagram</label>
+                      <input
+                        name="why"
+                        type="radio"
+                        value="Other"
                         checked={state.why === "Other"}
-                        onChange={handleInputChange} />
+                        onChange={handleInputChange}
+                      />
                       <label> Others</label>
                     </div>
                   </div>
@@ -387,7 +413,10 @@ const ElearningIndustriesComponent = () => {
                 <br />
                 <span>Remote Learning and Accessibility</span>
                 <p className="mt-2">
-                  The shift towards remote learning has highlighted the need for accessible and engaging e-learning platforms, ensuring students can seamlessly access educational resources from anywhere.
+                  The shift towards remote learning has highlighted the need for
+                  accessible and engaging e-learning platforms, ensuring
+                  students can seamlessly access educational resources from
+                  anywhere.
                 </p>
               </div>
               <div className="child1">
@@ -395,7 +424,9 @@ const ElearningIndustriesComponent = () => {
                 <br />
                 <span>Technology Integration in Teaching</span>
                 <p className="mt-2">
-                  Educators face the challenge of effectively integrating technology into teaching methodologies to enhance the learning experience and keep pace with evolving educational trends.
+                  Educators face the challenge of effectively integrating
+                  technology into teaching methodologies to enhance the learning
+                  experience and keep pace with evolving educational trends.
                 </p>
               </div>
             </div>
@@ -405,7 +436,11 @@ const ElearningIndustriesComponent = () => {
                 <br />
                 <span>Data Security and Privacy</span>
                 <p className="mt-2">
-                  With the digitization of student records and sensitive educational data, safeguarding the privacy and security of this information is paramount. Vsple Technologies employs state-of-the-art measures to prevent data breaches and ensure compliance with privacy regulations.
+                  With the digitization of student records and sensitive
+                  educational data, safeguarding the privacy and security of
+                  this information is paramount. Vsple Technologies employs
+                  state-of-the-art measures to prevent data breaches and ensure
+                  compliance with privacy regulations.
                 </p>
               </div>
               <div className="child1">
@@ -413,7 +448,11 @@ const ElearningIndustriesComponent = () => {
                 <br />
                 <span>Administrative Efficiency</span>
                 <p className="mt-2">
-                  Streamlining administrative processes is crucial for educational institutions to operate efficiently. Vsple Technologies provides solutions for automated workflows, student management systems, and communication platforms to enhance administrative efficiency.
+                  Streamlining administrative processes is crucial for
+                  educational institutions to operate efficiently. Vsple
+                  Technologies provides solutions for automated workflows,
+                  student management systems, and communication platforms to
+                  enhance administrative efficiency.
                 </p>
               </div>
             </div>
@@ -447,8 +486,9 @@ const ElearningIndustriesComponent = () => {
                       {item.title}
                     </div>
                     <div
-                      className={`accordion-content ${index === activeIndex ? "active" : ""
-                        }`}
+                      className={`accordion-content ${
+                        index === activeIndex ? "active" : ""
+                      }`}
                       style={{
                         maxHeight: index === activeIndex ? "140px" : "0",
                         display: "flex",
@@ -498,44 +538,72 @@ const ElearningIndustriesComponent = () => {
             <img className="my-4" src={tailored} width={"13%"} alt="" />
             <h5>Tailored E-Learning Solutions</h5>
             <p>
-              We understand that every educational institution or corporate entity has unique requirements. Our team excels in crafting bespoke E-Learning solutions, harnessing cutting-edge technologies, and integrating adaptive learning techniques to suit your specific needs.
+              We understand that every educational institution or corporate
+              entity has unique requirements. Our team excels in crafting
+              bespoke E-Learning solutions, harnessing cutting-edge
+              technologies, and integrating adaptive learning techniques to suit
+              your specific needs.
             </p>
           </div>
           <div className="b">
             <img className="my-4" src={robustTechnology} width={"13%"} alt="" />
             <h5>Robust Technology Integration</h5>
             <p>
-              Leveraging the latest advancements in IT, we seamlessly integrate diverse technological solutions into your E-Learning platforms. Whether it's AI-driven learning analytics, immersive virtual reality modules, or interactive content, we ensure a technologically enriched learning experience.
+              Leveraging the latest advancements in IT, we seamlessly integrate
+              diverse technological solutions into your E-Learning platforms.
+              Whether it's AI-driven learning analytics, immersive virtual
+              reality modules, or interactive content, we ensure a
+              technologically enriched learning experience.
             </p>
           </div>
           <div className="b">
             <img className="my-4" src={scalable} width={"13%"} alt="" />
             <h5>Scalable and Agile Development</h5>
             <p>
-
-              Our agile development methodology allows for flexibility and scalability. We adapt swiftly to evolving requirements, ensuring timely delivery without compromising on quality. Count on us for scalable solutions that grow with your audience.
+              Our agile development methodology allows for flexibility and
+              scalability. We adapt swiftly to evolving requirements, ensuring
+              timely delivery without compromising on quality. Count on us for
+              scalable solutions that grow with your audience.
             </p>
           </div>
           <div className="b">
-            <img className="my-4" src={expertCalculation} width={"13%"} alt="" />
+            <img
+              className="my-4"
+              src={expertCalculation}
+              width={"13%"}
+              alt=""
+            />
             <h5>Expert Consultation and Support</h5>
             <p>
-              Our team of seasoned professionals doesn't just deliver a product; we provide ongoing consultation and support. From initial conceptualization to implementation and beyond, we're dedicated to your success, offering expert guidance at every step.
+              Our team of seasoned professionals doesn't just deliver a product;
+              we provide ongoing consultation and support. From initial
+              conceptualization to implementation and beyond, we're dedicated to
+              your success, offering expert guidance at every step.
             </p>
           </div>
           <div className="b">
             <img className="my-4" src={foocusOn} width={"13%"} alt="" />
             <h5>Focus on User Experience</h5>
             <p>
-              User experience is at the core of what we do. Our designs prioritize intuitive interfaces, seamless navigation, and engaging content, fostering a positive and effective learning environment for your audience.
+              User experience is at the core of what we do. Our designs
+              prioritize intuitive interfaces, seamless navigation, and engaging
+              content, fostering a positive and effective learning environment
+              for your audience.
             </p>
           </div>
           <div className="b">
-            <img className="my-4" src={continiousnnovation} width={"13%"} alt="" />
+            <img
+              className="my-4"
+              src={continiousnnovation}
+              width={"13%"}
+              alt=""
+            />
             <h5>Continuous Innovation and Upgradation</h5>
             <p>
-
-              In the dynamic realm of technology, stagnation is never an option. We continually innovate and upgrade our solutions, keeping pace with industry trends, and integrating the latest advancements to enhance your E-Learning experience.
+              In the dynamic realm of technology, stagnation is never an option.
+              We continually innovate and upgrade our solutions, keeping pace
+              with industry trends, and integrating the latest advancements to
+              enhance your E-Learning experience.
             </p>
           </div>
         </div>
@@ -547,7 +615,12 @@ const ElearningIndustriesComponent = () => {
               <h5 className="text">E-Learning Market</h5>
               <h2 className="">Future of E-Learning Application Development</h2>
               <p>
-                The future of e-learning is marked by a revolution in personalized education, driven by AI-powered adaptive learning platforms. Vsple Technologies envisions a seamless integration of virtual classrooms, AI tutors, and immersive learning experiences. Data security and privacy will be at the forefront, ensuring a safe and enriching educational journey for students.
+                The future of e-learning is marked by a revolution in
+                personalized education, driven by AI-powered adaptive learning
+                platforms. Vsple Technologies envisions a seamless integration
+                of virtual classrooms, AI tutors, and immersive learning
+                experiences. Data security and privacy will be at the forefront,
+                ensuring a safe and enriching educational journey for students.
               </p>
               <span>Empowering Minds, One Click at a Time</span>
             </div>
@@ -564,7 +637,8 @@ const ElearningIndustriesComponent = () => {
           <span>E-Learning Project Development</span>
           <h5>Our solutions</h5>
           <p className="mt-3">
-            Healthcare applications are deployed across various platforms, including:
+            Healthcare applications are deployed across various platforms,
+            including:
           </p>
         </div>
       </div>
@@ -575,8 +649,10 @@ const ElearningIndustriesComponent = () => {
             <img className="my-4" src={web} width={"13%"} alt="" />
             <h5>Web</h5>
             <p>
-              Elevate your online educational presence with our web development solutions. We craft user-friendly, responsive websites that provide seamless access to educational resources, interactive lessons, and student collaboration tools.
-
+              Elevate your online educational presence with our web development
+              solutions. We craft user-friendly, responsive websites that
+              provide seamless access to educational resources, interactive
+              lessons, and student collaboration tools.
             </p>
           </div>
           <div className="b">
@@ -588,14 +664,20 @@ const ElearningIndustriesComponent = () => {
             />
             <h5>Application Development</h5>
             <p>
-              Empower educators and students with our customized e-learning app development. Whether it's a student-centric app for interactive learning or a robust platform for educators to streamline workflows, we've got you covered.
+              Empower educators and students with our customized e-learning app
+              development. Whether it's a student-centric app for interactive
+              learning or a robust platform for educators to streamline
+              workflows, we've got you covered.
             </p>
           </div>
           <div className="b">
             <img className="my-4" src={wearables} width={"13%"} alt="" />
             <h5>Wearables</h5>
             <p>
-              Step into the future of education with our wearable technology solutions. Vsple Technologies pioneers the development of educational wearables that seamlessly integrate into students' daily routines, enhancing the learning experience.
+              Step into the future of education with our wearable technology
+              solutions. Vsple Technologies pioneers the development of
+              educational wearables that seamlessly integrate into students'
+              daily routines, enhancing the learning experience.
             </p>
           </div>
         </div>
@@ -650,106 +732,7 @@ const ElearningIndustriesComponent = () => {
           <h5>Technologies We Use</h5>
         </div>
       </div>
-      <div className="tab-content hidden container web-model">
-        <Tabs defaultActiveKey={activeTab} onSelect={handleTabChange}>
-          <Tab eventKey="all" title="All">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Frontend" title="Frontend">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Backend" title="Backend">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="IOS" title="IOS">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Android" title="Android">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Cloud" title="Cloud">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-        </Tabs>
-      </div>
+      <TechnologiesWeUse />
     </div>
   );
 };

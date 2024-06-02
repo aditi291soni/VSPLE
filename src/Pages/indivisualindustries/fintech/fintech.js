@@ -47,6 +47,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import horse from "../../../assest/main-icons/strategy (2) 1.png";
+import TechnologiesWeUse from "../../../components/TechnologiesWeUse";
 
 const FintechIndustriesComponent = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -258,10 +259,16 @@ const FintechIndustriesComponent = () => {
               <div className="healthcare-head">
                 <span>Fintech</span>
                 <h5>
-                  Transforming <br /> Fintech<br /> with IT Solutions
+                  Transforming <br /> Fintech
+                  <br /> with IT Solutions
                 </h5>
                 <p>
-                In a dynamic era defined by constant technological evolution, the fusion of cutting-edge technology with the financial industry has become imperative. Embracing fintech solutions brings forth a myriad of advantages that deeply impact financial transactions, operational efficiency, risk management, and strategic decision-making processes.
+                  In a dynamic era defined by constant technological evolution,
+                  the fusion of cutting-edge technology with the financial
+                  industry has become imperative. Embracing fintech solutions
+                  brings forth a myriad of advantages that deeply impact
+                  financial transactions, operational efficiency, risk
+                  management, and strategic decision-making processes.
                 </p>
               </div>
             </div>
@@ -283,7 +290,6 @@ const FintechIndustriesComponent = () => {
                       </div>
                     </div>
                     <div className="w-100">
-
                       <div className="email">
                         <img width={"5%"} src={email} alt="" />
                         {/* <label>Password</label> */}
@@ -301,31 +307,57 @@ const FintechIndustriesComponent = () => {
                   <div className="why">
                     <h5>How Did You Hear About Us?</h5>
                     <div className="d-flex justify-content-start">
-                      <input name="why" type="radio" value="Google"
+                      <input
+                        name="why"
+                        type="radio"
+                        value="Google"
                         checked={state.why === "Google"}
-                        onChange={handleInputChange} />
+                        onChange={handleInputChange}
+                      />
                       <label> Google</label>
-                      <input name="why" type="radio" value="LinkedIn"
+                      <input
+                        name="why"
+                        type="radio"
+                        value="LinkedIn"
                         checked={state.why === "LinkedIn"}
-                        onChange={handleInputChange} />
-                      <label > LinkedIn</label>
-                      <input name="why" type="radio" value="Facebook"
+                        onChange={handleInputChange}
+                      />
+                      <label> LinkedIn</label>
+                      <input
+                        name="why"
+                        type="radio"
+                        value="Facebook"
                         checked={state.why === "Facebook"}
-                        onChange={handleInputChange} />
+                        onChange={handleInputChange}
+                      />
                       <label> Facebook</label>
-                      <input className="web-model" name="why" type="radio" value="Instagram"
+                      <input
+                        className="web-model"
+                        name="why"
+                        type="radio"
+                        value="Instagram"
                         checked={state.why === "Instagram"}
-                        onChange={handleInputChange} />
-                      <label className="web-model" > Instagram</label>
+                        onChange={handleInputChange}
+                      />
+                      <label className="web-model"> Instagram</label>
                     </div>
                     <div className="d-flex justify-content-start">
-                      <input className="mobile-model" name="why" type="radio" value="Instagram"
+                      <input
+                        className="mobile-model"
+                        name="why"
+                        type="radio"
+                        value="Instagram"
                         checked={state.why === "Instagram"}
-                        onChange={handleInputChange} />
-                      <label className="mobile-model" > Instagram</label>
-                      <input name="why" type="radio" value="Other"
+                        onChange={handleInputChange}
+                      />
+                      <label className="mobile-model"> Instagram</label>
+                      <input
+                        name="why"
+                        type="radio"
+                        value="Other"
                         checked={state.why === "Other"}
-                        onChange={handleInputChange} />
+                        onChange={handleInputChange}
+                      />
                       <label> Others</label>
                     </div>
                   </div>
@@ -378,8 +410,12 @@ const FintechIndustriesComponent = () => {
             Addressing Fintech <br /> Challenges
           </h5>
           <p className="mt-3">
-          In the ever-changing landscape of finance, technology emerges as a pivotal player in addressing critical industry challenges. As the financial sector navigates through unprecedented demands and transformations, Vsple Technologies takes center stage in providing innovative solutions. Let's delve into some key challenges in the fintech industry:
-
+            In the ever-changing landscape of finance, technology emerges as a
+            pivotal player in addressing critical industry challenges. As the
+            financial sector navigates through unprecedented demands and
+            transformations, Vsple Technologies takes center stage in providing
+            innovative solutions. Let's delve into some key challenges in the
+            fintech industry:
           </p>
         </div>
       </div>
@@ -388,37 +424,67 @@ const FintechIndustriesComponent = () => {
           <div className="miniportfolio col-md-7 col-sm-12 col-lg-7">
             <div className="parent">
               <div className="child1">
-                <img src={cybersecurity} width={"44px"} className="mb-2" alt="" />
+                <img
+                  src={cybersecurity}
+                  width={"44px"}
+                  className="mb-2"
+                  alt=""
+                />
                 <br />
                 <span>Cybersecurity and Data Privacy</span>
                 <p className="mt-2">
-                With the surge in digital transactions and the handling of sensitive financial data, ensuring robust cybersecurity and data privacy has become paramount. Cyber threats and breaches can result in severe financial repercussions and damage to reputation.
+                  With the surge in digital transactions and the handling of
+                  sensitive financial data, ensuring robust cybersecurity and
+                  data privacy has become paramount. Cyber threats and breaches
+                  can result in severe financial repercussions and damage to
+                  reputation.
                 </p>
               </div>
               <div className="child1">
-                <img src={Interoperability} width={"44px"} className="mb-2" alt="" />
+                <img
+                  src={Interoperability}
+                  width={"44px"}
+                  className="mb-2"
+                  alt=""
+                />
                 <br />
                 <span>Interoperability and Data Exchange</span>
                 <p className="mt-2">
-                The financial industry often grapples with seamless data exchange between different institutions and platforms, hindering the speed and efficiency of transactions.
+                  The financial industry often grapples with seamless data
+                  exchange between different institutions and platforms,
+                  hindering the speed and efficiency of transactions.
                 </p>
               </div>
             </div>
             <div className="parent">
               <div className="child1">
-                <img src={digitalBanking} width={"44px"} className="mb-2" alt="" />
+                <img
+                  src={digitalBanking}
+                  width={"44px"}
+                  className="mb-2"
+                  alt=""
+                />
                 <br />
                 <span>Digital Banking and Customer Experience</span>
                 <p className="mt-2">
-                In an era marked by the rise of digital banking, meeting customer expectations for seamless and user-friendly experiences is crucial.
+                  In an era marked by the rise of digital banking, meeting
+                  customer expectations for seamless and user-friendly
+                  experiences is crucial.
                 </p>
               </div>
               <div className="child1">
-                <img src={financialInclusion} width={"44px"} className="mb-2" alt="" />
+                <img
+                  src={financialInclusion}
+                  width={"44px"}
+                  className="mb-2"
+                  alt=""
+                />
                 <br />
                 <span>Financial Inclusion and Accessibility</span>
                 <p className="mt-2">
-                Ensuring that financial services are accessible to all, including underserved populations, is a pressing challenge in the fintech landscape.
+                  Ensuring that financial services are accessible to all,
+                  including underserved populations, is a pressing challenge in
+                  the fintech landscape.
                 </p>
               </div>
             </div>
@@ -486,7 +552,15 @@ const FintechIndustriesComponent = () => {
           <span>Perks Of Hiring VSPLE</span>
           <h5>How can VSPLE assist?</h5>
           <p className="mt-3">
-          Choose Vsple as your dedicated partner in fintech solutions. Our adept team combines cutting-edge technology with a profound understanding of the financial landscape to craft personalized solutions. Specializing in user-centric mobile banking experiences sets us apart. With Vsple, you'll enjoy seamless transactions and a focus on financial inclusivity. Your fintech solutions will adhere to the highest standards of security and compliance. Let Vsple empower your financial vision with our expertise and unwavering commitment to excellence.
+            Choose Vsple as your dedicated partner in fintech solutions. Our
+            adept team combines cutting-edge technology with a profound
+            understanding of the financial landscape to craft personalized
+            solutions. Specializing in user-centric mobile banking experiences
+            sets us apart. With Vsple, you'll enjoy seamless transactions and a
+            focus on financial inclusivity. Your fintech solutions will adhere
+            to the highest standards of security and compliance. Let Vsple
+            empower your financial vision with our expertise and unwavering
+            commitment to excellence.
           </p>
         </div>
       </div>
@@ -496,42 +570,71 @@ const FintechIndustriesComponent = () => {
             <img className="my-4" src={tailored} width={"13%"} alt="" />
             <h5>Tailored Fintech Solutions</h5>
             <p>
-            At Vsple, we comprehend the intricate nature of the Fintech industry. Our team specializes in tailoring solutions that cater to your unique financial needs, leveraging cutting-edge technology to streamline operations and drive innovation.
+              At Vsple, we comprehend the intricate nature of the Fintech
+              industry. Our team specializes in tailoring solutions that cater
+              to your unique financial needs, leveraging cutting-edge technology
+              to streamline operations and drive innovation.
             </p>
           </div>
           <div className="b">
-            <img className="my-4" src={advanceTechnological} width={"13%"} alt="" />
+            <img
+              className="my-4"
+              src={advanceTechnological}
+              width={"13%"}
+              alt=""
+            />
             <h5>Advanced Technological Integration</h5>
             <p>
-            Harnessing the power of advanced technologies like blockchain, artificial intelligence, and machine learning, we revolutionize Fintech operations. Our solutions enhance security, automate processes, and optimize financial workflows for unparalleled efficiency.
+              Harnessing the power of advanced technologies like blockchain,
+              artificial intelligence, and machine learning, we revolutionize
+              Fintech operations. Our solutions enhance security, automate
+              processes, and optimize financial workflows for unparalleled
+              efficiency.
             </p>
           </div>
           <div className="b">
             <img className="my-4" src={agileDev} width={"13%"} alt="" />
             <h5>Agile Development and Scalability</h5>
             <p>
-            Embracing an agile development approach, we ensure flexibility and scalability in every solution we deliver. Be it developing robust payment gateways, secure mobile banking applications, or scalable trading platforms, our solutions evolve as your business does.
+              Embracing an agile development approach, we ensure flexibility and
+              scalability in every solution we deliver. Be it developing robust
+              payment gateways, secure mobile banking applications, or scalable
+              trading platforms, our solutions evolve as your business does.
             </p>
           </div>
           <div className="b">
-            <img className="my-4" src={regulatoryCompliance} width={"13%"} alt="" />
+            <img
+              className="my-4"
+              src={regulatoryCompliance}
+              width={"13%"}
+              alt=""
+            />
             <h5>Regulatory Compliance Expertise</h5>
             <p>
-            Navigating the regulatory landscape is integral to Fintech success. Vsple Technologies Pvt. Ltd. provides expertise in compliance, ensuring that your solutions adhere to industry standards and regulations, minimizing risks and ensuring trust.
+              Navigating the regulatory landscape is integral to Fintech
+              success. Vsple Technologies Pvt. Ltd. provides expertise in
+              compliance, ensuring that your solutions adhere to industry
+              standards and regulations, minimizing risks and ensuring trust.
             </p>
           </div>
           <div className="b">
             <img className="my-4" src={seamlessUser} width={"13%"} alt="" />
             <h5>Seamless User Experience</h5>
             <p>
-            User-centric design is our forte. We prioritize intuitive interfaces and seamless experiences for your clients, ensuring optimal engagement and satisfaction, leading to increased adoption and retention rates.
+              User-centric design is our forte. We prioritize intuitive
+              interfaces and seamless experiences for your clients, ensuring
+              optimal engagement and satisfaction, leading to increased adoption
+              and retention rates.
             </p>
           </div>
           <div className="b">
             <img className="my-4" src={analyticDriven} width={"13%"} alt="" />
             <h5>Analytics-Driven Insights</h5>
             <p>
-            Empower your decision-making with our comprehensive analytics tools. Gain actionable insights into financial trends, user behaviors, and performance metrics, enabling data-driven decisions for business growth and optimization.
+              Empower your decision-making with our comprehensive analytics
+              tools. Gain actionable insights into financial trends, user
+              behaviors, and performance metrics, enabling data-driven decisions
+              for business growth and optimization.
             </p>
           </div>
         </div>
@@ -543,7 +646,15 @@ const FintechIndustriesComponent = () => {
               <h5 className="text">Fintech Market</h5>
               <h2 className="">Future of Fintech Application Development</h2>
               <p>
-              The future of fintech solutions is marked by a revolution in financial accessibility, driven by blockchain advancements and personalized financial experiences. Digital banking and payment innovations will be seamlessly integrated, while artificial intelligence ensures real-time fraud detection and risk management. Cybersecurity and data privacy will be central, adhering to the highest standards. Customer engagement and financial inclusivity will be at the forefront, offering a holistic approach to financial well-being.
+                The future of fintech solutions is marked by a revolution in
+                financial accessibility, driven by blockchain advancements and
+                personalized financial experiences. Digital banking and payment
+                innovations will be seamlessly integrated, while artificial
+                intelligence ensures real-time fraud detection and risk
+                management. Cybersecurity and data privacy will be central,
+                adhering to the highest standards. Customer engagement and
+                financial inclusivity will be at the forefront, offering a
+                holistic approach to financial well-being.
               </p>
               <span>Empowering Finances, One Transaction at a Time.</span>
             </div>
@@ -560,7 +671,9 @@ const FintechIndustriesComponent = () => {
           <span>Fintech Project Development</span>
           <h5>Our Solutions</h5>
           <p className="mt-3">
-          Vsple Technologies leads the way in crafting innovative solutions for Fintech application development, ensuring a seamless and secure financial experience. Our comprehensive approach includes
+            Vsple Technologies leads the way in crafting innovative solutions
+            for Fintech application development, ensuring a seamless and secure
+            financial experience. Our comprehensive approach includes
           </p>
         </div>
       </div>
@@ -570,23 +683,43 @@ const FintechIndustriesComponent = () => {
             <img className="my-4" src={web} width={"13%"} alt="" />
             <h5>Web</h5>
             <p>
-            Elevate your online financial presence with our web development solutions tailored for the fintech sector. We specialize in crafting user-friendly, secure websites that provide seamless access to financial information, transaction history, and interactive customer support. Our web solutions prioritize security, compliance, and scalability, ensuring your online platform is at the forefront of the financial technology revolution.
-
+              Elevate your online financial presence with our web development
+              solutions tailored for the fintech sector. We specialize in
+              crafting user-friendly, secure websites that provide seamless
+              access to financial information, transaction history, and
+              interactive customer support. Our web solutions prioritize
+              security, compliance, and scalability, ensuring your online
+              platform is at the forefront of the financial technology
+              revolution.
             </p>
           </div>
           <div className="b">
-            <img className="my-4" src={mobileApplication} width={"13%"} alt="" />
+            <img
+              className="my-4"
+              src={mobileApplication}
+              width={"13%"}
+              alt=""
+            />
             <h5>Mobile Application</h5>
             <p>
-            Empower both customers and financial professionals with our customized fintech app development. Whether it's a user-centric app for seamless transactions, financial planning, or a robust platform for financial institutions to streamline operations, we've got you covered. Our mobile fintech apps prioritize user experience, data security, and real-time connectivity, enhancing the efficiency of financial services.
-
+              Empower both customers and financial professionals with our
+              customized fintech app development. Whether it's a user-centric
+              app for seamless transactions, financial planning, or a robust
+              platform for financial institutions to streamline operations,
+              we've got you covered. Our mobile fintech apps prioritize user
+              experience, data security, and real-time connectivity, enhancing
+              the efficiency of financial services.
             </p>
           </div>
           <div className="b">
             <img className="my-4" src={wearables} width={"13%"} alt="" />
             <h5>Wearables</h5>
             <p>
-            Step into the future of finance with wearable technology. Vsple Technologies Pvt. Ltd. pioneers in developing wearable applications that bring convenience to financial interactions. Explore innovative ways to offer real-time data, transactions, and notifications through wearables.
+              Step into the future of finance with wearable technology. Vsple
+              Technologies Pvt. Ltd. pioneers in developing wearable
+              applications that bring convenience to financial interactions.
+              Explore innovative ways to offer real-time data, transactions, and
+              notifications through wearables.
             </p>
           </div>
         </div>
@@ -595,10 +728,10 @@ const FintechIndustriesComponent = () => {
         <div className="row container my-5 ">
           <div className="col-md-12 col-lg-8">
             <p style={{ textAlign: "left" }}>
-            Ready to revolutionize your Fintech experience?
+              Ready to revolutionize your Fintech experience?
               <br />
               <span className="inner-join">
-              Connect with Vsple to embark on a journey!
+                Connect with Vsple to embark on a journey!
               </span>
             </p>
           </div>
@@ -641,106 +774,7 @@ const FintechIndustriesComponent = () => {
           <h5>Technologies We Use</h5>
         </div>
       </div>
-      <div className="tab-content hidden container web-model">
-        <Tabs defaultActiveKey={activeTab} onSelect={handleTabChange}>
-          <Tab eventKey="all" title="All">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Frontend" title="Frontend">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Backend" title="Backend">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="IOS" title="IOS">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Android" title="Android">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Cloud" title="Cloud">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-        </Tabs>
-      </div>
+      <TechnologiesWeUse />
       <div className="h-journey d-flex justify-content-center text-center ">
         <div className="p-journey web-model">
           {/* <img src={frame5} width={"5%"} className="mb-1" alt="" />
