@@ -188,6 +188,7 @@
     position: absolute;
     top: 55.5%;
     left: 6%;
+  
   }
 
   .contact-page span {
@@ -261,6 +262,7 @@
     background-color: rgba(75, 75, 75, 0.25);
     margin-top: 12px;
     padding: 8% 13% !important;
+    color:white;
     width: 100%;
     padding: 2%;
     border: none;

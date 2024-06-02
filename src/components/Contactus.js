@@ -5,7 +5,7 @@ import "../common/thankyoumodal/thankyoumodal.css";
 import Modal from "../common/thankyoumodal/thankyoumodal";
 import thanks from "../assest/main-icons/icons/Thankyou.png";
 import "react-toastify/dist/ReactToastify.css";
-
+import emailjs from "emailjs-com";
 // import location from "../assest/main-icons/Group 611.png";
 // import contact from "../assest/main-icons/Group 617.png";
 import {
@@ -34,7 +34,7 @@ const ContactusComponent = () => {
     email: "",
     phone: "",
     message: "",
-    Subject: "Dummy",
+    subject: "Dummy",
   });
 
   const handleInputChange = (e) => {
@@ -47,15 +47,34 @@ const ContactusComponent = () => {
   const [thankyouToggle, setthankyouToggle] = useState(false);
 
   const handleSubmit = async (e) => {
-    setthankyouToggle(true);
+    console.log(e);
+    setLoading(true);
     e.preventDefault();
-    console.log(state)
+    console.log(state);
+
+    const mail = await emailjs.send(
+      "service_bq1f7qi",
+      "template_ycr0e7u",
+      state,
+      "35JIdQtUBW4uBv-hX"
+    );
+    setthankyouToggle(true);
+    setLoading(false);
+    console.log(mail);
+    setState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+    subject: "Dummy",
+  })
     // if (1) {
     //   try {
-    //     const response = await fetch("http://localhost:3000/send_email.php", {
-    //       method: "POST",
-    //       body: JSON.stringify(state),
-    //     });
+    // const response = await fetch("http://localhost:3000/send_email.php", {
+    //   method: "POST",
+    //   body: JSON.stringify(state),
+    // });
+    // console.log(response)
     //     if (response.ok) {
     //       setShowModal(true);
     //       const modalId = document.getElementById("modal");
@@ -79,7 +98,7 @@ const ContactusComponent = () => {
     <>
       {thankyouToggle && (
         <div
-          style={{ zIndex: 10}}
+          style={{ zIndex: 10 }}
           onClick={() => setthankyouToggle(false)}
           className="bg-black bg-opacity-75 w-100 h-100 position-fixed translate-middle top-50 start-50"
         ></div>
@@ -157,7 +176,7 @@ const ContactusComponent = () => {
                       name="name"
                       value={state.name}
                       onChange={handleInputChange}
-                      placeholder="Name"
+                      placeholder="* Name"
                       autocomplete="off"
                       required
                     />
@@ -168,10 +187,11 @@ const ContactusComponent = () => {
                     <img width={"6%"} src={email} alt="" />
                     <input
                       type="email"
+                      swd
                       name="email"
                       value={state.email}
                       onChange={handleInputChange}
-                      placeholder="Email"
+                      placeholder="* Email"
                       autocomplete="off"
                       required
                     />
@@ -186,8 +206,7 @@ const ContactusComponent = () => {
                       value={state.phone}
                       autocomplete="off"
                       onChange={handleInputChange}
-                      placeholder="Mobile Number"
-                      
+                      placeholder="* Mobile Number"
                       required
                     />
                     {/* {errors.phone && (
@@ -205,7 +224,7 @@ const ContactusComponent = () => {
                       value={state.message}
                       autocomplete="off"
                       onChange={handleInputChange}
-                      placeholder="Message"
+                      placeholder="* Message"
                       required
                     />
                     {/* {errors.message && (
@@ -213,7 +232,7 @@ const ContactusComponent = () => {
                     )} */}
                   </div>
                   <div className="button text-right">
-                    <button type="submit">Send</button>
+                    <button type="submit">{loading? "Loading" : "Send"}</button>
                   </div>
                 </form>
                 {showModal && (
@@ -284,8 +303,9 @@ const ContactusComponent = () => {
                       name="name"
                       value={state.name}
                       onChange={handleInputChange}
-                      placeholder="Name"
+                      placeholder="* Name"
                       autocomplete="off"
+                      required
                     />
                   </div>
                   <div className="email">
@@ -296,8 +316,9 @@ const ContactusComponent = () => {
                       name="email"
                       value={state.email}
                       onChange={handleInputChange}
-                      placeholder="Email"
+                      placeholder="* Email"
                       autocomplete="off"
+                      required
                     />
                   </div>
                   <div className="mobile">
@@ -308,8 +329,9 @@ const ContactusComponent = () => {
                       name="phone"
                       value={state.phone}
                       onChange={handleInputChange}
-                      placeholder="Mobile Number"
+                      placeholder="* Mobile Number"
                       autocomplete="off"
+                      required
                     />
                   </div>
                   <div className="message">
@@ -322,8 +344,9 @@ const ContactusComponent = () => {
                       name="message"
                       value={state.message}
                       onChange={handleInputChange}
-                      placeholder="Message"
+                      placeholder="* Message"
                       autocomplete="off"
+                      required
                     />
                   </div>
                   <div className="button text-center">
