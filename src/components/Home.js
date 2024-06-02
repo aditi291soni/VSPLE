@@ -1622,7 +1622,7 @@ const HoComponent = () => {
                   Unleashing the <br /> Potential
                 </span>
                 <p className="service-para mt-2">
-                  Your trusted partner in harnessing the power of cutting-edge
+                  Your trusteds partner in harnessing the power of cutting-edge
                   technologies. Our diverse expertise in a wide range of
                   technologies enables us to deliver innovative solutions that
                   drive business growth and transformation. Explore our
@@ -1630,7 +1630,7 @@ const HoComponent = () => {
                   journey that propels your business to new heights.
                 </p>
               </div>
-              <div className="slider-div">
+              {/* <div className="slider-div">
                 <div className="sliderS-wearable container-fluid">
                   <div className="slide-trackN-wearable">
                     <div className="slideN-wearable">
@@ -1668,11 +1668,7 @@ const HoComponent = () => {
                         <img src={unbound} width={"100%"} alt="" />
                       </div>
                     </div>
-                    {/* <div className="slideN-wearable">
-              <div className="service-box-slider-wearable p-4">
-                <img src={sf} width={"100%"} alt="" />
-              </div>
-            </div> */}
+             
                     <div className="slideN-wearable">
                       <div className="service-box-slider-wearable p-4">
                         <img src={ooredo} width={"100%"} alt="" />
@@ -1708,14 +1704,10 @@ const HoComponent = () => {
                         <img src={unbound} width={"100%"} alt="" />
                       </div>
                     </div>
-                    {/* <div className="slideN-wearable">
-              <div className="service-box-slider-wearable p-4">
-                <img src={sf} width={"100%"} alt="" />
-              </div>
-            </div> */}
+             
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
