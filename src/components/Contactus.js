@@ -157,7 +157,7 @@ const ContactusComponent = () => {
                       name="name"
                       value={state.name}
                       onChange={handleInputChange}
-                      placeholder="Name"
+                      placeholder="* Name"
                       autocomplete="off"
                       required
                     />
@@ -171,7 +171,7 @@ const ContactusComponent = () => {
                       name="email"
                       value={state.email}
                       onChange={handleInputChange}
-                      placeholder="Email"
+                      placeholder="* Email"
                       autocomplete="off"
                       required
                     />
@@ -186,7 +186,8 @@ const ContactusComponent = () => {
                       value={state.phone}
                       autocomplete="off"
                       onChange={handleInputChange}
-                      placeholder="Mobile Number"
+                      placeholder="* Mobile Number"
+                      required
                     />
                     {/* {errors.phone && (
                       <p className="error">{errors.phone}</p>
@@ -203,7 +204,7 @@ const ContactusComponent = () => {
                       value={state.message}
                       autocomplete="off"
                       onChange={handleInputChange}
-                      placeholder="Message"
+                      placeholder="* Message"
                       required
                     />
                     {/* {errors.message && (
