@@ -424,7 +424,7 @@ const HoComponent = () => {
   //   fadeInImage();
   // }, []);
   const handleAvatarClick = (clientId) => {
-    const internalImg = document.querySelector(".testimonial img");
+    const internalImg = document.querySelector(".testimonial div");
     internalImg.classList.add("active"); 
     setSelectedClient(clientId);
     setAnimate(true);
@@ -872,7 +872,7 @@ const HoComponent = () => {
                 <div className="getin-button text-center mt-4 web-model">
                   <div className="see-button">
                     <a href="/mobile-app-development-services">
-                      View All &nbsp;
+                      View All &nbsp;&nbsp;
                     </a>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -896,7 +896,10 @@ const HoComponent = () => {
             </div>
           </div>
         </div>
-        <div className="grid-container web-model mb-5 ">
+        <div
+          style={{ transform: "scale(.9)" }}
+          className="grid-container web-model mb-5 "
+        >
           <div className="ico-4">
             <a target="blank" href="https://twitter.com/VspleTech">
               <img src={twittericon} width={"30%"} alt="" />
@@ -961,7 +964,7 @@ const HoComponent = () => {
 
         <div className="indus-button text-center ">
           <div className="see-button">
-            <a href="/our-portfolio">See More &nbsp;</a>
+            <a href="/our-portfolio">See More &nbsp;&nbsp;</a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="2vmax"
@@ -1630,7 +1633,7 @@ const HoComponent = () => {
                   journey that propels your business to new heights.
                 </p>
               </div>
-              <div className="slider-div">
+              <div className="d-none slider-div">
                 <div className="sliderS-wearable container-fluid">
                   <div className="slide-trackN-wearable">
                     <div className="slideN-wearable">
@@ -1734,7 +1737,7 @@ const HoComponent = () => {
               <div className="getin-button-in text-center">
                 <div className="see-button">
                   <a href="/contact-us">
-                    Get In Touch &nbsp;
+                    Get In Touch &nbsp;&nbsp;
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="30"
@@ -1777,18 +1780,27 @@ const HoComponent = () => {
         <div className="web-model testimonial mt-5">
           <div className="avatars">
             {clients.map((client) => (
-              <img
-                key={client.id}
-                src={
-                  selectedClient === client.id
-                    ? client.avatar
-                    : client.selectedAvatar
-                }
-                alt=""
+              //   <img
+              //     key={client.id}
+              //     src={
+              //       selectedClient === client.id
+              //         ? client.avatar
+              //         : client.selectedAvatar
+              //     }
+              //     alt=""
+              //     onClick={() => handleAvatarClick(client.id)}
+              //     className={}
+              //   />
+              <div
                 onClick={() => handleAvatarClick(client.id)}
-                className={selectedClient === client.id ? "selected" : ""}
-              />
-              
+                className={
+                  selectedClient === client.id
+                    ? "active selected d-flex align-items-center justify-content-center text-white"
+                    : " d-flex align-items-center justify-content-center text-white"
+                }
+              >
+                {client.name[0]}
+              </div>
             ))}
             <img src={smile} alt="" />
             <img src={smile2} alt="" />
