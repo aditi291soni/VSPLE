@@ -42,7 +42,7 @@ const PortfolioComponent = () => {
                 <br />
                 <span className="portfolio">Portfolio</span>
                 <h2>
-                  <span className="innerText">WE</span> Make Something Trendy
+                  <span className="innerText">We</span> Make Something Trendy
                   And Cool!
                 </h2>
                 <img className="mt-5" src={cool} width={"100%"} alt="" />
