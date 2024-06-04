@@ -9,7 +9,7 @@
 
 .slider-div .slider-title-p {
   color: white;
-  opacity: .8 !important;
+  opacity: 0.8 !important;
   /* font-size: .9rem !important; */
   margin-top: 4%;
 }
@@ -27,7 +27,7 @@
   left: 10%;
 }
 .service-box-slider a {
-  color: #E5C26D !important;
+  color: #e5c26d !important;
   font-weight: 500 !important;
   font-size: 1.1rem !important;
   opacity: 1;
@@ -37,7 +37,7 @@
 .services-page span {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #E5C26D;
+  color: #e5c26d;
 }
 
 .b p,
@@ -52,7 +52,7 @@
 }
 
 .b p {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 /* .main-boxes-w {
@@ -89,6 +89,10 @@
 }
 
 @media (min-width: 869px) {
+  .main-text-service {
+    margin-left: 5rem;
+    width: 80%;
+  }
   .accordion {
     width: 90%;
     max-width: 1000px;
@@ -101,7 +105,7 @@
     letter-spacing: 0em;
     text-align: left;
     color: white !important;
-    opacity: .8;
+    opacity: 0.8;
     /* font-family: inter, sans-serif; */
   }
 
@@ -110,7 +114,7 @@
     font-weight: 600;
     letter-spacing: 0em;
     text-align: left;
-    color: #FFFF;
+    color: #ffff;
   }
 
   .main-text-service h5 {
@@ -119,7 +123,7 @@
     /* line-height: 30px; */
     letter-spacing: 0em;
     text-align: left;
-    color: #FFFF;
+    color: #ffff;
   }
 }
 
@@ -129,13 +133,17 @@
     max-width: 1000px;
     /* margin: 2rem auto; */
   }
+  .main-text-service {
+    margin-left: 1rem;
+    width: 90%;
+  }
   .main-text-service h5 {
     font-size: 1.6rem;
     font-weight: 700;
     /* line-height: 30px; */
     letter-spacing: 0em;
     text-align: left;
-    color: #FFFF;
+    color: #ffff;
   }
 
   .main-boxes .b {
@@ -153,18 +161,18 @@
     line-height: 20px;
     letter-spacing: 0em;
     color: white;
-    opacity: .8;
+    opacity: 0.8;
   }
   .center {
     text-align: center;
-    
-    color: #FFFF;
+
+    color: #ffff;
   }
   .main-text-service h2 {
     font-size: 1.6rem;
     font-weight: 600;
-    
-    color: #FFFF;
+
+    color: #ffff;
   }
 }
 
@@ -176,16 +184,14 @@
   100% {
     transform: translateX(calc(-610px * 4));
   }
-
 }
 
 .service-content-div p {
   color: white;
-  opacity: .5;
+  opacity: 0.5;
 }
 
-
-.custom-flicker .secondDiv{
+.custom-flicker .secondDiv {
   display: inline-block;
   border: 0.01px solid rgba(255, 255, 255, 0.264);
   border-radius: 10px;
@@ -198,33 +204,41 @@
   animation: scroll 45s linear infinite;
   animation-direction: reverse;
 }
-.custom-flicker .secondDiv:hover{
+.custom-flicker .secondDiv:hover {
   /* background: #e5c16d9d; */
   /* background:linear-gradient(90deg, #e5c16d2c 3.49%, #e5c16d8f 54.28%, #e5c16d00 100%); */
-  background:linear-gradient(280deg, #dfbb5f95 -131.4%, rgba(30, 27, 22, 0.00) 104.63%);
+  background: linear-gradient(
+    280deg,
+    #dfbb5f95 -131.4%,
+    rgba(30, 27, 22, 0) 104.63%
+  );
 }
 .custom-flicker .activeDiv {
   /* border-radius: 10px; */
   /* background: linear-gradient(180deg, #E5C26D 0%, #E5C26D 100%); */
   /* background: linear-gradient(90deg, #e5c16d2c 3.49%, #e5c16d8f 54.28%, #e5c16d00 100%); */
-  background: linear-gradient(280deg, #dfbb5f95 -131.4%, rgba(30, 27, 22, 0.00) 104.63%);
+  background: linear-gradient(
+    280deg,
+    #dfbb5f95 -131.4%,
+    rgba(30, 27, 22, 0) 104.63%
+  );
 }
 
 .custom-flicker .secondDiv {
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.30);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   margin-left: 2vw;
 }
 
 .custom-flicker .thirdDiv {
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.30);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   margin-left: 2vw;
 }
 
 .custom-flicker .fourthDiv {
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.30);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   margin-left: 2vw;
 }
 
@@ -256,8 +270,18 @@
   font-weight: 650;
   font-size: 1rem;
 }
-
-
+@media (max-width: 576px) {
+  .custom-flicker{
+    height: 45vw;
+  }
+  .custom-flicker .secondDiv{
+    font-size: 12px !important;
+        width: calc(80px* 4);
+  }
+  .custom-flicker .secondDiv img{
+    width: 8vmax !important;
+  }
+}
 .hide {
   display: none;
 }
@@ -303,21 +327,21 @@
 } */
 
 .key-text h5 {
-  line-height: .05vw;
-  color: #E8CB80;
+  line-height: 0.05vw;
+  color: #e8cb80;
   font-size: 100%;
   font-weight: 500;
 }
-.slider-div .swiper-button-next , .swiper-button-prev{
+.slider-div .swiper-button-next,
+.swiper-button-prev {
   display: none !important;
 }
- .text {
+.text {
   /* line-height: .05vw; */
-  color: #E8CB80;
+  color: #e8cb80;
   width: 60%;
   font-size: 100%;
   font-weight: 500;
-  
 }
 
 .key-text span {
@@ -326,7 +350,7 @@
   /* line-height: 40px !important; */
   letter-spacing: 0em;
   text-align: left;
-  color: #FFFF;
+  color: #ffff;
 }
 
 .key-text p {
@@ -335,8 +359,8 @@
   /* line-height: 40px !important; */
   letter-spacing: 0em;
   text-align: left;
-  color: #FFFF;
-  opacity: .8;
+  color: #ffff;
+  opacity: 0.8;
 }
 
 .key-text .accordion {
@@ -369,7 +393,7 @@
   list-style: none;
   color: rgba(255, 255, 255, 0.45);
   font-weight: 400;
-  font-size: .9rem;
+  font-size: 0.9rem;
   /* line-height: 3rem; */
   padding-left: 10% !important;
 }
@@ -405,8 +429,6 @@
   opacity: 0.6;
   font-size: 15;
 }
-
-
 
 .accordion-item {
   background-color: #d00000 !important;
@@ -458,12 +480,11 @@
     font-size: 14px;
   }
   .text {
-    color: #E8CB80;
+    color: #e8cb80;
     font-size: 100%;
     width: 100%;
     font-weight: 500;
     text-align: center;
-    
   }
 }
 
@@ -484,7 +505,11 @@
 .service-box-slider {
   width: 95%;
   height: 270px;
-  background: linear-gradient(178deg, rgba(217, 217, 217, 0.31) -105.98%, rgba(217, 217, 217, 0.00) 162.88%);
+  background: linear-gradient(
+    178deg,
+    rgba(217, 217, 217, 0.31) -105.98%,
+    rgba(217, 217, 217, 0) 162.88%
+  );
   border-radius: 47px;
   display: flex;
   flex-direction: column;
@@ -500,7 +525,7 @@
   height: 35%;
   width: 25%;
   border-radius: 30%;
-  background-color: #4B4B4B;
+  background-color: #4b4b4b;
   top: -20%;
   left: 20%;
   margin: 0% 0% 10% 0%;
@@ -535,8 +560,8 @@
 .accordion-content {
   max-height: 0;
   overflow: auto;
-  transition: max-height .1s ease;
-  opacity: .8;
+  transition: max-height 0.1s ease;
+  opacity: 0.8;
   font-size: 1rem;
   margin-left: 32px;
   width: 85%;

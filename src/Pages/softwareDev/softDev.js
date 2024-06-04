@@ -59,6 +59,14 @@ import databaselogo from "../../assest/servicesImages/database-icon.png";
 import ecomercelogo from "../../assest/servicesImages/ecomerce-icon.png";
 import microservicelogo from "../../assest/servicesImages/microservice-icon.png";
 import cmslogo from "../../assest/servicesImages/cms-icon.png";
+import {
+  APIOnClick,
+  BackendOnClick,
+  CMSOnClick,
+  DatabaseOnClick,
+  EccomerceOnClick,
+  MicroservicesOnClick,
+} from "../../assest/icons/software-dev-service";
 
 import {
   premiumIcon,
@@ -282,7 +290,11 @@ const SoftwareDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-md-4 text-center">
-                <img src={backendlogo} width={"60vw"} alt="" />
+                <img
+                  src={activeDiv === 0 ? BackendOnClick : backendlogo}
+                  width={"60vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-md-8 ">
                 <h5>BACKEND</h5>
@@ -296,7 +308,11 @@ const SoftwareDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-md-4 text-center">
-                <img src={apilogo} width={"60vw"} alt="" />
+                <img
+                  src={activeDiv === 1 ? APIOnClick : apilogo}
+                  width={"60vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-md-8 ">
                 <h5>APIS</h5>
@@ -310,7 +326,11 @@ const SoftwareDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-md-4 text-center">
-                <img src={databaselogo} width={"60vw"} alt="" />
+                <img
+                  src={activeDiv === 2 ? DatabaseOnClick : databaselogo}
+                  width={"60vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-md-8 ">
                 <h5>DATABASE</h5>
@@ -324,7 +344,11 @@ const SoftwareDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-md-4 text-center">
-                <img src={cmslogo} width={"60vw"} alt="" />
+                <img
+                  src={activeDiv === 3 ? CMSOnClick : cmslogo}
+                  width={"60vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-md-8 ">
                 <h5>CMS</h5>
@@ -338,7 +362,13 @@ const SoftwareDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-md-4 text-center">
-                <img src={microservicelogo} width={"60vw"} alt="" />
+                <img
+                  src={
+                    activeDiv === 4 ? MicroservicesOnClick : microservicelogo
+                  }
+                  width={"60vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-md-8 ">
                 <h5>MICROSERVICE</h5>
@@ -352,7 +382,11 @@ const SoftwareDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-md-4 text-center">
-                <img src={ecomercelogo} width={"60vw"} alt="" />
+                <img
+                  src={activeDiv === 5 ? EccomerceOnClick : ecomercelogo}
+                  width={"60vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-md-8 ">
                 <h5>E-COMMERCE</h5>
@@ -366,7 +400,11 @@ const SoftwareDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-md-4 text-center">
-                <img src={backendlogo} width={"60vw"} alt="" />
+                <img
+                  src={activeDiv === 0 ? BackendOnClick : backendlogo}
+                  width={"60vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-md-8 ">
                 <h5>BACKEND</h5>
@@ -380,7 +418,11 @@ const SoftwareDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-md-4 text-center">
-                <img src={apilogo} width={"60vw"} alt="" />
+                <img
+                  src={activeDiv === 1 ? APIOnClick : apilogo}
+                  width={"60vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-md-8 ">
                 <h5>APIS</h5>
@@ -394,7 +436,11 @@ const SoftwareDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-md-4 text-center">
-                <img src={databaselogo} width={"60vw"} alt="" />
+                <img
+                  src={activeDiv === 2 ? DatabaseOnClick : databaselogo}
+                  width={"60vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-md-8 ">
                 <h5>DATABASE</h5>
@@ -408,7 +454,11 @@ const SoftwareDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-md-4 text-center">
-                <img src={cmslogo} width={"60vw"} alt="" />
+                <img
+                  src={activeDiv === 3 ? CMSOnClick : cmslogo}
+                  width={"60vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-md-8 ">
                 <h5>CMS</h5>
@@ -422,7 +472,13 @@ const SoftwareDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-md-4 text-center">
-                <img src={microservicelogo} width={"60vw"} alt="" />
+                <img
+                  src={
+                    activeDiv === 4 ? MicroservicesOnClick : microservicelogo
+                  }
+                  width={"60vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-md-8 ">
                 <h5>MICROSERVICE</h5>
@@ -436,7 +492,11 @@ const SoftwareDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-md-4 text-center">
-                <img src={ecomercelogo} width={"60vw"} alt="" />
+                <img
+                  src={activeDiv === 5 ? EccomerceOnClick : ecomercelogo}
+                  width={"60vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-md-8 ">
                 <h5>E-COMMERCE</h5>
