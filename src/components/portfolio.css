@@ -1,10 +1,14 @@
 @media (max-width: 869px) {
     .main-text-service {
         max-width: 100%;
+<<<<<<< HEAD
+        margin-top: 2px;
+=======
         margin-top: 25px;
         margin-right: 5rem;
         width: 80%;
 
+>>>>>>> 58836f0cae93e81988ba0c196b16850832c09ae1
     }
 
 

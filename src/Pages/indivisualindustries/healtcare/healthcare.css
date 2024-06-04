@@ -212,6 +212,24 @@ form .message img {
   margin-left: -4% !important;
   opacity: 0.5;
 }
+<<<<<<< HEAD
+.why input:checked{
+margin: 6px !important;
+background-color: black;
+display: flex;
+justify-content: start;
+align-items: start;
+width: 15% !important;
+margin-left: 1% !important;
+opacity: 1;
+}
+.why input[type="radio"]:checked{
+    background-color: #007bff; /* Change background color when checked */
+    border-color: #ff0000 !important; /* Change border color when checked */
+    color: #fff; /* Change text color when checked */
+  }
+
+=======
 .why input:checked {
   margin: 6px !important;
   background-color: black;
@@ -227,3 +245,4 @@ form .message img {
   border-color: #ff0000 !important; /* Change border color when checked */
   color: #fff; /* Change text color when checked */
 }
+>>>>>>> 58836f0cae93e81988ba0c196b16850832c09ae1

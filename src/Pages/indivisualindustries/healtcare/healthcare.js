@@ -307,6 +307,14 @@ const HealthIndustriesComponent = () => {
 
                   <div className="why">
                     <h5>How Did You Hear About Us?</h5>
+<<<<<<< HEAD
+                    <div className="d-flex justify-content-start ">
+                      <input name="why" type="radio" value="Google"
+                        checked={state.why === "Google"}
+                        onChange={handleInputChange} />
+                      <label> Google</label> 
+                      <input name="why" type="radio" value="LinkedIn"
+=======
                     <div className="d-flex justify-content-start">
                       <input
                         name="why"
@@ -320,6 +328,7 @@ const HealthIndustriesComponent = () => {
                         name="why"
                         type="radio"
                         value="LinkedIn"
+>>>>>>> 58836f0cae93e81988ba0c196b16850832c09ae1
                         checked={state.why === "LinkedIn"}
                         onChange={handleInputChange}
                       />

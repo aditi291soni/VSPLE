@@ -69,7 +69,7 @@ const PortfolioComponent = () => {
             </div>
           </div>
         </div>
-        <div className="tab-content hidden text-center" style={{ margin: "12% " }}>
+        <div className="tab-content hidden text-center" style={{ margin: "5% " }}>
           <span>Portfolio</span>
           <h4 className="mb-4" style={{ lineHeight: "35px" }}>
 

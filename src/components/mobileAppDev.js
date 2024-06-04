@@ -487,7 +487,7 @@ const MobileAppDevComponent = () => {
                     name="role"
                     value={state.reason}
                     onChange={handleInputChange}
-                    placeholder="What role are you looking to hire for?"
+                    placeholder="What role are you looking to hire?"
                     autocomplete="off"
                     required
                   />
