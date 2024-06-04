@@ -283,20 +283,20 @@ const SoftwareDevComponent = () => {
           <span className="mb-0">Services</span>
           <h5>Software Development</h5>
         </div>
-        <div className="custom-flicker web-model">
+        <div className="custom-flicker ">
           <div
             className={`secondDiv ${activeDiv === 0 ? "activeDiv" : ""}`}
             onClick={() => handleServiceImageClick(0)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img
                   src={activeDiv === 0 ? BackendOnClick : backendlogo}
                   width={"60vw"}
                   alt=""
                 />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>BACKEND</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -307,14 +307,14 @@ const SoftwareDevComponent = () => {
             onClick={() => handleServiceImageClick(1)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img
                   src={activeDiv === 1 ? APIOnClick : apilogo}
                   width={"60vw"}
                   alt=""
                 />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>APIS</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -325,14 +325,14 @@ const SoftwareDevComponent = () => {
             onClick={() => handleServiceImageClick(2)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img
                   src={activeDiv === 2 ? DatabaseOnClick : databaselogo}
                   width={"60vw"}
                   alt=""
                 />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>DATABASE</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -343,14 +343,14 @@ const SoftwareDevComponent = () => {
             onClick={() => handleServiceImageClick(3)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img
                   src={activeDiv === 3 ? CMSOnClick : cmslogo}
                   width={"60vw"}
                   alt=""
                 />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>CMS</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -361,7 +361,7 @@ const SoftwareDevComponent = () => {
             onClick={() => handleServiceImageClick(4)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img
                   src={
                     activeDiv === 4 ? MicroservicesOnClick : microservicelogo
@@ -370,7 +370,7 @@ const SoftwareDevComponent = () => {
                   alt=""
                 />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>MICROSERVICE</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -381,14 +381,14 @@ const SoftwareDevComponent = () => {
             onClick={() => handleServiceImageClick(5)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img
                   src={activeDiv === 5 ? EccomerceOnClick : ecomercelogo}
                   width={"60vw"}
                   alt=""
                 />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>E-COMMERCE</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -399,14 +399,14 @@ const SoftwareDevComponent = () => {
             onClick={() => handleServiceImageClick(0)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img
                   src={activeDiv === 0 ? BackendOnClick : backendlogo}
                   width={"60vw"}
                   alt=""
                 />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>BACKEND</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -417,14 +417,14 @@ const SoftwareDevComponent = () => {
             onClick={() => handleServiceImageClick(1)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img
                   src={activeDiv === 1 ? APIOnClick : apilogo}
                   width={"60vw"}
                   alt=""
                 />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>APIS</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -435,14 +435,14 @@ const SoftwareDevComponent = () => {
             onClick={() => handleServiceImageClick(2)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img
                   src={activeDiv === 2 ? DatabaseOnClick : databaselogo}
                   width={"60vw"}
                   alt=""
                 />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>DATABASE</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -453,14 +453,14 @@ const SoftwareDevComponent = () => {
             onClick={() => handleServiceImageClick(3)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img
                   src={activeDiv === 3 ? CMSOnClick : cmslogo}
                   width={"60vw"}
                   alt=""
                 />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>CMS</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -471,7 +471,7 @@ const SoftwareDevComponent = () => {
             onClick={() => handleServiceImageClick(4)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img
                   src={
                     activeDiv === 4 ? MicroservicesOnClick : microservicelogo
@@ -480,7 +480,7 @@ const SoftwareDevComponent = () => {
                   alt=""
                 />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>MICROSERVICE</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -491,14 +491,14 @@ const SoftwareDevComponent = () => {
             onClick={() => handleServiceImageClick(5)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img
                   src={activeDiv === 5 ? EccomerceOnClick : ecomercelogo}
                   width={"60vw"}
                   alt=""
                 />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>E-COMMERCE</h5>
                 <span>DEVELOPMENT</span>
               </div>

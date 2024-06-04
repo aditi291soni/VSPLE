@@ -270,16 +270,16 @@ const WebsiteDevComponent = () => {
           <span className="mb-0">Services</span>
           <h5>Website Development</h5>
         </div>
-        <div className="custom-flicker web-model">
+        <div className="custom-flicker ">
           <div
             className={`secondDiv ${activeDiv === 0 ? "activeDiv" : ""}`}
             onClick={() => handleServiceImageClick(0)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img src={customweblogo} width={"60vw"} alt="" />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>CUSTOM WEB</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -290,10 +290,10 @@ const WebsiteDevComponent = () => {
             onClick={() => handleServiceImageClick(1)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img src={staticlogo} width={"60vw"} alt="" />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>STATIC WEB</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -304,10 +304,10 @@ const WebsiteDevComponent = () => {
             onClick={() => handleServiceImageClick(2)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img src={dynamiclogo} width={"60vw"} alt="" />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>DYNAMIC WEB</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -318,10 +318,10 @@ const WebsiteDevComponent = () => {
             onClick={() => handleServiceImageClick(3)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img src={ecommercelogo} width={"60vw"} alt="" />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>E-COMMERCE WEB</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -332,10 +332,10 @@ const WebsiteDevComponent = () => {
             onClick={() => handleServiceImageClick(4)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img src={pwalogo} width={"60vw"} alt="" />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>PWAS</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -346,10 +346,10 @@ const WebsiteDevComponent = () => {
             onClick={() => handleServiceImageClick(5)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img src={spalogo} width={"60vw"} alt="" />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>SPAS</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -360,10 +360,10 @@ const WebsiteDevComponent = () => {
             onClick={() => handleServiceImageClick(0)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img src={customweblogo} width={"60vw"} alt="" />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>CUSTOM WEB</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -374,10 +374,10 @@ const WebsiteDevComponent = () => {
             onClick={() => handleServiceImageClick(1)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img src={staticlogo} width={"60vw"} alt="" />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>STATIC WEB</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -388,10 +388,10 @@ const WebsiteDevComponent = () => {
             onClick={() => handleServiceImageClick(2)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img src={dynamiclogo} width={"60vw"} alt="" />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>DYNAMIC WEB</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -402,10 +402,10 @@ const WebsiteDevComponent = () => {
             onClick={() => handleServiceImageClick(3)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img src={ecommercelogo} width={"60vw"} alt="" />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>E-COMMERCE WEB</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -416,10 +416,10 @@ const WebsiteDevComponent = () => {
             onClick={() => handleServiceImageClick(4)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img src={pwalogo} width={"60vw"} alt="" />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>PWAS</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -430,10 +430,10 @@ const WebsiteDevComponent = () => {
             onClick={() => handleServiceImageClick(5)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
+              <div className="col-4 text-center">
                 <img src={spalogo} width={"60vw"} alt="" />
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>SPAS</h5>
                 <span>DEVELOPMENT</span>
               </div>

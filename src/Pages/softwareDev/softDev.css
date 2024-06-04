@@ -35,3 +35,21 @@ font-size: 1.8rem;
     padding: .5%;
     width: 100%;
 }
+
+
+
+
+@media (max-width: 576px) {
+    .custom-flicker {
+        height: 45vw;
+    }
+
+    .custom-flicker .secondDiv {
+        font-size: 12px !important;
+        width: calc(80px* 4);
+    }
+
+    .custom-flicker .secondDiv img {
+        width: 8vmax !important;
+    }
+}
