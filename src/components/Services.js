@@ -30,6 +30,16 @@ import serviceImg from "../assest/icons/vsple_website_design_4/Group 830.png";
 import first from "../assest/icons/vsple_website_design_4/Group 833.png";
 import second from "../assest/icons/vsple_website_design_4/Group 834.png";
 import third from "../assest/icons/vsple_website_design_4/Group 832.png";
+import {
+  Android,
+  AndroidOnClick,
+  Hybrid,
+  HybridOnClick,
+  IOS,
+  IOSOnClick,
+  Wearable,
+  WearableOnClick,
+} from "../assest/icons/mobile-app-service";
 import moneyBag from "../assest/main-icons/money-bag 1 (1).png";
 import trnd from "../assest/main-icons/trend 1.png";
 import hr24 from "../assest/main-icons/24-hours-service 1.png";
@@ -231,7 +241,7 @@ const ServiceComponent = () => {
             <img src={service} width={"90%"} alt="" />
           </div>
           <div className=" col-md-6 d-flex justify-content-start align-items-center">
-            <div className="main-text-service">
+            <div className="main-text-service w-80">
               <h2 className="">
                 Mobile App
                 <br />
@@ -277,16 +287,20 @@ const ServiceComponent = () => {
           <span className="mb-0">Services</span>
           <h5>Mobile App Development</h5>
         </div>
-        <div className="custom-flicker web-model">
+        <div className="custom-flicker  ">
           <div
             className={`secondDiv ${activeDiv === 0 ? "activeDiv" : ""}`}
             onClick={() => handleServiceImageClick(0)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
-                <img src={ioslogo} width={"60vw"} alt="" />
+              <div className="col-4 text-center">
+                {activeDiv === 0 ? (
+                  <img src={IOSOnClick} width={"60vw"} alt="" />
+                ) : (
+                  <img src={IOS} width={"60vw"} alt="" />
+                )}
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>iOS APP </h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -297,10 +311,14 @@ const ServiceComponent = () => {
             onClick={() => handleServiceImageClick(1)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
-                <img src={androidLogo} width={"60vw"} alt="" />
+              <div className="col-4 text-center">
+                {activeDiv === 1 ? (
+                  <img src={AndroidOnClick} width={"60vmax"} alt="" />
+                ) : (
+                  <img src={Android} width={"60vmax"} alt="" />
+                )}
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>ANDROID APP</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -311,10 +329,14 @@ const ServiceComponent = () => {
             onClick={() => handleServiceImageClick(2)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
-                <img src={wearablelogo} width={"60vw"} alt="" />
+              <div className="col-4 text-center">
+                {activeDiv === 2 ? (
+                  <img src={WearableOnClick} width={"60vw"} alt="" />
+                ) : (
+                  <img src={Wearable} width={"60vw"} alt="" />
+                )}
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>WEARABLE APP</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -325,10 +347,14 @@ const ServiceComponent = () => {
             onClick={() => handleServiceImageClick(3)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
-                <img src={hybridlogo} width={"60vw"} alt="" />
+              <div className="col-4 text-center">
+                {activeDiv === 3 ? (
+                  <img src={HybridOnClick} width={"60vw"} alt="" />
+                ) : (
+                  <img src={Hybrid} width={"60vw"} alt="" />
+                )}
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>HYBRID APP</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -339,10 +365,14 @@ const ServiceComponent = () => {
             onClick={() => handleServiceImageClick(0)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
-                <img src={ioslogo} width={"60vw"} alt="" />
+              <div className="col-4 text-center">
+                {activeDiv === 0 ? (
+                  <img src={IOSOnClick} width={"60vw"} alt="" />
+                ) : (
+                  <img src={IOS} width={"60vw"} alt="" />
+                )}
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>iOS APP </h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -353,10 +383,14 @@ const ServiceComponent = () => {
             onClick={() => handleServiceImageClick(1)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
-                <img src={androidLogo} width={"60vw"} alt="" />
+              <div className="col-4 text-center">
+                {activeDiv === 1 ? (
+                  <img src={AndroidOnClick} width={"60vw"} alt="" />
+                ) : (
+                  <img src={Android} width={"60vw"} alt="" />
+                )}
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>ANDROID APP</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -367,10 +401,15 @@ const ServiceComponent = () => {
             onClick={() => handleServiceImageClick(2)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
-                <img src={wearablelogo} width={"60vw"} alt="" />
+              <div className="col-4 text-center">
+                {" "}
+                {activeDiv === 2 ? (
+                  <img src={WearableOnClick} width={"60vw"} alt="" />
+                ) : (
+                  <img src={Wearable} width={"60vw"} alt="" />
+                )}{" "}
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>WEARABLE APP</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -381,10 +420,14 @@ const ServiceComponent = () => {
             onClick={() => handleServiceImageClick(3)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
-                <img src={hybridlogo} width={"60vw"} alt="" />
+              <div className="col-4 text-center">
+                {activeDiv === 3 ? (
+                  <img src={HybridOnClick} width={"60vw"} alt="" />
+                ) : (
+                  <img src={Hybrid} width={"60vw"} alt="" />
+                )}
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>HYBRID APP</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -395,10 +438,14 @@ const ServiceComponent = () => {
             onClick={() => handleServiceImageClick(1)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
-                <img src={androidLogo} width={"60vw"} alt="" />
+              <div className="col-4 text-center">
+                {activeDiv === 1 ? (
+                  <img src={AndroidOnClick} width={"60vw"} alt="" />
+                ) : (
+                  <img src={Android} width={"60vw"} alt="" />
+                )}
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>ANDROID APP</h5>
                 <span>DEVELOPMENT</span>
               </div>
@@ -409,10 +456,14 @@ const ServiceComponent = () => {
             onClick={() => handleServiceImageClick(2)}
           >
             <div className="flicker-content row">
-              <div className="col-md-4 text-center">
-                <img src={wearablelogo} width={"60vw"} alt="" />
+              <div className="col-4 text-center">
+                {activeDiv === 2 ? (
+                  <img src={WearableOnClick} width={"60vw"} alt="" />
+                ) : (
+                  <img src={Wearable} width={"60vw"} alt="" />
+                )}
               </div>
-              <div className="notActive col-md-8 ">
+              <div className="notActive col-8 ">
                 <h5>WEARABLE APP</h5>
                 <span>DEVELOPMENT</span>
               </div>

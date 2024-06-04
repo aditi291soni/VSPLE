@@ -1,6 +1,7 @@
 import "./home.css";
 import React, { useState, useEffect, useRef } from "react";
 import "./home1.css";
+import Testimonials from "./Testimonials";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -424,7 +425,7 @@ const HoComponent = () => {
   //   fadeInImage();
   // }, []);
   const handleAvatarClick = (clientId) => {
-    const internalImg = document.querySelector(".testimonial img");
+    const internalImg = document.querySelector(".testimonial div");
     internalImg.classList.add("active"); 
     setSelectedClient(clientId);
     setAnimate(true);
@@ -872,7 +873,7 @@ const HoComponent = () => {
                 <div className="getin-button text-center mt-4 web-model">
                   <div className="see-button">
                     <a href="/mobile-app-development-services">
-                      View All &nbsp;
+                      View All &nbsp;&nbsp;
                     </a>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -896,7 +897,10 @@ const HoComponent = () => {
             </div>
           </div>
         </div>
-        <div className="grid-container web-model mb-5 ">
+        <div
+          style={{ transform: "scale(.9)" }}
+          className="grid-container web-model mb-5 "
+        >
           <div className="ico-4">
             <a target="blank" href="https://twitter.com/VspleTech">
               <img src={twittericon} width={"30%"} alt="" />
@@ -961,7 +965,7 @@ const HoComponent = () => {
 
         <div className="indus-button text-center ">
           <div className="see-button">
-            <a href="/our-portfolio">See More &nbsp;</a>
+            <a href="/our-portfolio">See More &nbsp;&nbsp;</a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="2vmax"
@@ -1622,7 +1626,7 @@ const HoComponent = () => {
                   Unleashing the <br /> Potential
                 </span>
                 <p className="service-para mt-2">
-                  Your trusted partner in harnessing the power of cutting-edge
+                  Your trusteds partner in harnessing the power of cutting-edge
                   technologies. Our diverse expertise in a wide range of
                   technologies enables us to deliver innovative solutions that
                   drive business growth and transformation. Explore our
@@ -1630,7 +1634,7 @@ const HoComponent = () => {
                   journey that propels your business to new heights.
                 </p>
               </div>
-              <div className="slider-div">
+              <div className="d-none slider-div">
                 <div className="sliderS-wearable container-fluid">
                   <div className="slide-trackN-wearable">
                     <div className="slideN-wearable">
@@ -1668,11 +1672,7 @@ const HoComponent = () => {
                         <img src={unbound} width={"100%"} alt="" />
                       </div>
                     </div>
-                    {/* <div className="slideN-wearable">
-              <div className="service-box-slider-wearable p-4">
-                <img src={sf} width={"100%"} alt="" />
-              </div>
-            </div> */}
+             
                     <div className="slideN-wearable">
                       <div className="service-box-slider-wearable p-4">
                         <img src={ooredo} width={"100%"} alt="" />
@@ -1708,11 +1708,7 @@ const HoComponent = () => {
                         <img src={unbound} width={"100%"} alt="" />
                       </div>
                     </div>
-                    {/* <div className="slideN-wearable">
-              <div className="service-box-slider-wearable p-4">
-                <img src={sf} width={"100%"} alt="" />
-              </div>
-            </div> */}
+             
                   </div>
                 </div>
               </div>
@@ -1734,7 +1730,7 @@ const HoComponent = () => {
               <div className="getin-button-in text-center">
                 <div className="see-button">
                   <a href="/contact-us">
-                    Get In Touch &nbsp;
+                    Get In Touch &nbsp;&nbsp;
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="30"
@@ -1774,49 +1770,7 @@ const HoComponent = () => {
             </div>
           </div>
         </div>
-        <div className="web-model testimonial mt-5">
-          <div className="avatars">
-            {clients.map((client) => (
-              <img
-                key={client.id}
-                src={
-                  selectedClient === client.id
-                    ? client.avatar
-                    : client.selectedAvatar
-                }
-                alt=""
-                onClick={() => handleAvatarClick(client.id)}
-                className={selectedClient === client.id ? "selected" : ""}
-              />
-              
-            ))}
-            <img src={smile} alt="" />
-            <img src={smile2} alt="" />
-            <img src={like} alt="" />
-            <img src={like1} alt="" />
-            <img src={like2} alt="" />
-            {/* <img src={like2} alt="" />
-          <img src={smile2} alt="" /> */}
-          </div>
-          <div className="testimonial-text text-center">
-            <img width={25} src={review} alt="" />
-
-            <h2 className="slide-i">Testimonial</h2>
-            {selectedClient !== null && (
-              <>
-                <h5 className={animate ? "slide-in" : ""}>
-                  {clients[selectedClient - 1].name}
-                  {/* {clients.name.charAt(0)} */}
-                </h5>
-                <p className={` ${animate ? "slide-in" : ""}`}>
-                  <img src={left} alt="" className="mb-4" />
-                  {clients[selectedClient - 1].description}
-                  <img src={right} alt="" />
-                </p>
-              </>
-            )}
-          </div>
-        </div>
+        <Testimonials/>
         <div className="mobile-model mobile-swiper container">
           <Swiper
             spaceBetween={30}

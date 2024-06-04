@@ -25,7 +25,8 @@ import team from "../assest/main-icons/team 1.png";
 import software from "../assest/icons/software-developer 1.png";
 import webdev from "../assest/navi-icons/web-development (1) 1.png";
 import testing from "../assest/main-icons/approval (1) 1 (1).png";
-import staffAug from "../assest/main-icons/staff (1) 1.png";
+// import staffAug from "../assest/main-icons/staff (1) 1.png";
+import staffAug from "../assest/main-icons/ux_design.png";
 import devops from "../assest/main-icons/devops (1) 1.png";
 import devop from "../assest/main-icons/services/gameServices/gameIcon.png";
 import uiux from "../assest/main-icons/ux-design (2) 1.png";
@@ -587,37 +588,37 @@ const handleMouseLeave = ()=>{
                   <ul>
                     <li>
                       <a href="/hire-mobile-application-developers" className="sd-link2">
-                        <img src={slogo} width={12} alt="" /> &nbsp; Mobile App
+                        <img src={mobiledev} width={12} alt="" /> &nbsp; Mobile App
                         Development
                       </a>
                     </li>
                     <li>
                       <a href="/our-mission" className="sd-link2">
-                        <img src={mission} width={12} alt="" /> &nbsp; Software
+                        <img src={software} width={12} alt="" /> &nbsp; Software
                         Development
                       </a>
                     </li>
                     <li>
                       <a href="/our-vision" className="sd-link2">
-                        <img src={eye} width={12} alt="" /> &nbsp; Website
+                        <img src={webdev} width={12} alt="" /> &nbsp; Website
                         Development
                       </a>
                     </li>
                     <li>
                       <a className="sd-link2">
-                        <img src={interview} width={12} alt="" /> &nbsp; Game
+                        <img src={devop } width={12} alt="" /> &nbsp; Game
                         Developnent
                       </a>
                     </li>
                     <li>
                       <a className="sd-link2">
-                        <img src={certificate} width={12} alt="" /> &nbsp; UI/UX
+                        <img src={staffAug} width={12} alt="" /> &nbsp; UI/UX
                         Development
                       </a>
                     </li>
                     <li>
                       <a className="sd-link2">
-                        <img src={certificate} width={12} alt="" /> &nbsp;
+                        <img src={testing} width={12} alt="" /> &nbsp;
                         Quality Assurance
                       </a>
                     </li>

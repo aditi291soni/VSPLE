@@ -213,7 +213,7 @@ const TradetipsComponent = () => {
             <img
               style={{ marginTop: "35%" }}
               className="mb-3"
-              src={four}
+              src={five}
               width={"44px"}
               alt=""
             />
@@ -235,7 +235,7 @@ const TradetipsComponent = () => {
             {/* <img src={mobile} width={"100%"} alt="" /> */}
           </div>
           <div className="col-md-12 col-lg-3">
-            <img className="mb-3" src={five} width={"44px"} alt="" />
+            <img className="mb-3" src={four} width={"44px"} alt="" />
             <h5 className="">News and Analysis</h5>
             <p>
               Timely news updates and financial analysis to help users stay informed about market trends and events.

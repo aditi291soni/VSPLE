@@ -36,6 +36,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
 import horse from "../../../assest/main-icons/strategy (2) 1.png";
+import TechnologiesWeUse from "../../../components/TechnologiesWeUse";
 
 const SportsIndustriesComponent = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -274,7 +275,8 @@ const SportsIndustriesComponent = () => {
                           name="name"
                           value={state.name}
                           onChange={handleInputChange}
-                          placeholder="Name"
+                          placeholder="* Name"
+                          required
                         />
                       </div>
                     </div>
@@ -288,7 +290,8 @@ const SportsIndustriesComponent = () => {
                           name="email"
                           value={state.email}
                           onChange={handleInputChange}
-                          placeholder="Email"
+                          placeholder="* Email"
+                          required
                         />
                       </div>
                     </div>
@@ -333,7 +336,8 @@ const SportsIndustriesComponent = () => {
                       name="phone"
                       value={state.password}
                       onChange={handleInputChange}
-                      placeholder="Mobile Number"
+                      placeholder="* Mobile Number"
+                      required
                     />
                   </div>
                   <div className="message">
@@ -346,7 +350,8 @@ const SportsIndustriesComponent = () => {
                       name="message"
                       value={state.message}
                       onChange={handleInputChange}
-                      placeholder="Message"
+                      placeholder="* Message"
+                      required
                     />
                     <div className="button text-end">
                       <button type="submit">Send</button>
@@ -737,106 +742,8 @@ const SportsIndustriesComponent = () => {
           <h5>Technologies We Use</h5>
         </div>
       </div>
-      <div className="tab-content hidden container web-model">
-        <Tabs defaultActiveKey={activeTab} onSelect={handleTabChange}>
-          <Tab eventKey="all" title="All">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Frontend" title="Frontend">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Backend" title="Backend">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="IOS" title="IOS">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Android" title="Android">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Cloud" title="Cloud">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-        </Tabs>
-      </div>
+     
+      <TechnologiesWeUse/>
       {/* <div className="h-journey d-flex justify-content-center text-center">
         <div className="p-journey">
           <span>Technologies</span>

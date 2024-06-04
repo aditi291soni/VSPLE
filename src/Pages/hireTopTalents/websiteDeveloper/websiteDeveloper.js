@@ -18,6 +18,8 @@ import nexticon from "../../../assest/main-icons/Group 670.png";
 import previcon from "../../../assest/main-icons/Group 670 (1).png";
 import gog from "../../../assest/main-icons/Group 918 (1).png";
 import watch from "../../../assest/web-icons/wesbsitedev/Group 1000005573.png";
+import backend from "../../../assest/icons/Isolation_Mode.png";
+import ecommerce from '../../../assest/main-icons/check-out(1) 1.png'
 import appleLogo from "../../../assest/main-icons/Group 1410.png";
 import appleLogo2 from "../../../assest/main-icons/Group 1000004599 (1).png";
 import ai from "../../../assest/main-icons/faceman.gif";
@@ -49,6 +51,7 @@ import breckW from "../../../assest/web-icons/global-icon/Group 1000005597 (1).p
 import hobbyst from "../../../assest/web-icons/global-icon/Group 1000005603.png";
 import qrScape from "../../../assest/web-icons/global-icon/Group 1000005604.png";
 import "swiper/css";
+import fullstack from '../../../assest/main-icons/services/Isolation_Mode (1).png'
 import FAQ from "../../../components/Faq";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -105,8 +108,8 @@ const WebsiteDeveloperComponent = () => {
       arrow: downArroForHire,
       beforeArrow: downArroForHire,
       afterArrow: upArroForHire,
-      beforelogo: full,
-      afterdLogo: full,
+      beforelogo: fullstack,
+      afterdLogo: fullstack,
       para: "Our full-stack developers possess a comprehensive...",
       para2:
         "Our full-stack developers possess a comprehensive skill set covering both frontend and backend development. They are adept at handling the entire web development process, from conceptualization and design to implementation and deployment. Their expertise in multiple technologies allows for cohesive and efficient development of feature-rich websites.",
@@ -125,12 +128,24 @@ const WebsiteDeveloperComponent = () => {
     },
     {
       content: "Our team of talented Android app developers specializes in...",
-      logo: appleLogo,
+      logo: backend,
       arrow: downArroForHire,
       beforeArrow: downArroForHire,
       afterArrow: upArroForHire,
-      beforelogo: backendDev,
-      afterdLogo: backendDev,
+      beforelogo: backend,
+      afterdLogo: backend,
+      para: "For businesses seeking specialized e-commerce...",
+      para2:
+        "For businesses seeking specialized e-commerce solutions, our ecommerce developers have the expertise to build secure and user-friendly online stores. They are proficient in platforms like Shopify, WooCommerce, Magento, and custom ecommerce development, enabling seamless online shopping experiences for your customers",
+    },
+    {
+      content: "Our team of talented Android app developers specializes in...",
+      logo: ecommerce,
+      arrow: downArroForHire,
+      beforeArrow: downArroForHire,
+      afterArrow: upArroForHire,
+      beforelogo: ecommerce,
+      afterdLogo: ecommerce,
       para: "For businesses seeking specialized e-commerce...",
       para2:
         "For businesses seeking specialized e-commerce solutions, our ecommerce developers have the expertise to build secure and user-friendly online stores. They are proficient in platforms like Shopify, WooCommerce, Magento, and custom ecommerce development, enabling seamless online shopping experiences for your customers",
@@ -1248,13 +1263,13 @@ const WebsiteDeveloperComponent = () => {
                   {/* <div className="rouded-content-b"></div> */}
                   <img
                     className="beforeLogo"
-                    src={langConB[3].beforelogo}
+                    src={langConB[4].beforelogo}
                     width={"50%"}
                     alt=""
                   />
                   <img
                     className="afterLogo"
-                    src={langConB[3].afterdLogo}
+                    src={langConB[4].afterdLogo}
                     width={"50%"}
                     alt=""
                   />
@@ -1279,7 +1294,7 @@ const WebsiteDeveloperComponent = () => {
                     }}
                     className="beforeContent"
                   >
-                    {langConB[3].para}
+                    {langConB[4].para}
                   </p>
                   <p
                     style={{
@@ -1290,20 +1305,20 @@ const WebsiteDeveloperComponent = () => {
                     }}
                     className="afterContent"
                   >
-                    {langConB[3].para2}
+                    {langConB[4].para2}
                   </p>
                 </div>
                 <div className="flicker-text col-2">
                   <img
                     className="beforeArrow"
                     width={"70%"}
-                    src={langConB[3].beforeArrow}
+                    src={langConB[4].beforeArrow}
                     alt=""
                   />
                   <img
                     className="afterArrow"
                     width={"70%"}
-                    src={langConB[3].afterArrow}
+                    src={langConB[4].afterArrow}
                     alt=""
                   />
                 </div>

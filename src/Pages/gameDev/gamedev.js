@@ -170,7 +170,7 @@ const GamedevComponent = () => {
                 redefine gaming. Elevate your entertainment with our innovative
                 gaming solutions!
               </p>
-              <img className="" src={apps} width={"60%"} alt="" />
+              <img className="" src={apps} width={"90%"} alt="" />
             </div>
           </div>
           <div className="col-md-6 d-flex justify-content-center">
@@ -186,7 +186,7 @@ const GamedevComponent = () => {
           </h5>
         </div>
         <div className="container my-5">
-          <div className="hidden gameparent mx-auto">
+          <div className="hidden gameparent mx-auto mb-n5">
             <div className="gameBox">
              
               <img src={rec8419} width={"100%"} alt="" />
@@ -218,7 +218,7 @@ const GamedevComponent = () => {
               </p>
             </div>
           </div>
-          <div className="hidden gameparent mx-auto ">
+          <div className="hidden gameparent mx-auto mt-n5">
             <div className="gameBox">
               <img src={rec2424} width={"100%"} alt="" />
               <h5>Virtual Reality (VR) Game Development</h5>

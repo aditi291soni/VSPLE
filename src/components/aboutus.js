@@ -12,6 +12,7 @@ import smile2 from "../assest/icons/vsple website design (5)/happy 2.png";
 import like from "../assest/icons/vsple website design (5)/like (1) 1.png";
 import like1 from "../assest/icons/vsple website design (5)/like 1.png";
 import like2 from "../assest/icons/vsple website design (5)/like 2.png";
+import project_based_model from "../assest/icons/project_based_model.png";
 import left from "../assest/left.png";
 import right from "../assest/right.png";
 import avatar from "../assest/web-icons/global-icon/Screenshot_2024-02-01_at_5.16 1.png";
@@ -48,8 +49,12 @@ import group110 from "../assest/icons/Group 110.png";
 import vector9 from "../assest/icons/Vector9.png";
 import group111 from "../assest/icons/Group 111.png";
 import group112 from "../assest/icons/Group 112.png";
-
+import Testimonials from "./Testimonials";
 import { mainimg, leader, frame6, progress } from "../common/images";
+import img3 from '../assest/main-icons/services/Vector.png'
+import img1 from '../assest/main-icons/services/Frame (1).png'
+import img2 from '../assest/main-icons/services/Frame.png'
+
 
 const AboutComponent = () => {
   const [animate, setAnimate] = useState(false);
@@ -449,7 +454,9 @@ const AboutComponent = () => {
                   </div>
                   <div className="box-3 d-flex justify-content-center align-items-center">
                     <div className="content">
-                      <img src={frame19} alt="" width={"55%"} />
+                      <div style={{ width: "60%" }}>
+                        <img src={img2} alt="img" width={"100%"} />
+                      </div>
                       <span>
                         Dedicated <br />
                         Team Model
@@ -466,43 +473,72 @@ const AboutComponent = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-12 col-sm-12 col-lg-6">
-                <div className="p-modules-name mx-auto">
-                  <span>Project-Based Model</span>
-                  <p>
-                    In the Project-Based Model, IT services are tailored to meet
-                    the specific needs of a project. Clients agree to a fixed
-                    price, and the IT provider takes responsibility for
-                    completing the project within the agreed-upon budget and
-                    timeline.
-                  </p>
-                  <span>
-                    Time And <br /> Material Based Model
-                  </span>
-                  <p>
-                    This model offers flexibility, with clients paying for IT
-                    services based on the actual time and materials used. Costs
-                    are incurred as the project progresses, allowing adjustments
-                    to scope and budget as needed.
-                  </p>
-                  <span>Dedicated Team Model</span>
-                  <p>
-                    With the Dedicated Team Model, clients have the advantage of
-                    a specialized IT team exclusively focused on their projects.
-                    This approach provides ongoing support and expertise,
-                    helping clients achieve their long-term IT objectives.
-                  </p>
-                  <span>Managed IT Services Model</span>
-                  <p>
-                    Managed Service Providers (MSPs) offer comprehensive IT
-                    support and management for a fixed monthly fee. This model
-                    ensures proactive monitoring, maintenance, and support for a
-                    client's IT infrastructure.
-                  </p>
+              <div className=" col-md-12 f col-sm-12 col-lg-6">
+                <div className="p-modules-name d-flex flex-column gap-2 mx-auto">
+                  <div className="d-flex gap-4">
+                    <div className="choose-model-list-img">
+                      {" "}
+                      <img src={project_based_model} alt="" />{" "}
+                    </div>
+                    <div className="d-flex flex-column gap-2">
+                      <span>Project-Based Model</span>
+                      <p>
+                        In the Project-Based Model, IT services are tailored to
+                        meet the specific needs of a project. Clients agree to a
+                        fixed price, and the IT provider takes responsibility
+                        for completing the project within the agreed-upon budget
+                        and timeline.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex gap-4">
+                    <div className="choose-model-list-img">
+                      <img src={img3} alt="" />{" "}
+                    </div>
+                    <div className="d-flex flex-column gap-2">
+                      <span>
+                        Time And <br /> Material Based Model
+                      </span>
+                      <p>
+                        This model offers flexibility, with clients paying for
+                        IT services based on the actual time and materials used.
+                        Costs are incurred as the project progresses, allowing
+                        adjustments to scope and budget as needed.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex gap-4">
+                    <div className="choose-model-list-img">
+                      <img src={img1} alt="" />{" "}
+                    </div>
+                    <div className="d-flex flex-column gap-2">
+                      <span>Dedicated Team Model</span>
+                      <p>
+                        With the Dedicated Team Model, clients have the
+                        advantage of a specialized IT team exclusively focused
+                        on their projects. This approach provides ongoing
+                        support and expertise, helping clients achieve their
+                        long-term IT objectives.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex gap-4">
+                    <div className="choose-model-list-img">
+                      <img src={img2} alt="" />{" "}
+                    </div>
+                    <div className="d-flex flex-column gap-2">
+                      <span>Managed IT Services Model</span>
+                      <p>
+                        Managed Service Providers (MSPs) offer comprehensive IT
+                        support and management for a fixed monthly fee. This
+                        model ensures proactive monitoring, maintenance, and
+                        support for a client's IT infrastructure.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            ,
           </Carousel.Item>
           <Carousel.Item>
             <div className="row">
@@ -546,34 +582,54 @@ const AboutComponent = () => {
                 </div>
               </div>
               <div className="col-md-12 col-sm-12 col-lg-6 mt-1">
-                <div className="p-modules-name mx-auto">
-                  <span>Remote/Hybrid Model</span>
-                  <p>
-                    The Remote/Hybrid Model delivers IT services remotely, with
-                    teams operating from various locations or through a
-                    combination of on-site and remote work. It provides the
-                    flexibility to adapt to different client requirements.
-                  </p>
-                  <span>Just-in-Time IT Staff Augmentation Model</span>
-                  <p>
-                    This model allows for the rapid scaling of IT teams on
-                    short-term, long-term, or project-based contracts,
-                    addressing resource needs with flexibility and tailored
-                    contract options.
-                  </p>
-                  <span>Consulting Business Model</span>
-                  <p>
-                    IT consulting firms provide expert guidance, advice, and
-                    strategic recommendations to assist clients in making
-                    informed decisions and addressing complex IT challenges.
-                  </p>
-                  <span>Agency-Based Business Model</span>
-                  <p>
-                    IT agencies act as intermediaries, connecting clients with
-                    specialised IT professionals or teams for specific projects.
-                    They handle project coordination, management, and quality
-                    assurance, ensuring successful outcomes.
-                  </p>
+                <div className="p-modules-name d-flex flex-column gap-2 mx-auto">
+                  <div className="d-flex gap-4">
+                    <div className="choose-model-list-img"><img src={img2} alt="" />{" "}</div>
+                    <div className="d-flex flex-column gap-2">
+                      <span>Remote/Hybrid Model</span>
+                      <p>
+                        The Remote/Hybrid Model delivers IT services remotely,
+                        with teams operating from various locations or through a
+                        combination of on-site and remote work. It provides the
+                        flexibility to adapt to different client requirements.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex gap-4">
+                    <div className="choose-model-list-img"><img src={img3} alt="" />{" "}</div>
+                    <div className="d-flex flex-column gap-2">
+                      <span>Just-in-Time IT Staff Augmentation Model</span>
+                      <p>
+                        This model allows for the rapid scaling of IT teams on
+                        short-term, long-term, or project-based contracts,
+                        addressing resource needs with flexibility and tailored
+                        contract options.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex gap-4">
+                    <div className="choose-model-list-img"><img src={img1} alt="" />{" "}</div>
+                    <div className="d-flex flex-column gap-2">
+                      <span>Consulting Business Model</span>
+                      <p>
+                        IT consulting firms provide expert guidance, advice, and
+                        strategic recommendations to assist clients in making
+                        informed decisions and addressing complex IT challenges.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex gap-4">
+                    <div className="choose-model-list-img"><img src={img2} alt="" />{" "}</div>
+                    <div className="d-flex flex-column gap-2">
+                      <span>Agency-Based Business Model</span>
+                      <p>
+                        IT agencies act as intermediaries, connecting clients
+                        with specialised IT professionals or teams for specific
+                        projects. They handle project coordination, management,
+                        and quality assurance, ensuring successful outcomes.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -749,47 +805,7 @@ const AboutComponent = () => {
           </div>
         </div>
       </div>
-      <div className="web-model testimonial">
-        <div className="avatars">
-          {clients.map((client) => (
-            <img
-              key={client.id}
-              src={
-                selectedClient === client.id
-                  ? client.avatar
-                  : client.selectedAvatar
-              }
-              alt=""
-              onClick={() => handleAvatarClick(client.id)}
-              className={selectedClient === client.id ? "selected" : ""}
-            />
-          ))}
-          <img src={smile} alt="" />
-          <img src={smile2} alt="" />
-          <img src={like} alt="" />
-          <img src={like1} alt="" />
-          <img src={like2} alt="" />
-          {/* <img src={like2} alt="" />
-          <img src={smile2} alt="" /> */}
-        </div>
-        <div className="testimonial-text text-center">
-          <img width={25} src={review} alt="" />
-
-          <h2 className="my-2 slide-i">Testimonial</h2>
-          {selectedClient !== null && (
-            <>
-              <h5 className={animate ? "slide-in" : ""}>
-                {clients[selectedClient - 1].name}
-              </h5>
-              <p className={`my-4 ${animate ? "slide-in" : ""}`}>
-                <img src={left} alt="" className="mb-3" />
-                {clients[selectedClient - 1].description}
-                <img src={right} alt="" />
-              </p>
-            </>
-          )}
-        </div>
-      </div>
+      <Testimonials />
       <div className="mobile-model mobile-swiper">
         <Swiper
           spaceBetween={30}

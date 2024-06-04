@@ -40,6 +40,7 @@ import {
   btnsvg,
   loader,
 } from "../../../common/images";
+import TechnologiesWeUse from "../../../components/TechnologiesWeUse";
 
 const HealthIndustriesComponent = () => {
   const [showModal, setShowModal] = useState(false);
@@ -281,13 +282,13 @@ const HealthIndustriesComponent = () => {
                           name="name"
                           value={state.name}
                           onChange={handleInputChange}
-                          placeholder="Name"
+                          placeholder="* Name"
                           autoComplete="off"
+                          required
                         />
                       </div>
                     </div>
                     <div className="w-100">
-
                       <div className="email">
                         <img width={"5%"} src={email} alt="" />
                         {/* <label>Password</label> */}
@@ -296,8 +297,9 @@ const HealthIndustriesComponent = () => {
                           name="email"
                           value={state.email}
                           onChange={handleInputChange}
-                          placeholder="Email"
+                          placeholder="* Email"
                           autoComplete="off"
+                          required
                         />
                       </div>
                     </div>
@@ -305,32 +307,67 @@ const HealthIndustriesComponent = () => {
 
                   <div className="why">
                     <h5>How Did You Hear About Us?</h5>
+<<<<<<< HEAD
                     <div className="d-flex justify-content-start ">
                       <input name="why" type="radio" value="Google"
                         checked={state.why === "Google"}
                         onChange={handleInputChange} />
                       <label> Google</label> 
                       <input name="why" type="radio" value="LinkedIn"
+=======
+                    <div className="d-flex justify-content-start">
+                      <input
+                        name="why"
+                        type="radio"
+                        value="Google"
+                        checked={state.why === "Google"}
+                        onChange={handleInputChange}
+                      />
+                      <label> Google</label>
+                      <input
+                        name="why"
+                        type="radio"
+                        value="LinkedIn"
+>>>>>>> 58836f0cae93e81988ba0c196b16850832c09ae1
                         checked={state.why === "LinkedIn"}
-                        onChange={handleInputChange} />
-                      <label > LinkedIn</label>
-                      <input name="why" type="radio" value="Facebook"
+                        onChange={handleInputChange}
+                      />
+                      <label> LinkedIn</label>
+                      <input
+                        name="why"
+                        type="radio"
+                        value="Facebook"
                         checked={state.why === "Facebook"}
-                        onChange={handleInputChange} />
+                        onChange={handleInputChange}
+                      />
                       <label> Facebook</label>
-                      <input className="web-model" name="why" type="radio" value="Instagram"
+                      <input
+                        className="web-model"
+                        name="why"
+                        type="radio"
+                        value="Instagram"
                         checked={state.why === "Instagram"}
-                        onChange={handleInputChange} />
-                      <label className="web-model" > Instagram</label>
+                        onChange={handleInputChange}
+                      />
+                      <label className="web-model"> Instagram</label>
                     </div>
                     <div className="d-flex justify-content-start">
-                      <input className="mobile-model" name="why" type="radio" value="Instagram"
+                      <input
+                        className="mobile-model"
+                        name="why"
+                        type="radio"
+                        value="Instagram"
                         checked={state.why === "Instagram"}
-                        onChange={handleInputChange} />
-                      <label className="mobile-model" > Instagram</label>
-                      <input name="why" type="radio" value="Other"
+                        onChange={handleInputChange}
+                      />
+                      <label className="mobile-model"> Instagram</label>
+                      <input
+                        name="why"
+                        type="radio"
+                        value="Other"
                         checked={state.why === "Other"}
-                        onChange={handleInputChange} />
+                        onChange={handleInputChange}
+                      />
                       <label> Others</label>
                     </div>
                   </div>
@@ -342,8 +379,9 @@ const HealthIndustriesComponent = () => {
                       name="phone"
                       value={state.password}
                       onChange={handleInputChange}
-                      placeholder="Mobile Number"
+                      placeholder="* Mobile Number"
                       autoComplete="off"
+                      required
                     />
                   </div>
                   <div className="message">
@@ -356,8 +394,9 @@ const HealthIndustriesComponent = () => {
                       name="message"
                       value={state.message}
                       onChange={handleInputChange}
-                      placeholder="Message"
+                      placeholder="* Message"
                       autoComplete="off"
+                      required
                     />
                     <div className="button text-end">
                       <button type="submit">Send</button>
@@ -368,16 +407,27 @@ const HealthIndustriesComponent = () => {
                   </div>
                 </form>
                 {showModal && (
-                 <Modal id="modal" isOpen={showModal} >
-                 <div className="text-center">
-
-                   <h5>Thankyou!</h5>
-                   <p>Thank you for reaching out to us at Vsple. We appreciate your interest and value your inquiry.</p>
-                   <p>Our team is actively reviewing your message and will respond to your inquiry as soon as possible. We strive to address all inquiries as soon as possible.</p>
-                   <p>In the meantime, we invite you to explore our website for more information about our services and our company values. If your matter requires urgent attention, please feel free to contact us directly at +91 9009797197</p>
-                   <span onClick={closeModal}>Close</span>
-                 </div>
-               </Modal>
+                  <Modal id="modal" isOpen={showModal}>
+                    <div className="text-center">
+                      <h5>Thankyou!</h5>
+                      <p>
+                        Thank you for reaching out to us at Vsple. We appreciate
+                        your interest and value your inquiry.
+                      </p>
+                      <p>
+                        Our team is actively reviewing your message and will
+                        respond to your inquiry as soon as possible. We strive
+                        to address all inquiries as soon as possible.
+                      </p>
+                      <p>
+                        In the meantime, we invite you to explore our website
+                        for more information about our services and our company
+                        values. If your matter requires urgent attention, please
+                        feel free to contact us directly at +91 9009797197
+                      </p>
+                      <span onClick={closeModal}>Close</span>
+                    </div>
+                  </Modal>
                 )}
               </div>
             </div>
@@ -481,8 +531,9 @@ const HealthIndustriesComponent = () => {
                       {item.title}
                     </div>
                     <div
-                      className={`accordion-content ${index === activeIndex ? "active" : ""
-                        }`}
+                      className={`accordion-content ${
+                        index === activeIndex ? "active" : ""
+                      }`}
                       style={{
                         maxHeight: index === activeIndex ? "140px" : "0",
                         display: "flex",
@@ -739,106 +790,7 @@ const HealthIndustriesComponent = () => {
           <h5>Technologies We Use</h5>
         </div>
       </div>
-      <div className="tab-content hidden container web-model">
-        <Tabs defaultActiveKey={activeTab} onSelect={handleTabChange}>
-          <Tab eventKey="all" title="All">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Frontend" title="Frontend">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Backend" title="Backend">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="IOS" title="IOS">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Android" title="Android">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-          <Tab eventKey="Cloud" title="Cloud">
-            <div className="health-boxes mx-auto mt-5">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-            <div className="health-boxes mx-auto mt-2">
-              <div className="box">HTML</div>
-              <div className="box">CSS</div>
-              <div className="box">NODE JS</div>
-              <div className="box">PYTHON</div>
-              <div className="box">FLUTTER</div>
-            </div>
-          </Tab>
-        </Tabs>
-      </div>
+      <TechnologiesWeUse />
       {/* <div className="h-journey d-flex justify-content-center text-center web-model">
         <div className="p-journey web-model">
           <span>Technologies</span>

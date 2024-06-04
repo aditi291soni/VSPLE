@@ -1,14 +1,18 @@
 .gameBox {
-    border-radius: 40px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.197) 0%, rgba(51, 51, 51, 0.00) 100%);
-    /* width: 45vw; */
-    padding: 4%;
-    margin-top: -20px;
+  border-radius: 40px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.197) 0%,
+    rgba(51, 51, 51, 0) 100%
+  );
+  /* width: 45vw; */
+  padding: 4%;
+  /* margin-top: -70px; */
 }
 .gameBox img {
-    border-radius: 40px;
-    /* object-fit: contain; */
-    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.197) 0%, rgba(51, 51, 51, 0.00) 100%);
+  border-radius: 40px;
+  /* object-fit: contain; */
+  /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.197) 0%, rgba(51, 51, 51, 0.00) 100%);
     padding: 4%; */
 }
 /* .gameBox:hover {
@@ -17,153 +21,168 @@
     transition: .5s linear;
 } */
 .gameBox h5 {
-   color: white;
-   font-size: 1.5rem;
-   margin: 5% 0%;
+  color: white;
+  font-size: 1.5rem;
+  margin: 5% 0%;
 }
 .gameBox p {
-    color: white;
-    opacity: 0.8;
+  color: white;
+  opacity: 0.8;
 }
-@media (max-width: 869px) {
-    .--watch img {
-        width: 85%;
-    }
-    .--watch-wearable img {
-        width: 100%;
-    }
-    .left{
-        flex-direction: column;
-        justify-content:space-between;
-        gap: 20px;
-        height: 100%;
-        text-align: end;
-        padding: 5% 0%;
-        /* margin-right: -1%; */
-    }
-.right{
+  .gameparent {
+    /* margin-top: -150px; */
+    transform: scale(0.8);
+  }
+  @media (max-width: 869px) {
+      .gameparent:nth-child(2){
+    
+       margin-top: -35vmax;
+       
+      }
+      /* .gameBox {
+    margin-top: 0px;
+  } */
+  .--watch img {
+    width: 85%;
+  }
+  .--watch-wearable img {
+    width: 100%;
+  }
+  .left {
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100%;
+    text-align: end;
+    padding: 5% 0%;
+    /* margin-right: -1%; */
+  }
+  .right {
+    flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
     height: 100%;
     text-align: start;
     padding: 5%;
     /* margin-left: -1%; */
-}
-    .stack-box {
-        background: linear-gradient(180deg, #232323 0%, rgba(35, 35, 35, 0.46) 100%);
-        position: relative;
-        /* width: 60%; */
-        border-radius: 30px;
-        padding: 8% 0%;
-    }
-    .left{
-        flex-direction: column;
-        justify-content:space-between;
-        gap: 20px;
-        height: 100%;
-        text-align: start;
-        padding: 5%;
-    }
-    .header{
-        margin-top: 0vh;
-    }
-    .stack-box .stacks {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-      }
-      
-      .stack-box .stacks img {
-        object-fit: contain;
-        width: 100%;
-        max-height: 80px;
-      }
+  }
+  .stack-box {
+    background: linear-gradient(
+      180deg,
+      #232323 0%,
+      rgba(35, 35, 35, 0.46) 100%
+    );
+    position: relative;
+    /* width: 60%; */
+    border-radius: 30px;
+    padding: 8% 0%;
+  }
+  .left {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100%;
+    text-align: start;
+    padding: 5%;
+  }
+  .header {
+    margin-top: 0vh;
+  }
+  .stack-box .stacks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .stack-box .stacks img {
+    object-fit: contain;
+    width: 100%;
+    max-height: 80px;
+  }
 }
 @media (min-width: 869px) {
-    .left{
-        flex-direction: column;
-        justify-content:space-between;
-        gap: 20px;
-        height: 100%;
-        text-align: end;
-        padding: 5% 0%;
-        margin-right: -1%;
-    }
-    .left-portfolio{
-        flex-direction: column;
-        justify-content:space-between;
-        gap: 20px;
-        height: 100%;
-        text-align: start;
-        padding: 5% 0%;
-        margin-right: -1%;
-    }
-.right{
+
+  .left {
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100%;
+    text-align: end;
+    padding: 5% 0%;
+    margin-right: -1%;
+  }
+  .left-portfolio {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100%;
+    text-align: start;
+    padding: 5% 0%;
+    margin-right: -1%;
+  }
+  .right {
+    flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
     height: 100%;
     text-align: start;
     padding: 5% 0%;
     margin-left: -1%;
-}
-    .gameparent{
-        display: flex;
-        gap: 40px;
-        width: 85%;
-        transform: scale(.8);
-    }
-    .stack-box {
-        background: linear-gradient(180deg, #232323 0%, rgba(35, 35, 35, 0.46) 100%);
-        position: relative;
-        border-radius: 30px;
-    }
-    .stack-box .stacks img {
-        object-fit: contain;
-        width: auto;
-        max-height:80px;
-    }
+  }
+  .gameparent {
+    display: flex;
+    gap: 40px;
+    width: 85%;
 
-    .header{
-        margin-top: 10%;
-    }
-    .stacks{
-        justify-content: space-between;
-        padding: 5% 6%;
-        display: flex;
-    }
+  }
+  .stack-box {
+    background: linear-gradient(
+      180deg,
+      #232323 0%,
+      rgba(35, 35, 35, 0.46) 100%
+    );
+    position: relative;
+    border-radius: 30px;
+  }
+  .stack-box .stacks img {
+    object-fit: contain;
+    width: auto;
+    max-height: 80px;
+  }
+
+  .header {
+    margin-top: 10%;
+  }
+  .stacks {
+    justify-content: space-between;
+    padding: 5% 6%;
+    display: flex;
+  }
 }
 
-.sec-4-content h5{
-    color: white;
-    font-size: 1.3rem;
-    font-weight: 500;
-    opacity: 1;
+.sec-4-content h5 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+  opacity: 1;
 }
 /* .accordion{
     width: auto;
 } */
 
-.left h5 , .right h5{
-    color: white;
-    font-weight: 600;
-    font-size: 1.2rem;
-    margin-top: 4%;
-    margin-bottom: 4%;
+.left h5,
+.right h5 {
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
-.left p , .right p{
-    color: white;
+.left p,
+.right p {
+  color: white;
 }
-.-img img{
-    object-fit:contain;
-    height: inherit;
+.-img img {
+  object-fit: contain;
+  height: inherit;
 }
-
-
-/* @media (min-widt:869px) {
-    .gameBox{
-        margin-top: 10px;
-        background-color: red;
-    }
-} */

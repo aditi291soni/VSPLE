@@ -1,8 +1,16 @@
 @media (max-width: 869px) {
     .main-text-service {
         max-width: 100%;
+<<<<<<< HEAD
         margin-top: 2px;
+=======
+        margin-top: 25px;
+        margin-right: 5rem;
+        width: 80%;
+
+>>>>>>> 58836f0cae93e81988ba0c196b16850832c09ae1
     }
+
 
     .main-text-service-portfolio {
         margin-left: 5vmax;
@@ -12,6 +20,8 @@
 @media (min-width: 869px) {
     .main-text-service {
         max-width: 90%;
+        margin-right: 5rem;
+        width: 70%;
     }
 
     .main-text-service-portfolio {

@@ -1,204 +1,218 @@
 @media (min-width: 869px) {
-    .heathcare-top {
-        background-image: url('../../../assest/main-icons/image\ 24812.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: #e8cb8066;
-        height: 90vh;
-        padding-top: 10%;
-    }
+  .heathcare-top {
+    background-image: url("../../../assest/main-icons/image\ 24812.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e8cb8066;
+    height: 90vh;
+    padding-top: 10%;
+  }
 }
 
 @media (max-width: 869px) {
-    .heathcare-top {
-        background-image: url('../../../assest/main-icons/image\ 24812.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-color: #e8cb8066;
-        /* height: 90vh; */
-    }
+  .heathcare-top {
+    background-image: url("../../../assest/main-icons/image\ 24812.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e8cb8066;
+    /* height: 90vh; */
+  }
 }
 
 .main-boxes .b:hover {
-    scale: 1.03;
-    /* box-shadow: inset 0 0 20px #e8cb808c, inset 0 0 50px #e8cb80d3; */
-    background:linear-gradient(280deg, #dfbb5f95 -131.4%, rgba(30, 27, 22, 0.00) 104.63%);
-    /* border:0px 1px 0px 0px solid #e8cb80; */
-    transition: .5s linear;
+  scale: 1.03;
+  /* box-shadow: inset 0 0 20px #e8cb808c, inset 0 0 50px #e8cb80d3; */
+  background: linear-gradient(
+    280deg,
+    #dfbb5f95 -131.4%,
+    rgba(30, 27, 22, 0) 104.63%
+  );
+  /* border:0px 1px 0px 0px solid #e8cb80; */
+  transition: 0.5s linear;
 }
 
 .form-head {
-    height: inherit;
-    padding: 7%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: inherit;
+  padding: 7%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-head span {
-    /* color: #DBB657; */
-    font-weight: 500;
-    /* font-size: 1.5rem; */
-    color: #E8CB80;
-    font-size: 100%;
-    font-weight: 500;
+  /* color: #DBB657; */
+  font-weight: 500;
+  /* font-size: 1.5rem; */
+  color: #e8cb80;
+  font-size: 100%;
+  font-weight: 500;
 }
 
 .form-head h5 {
-    color: white;
-    font-weight: 600;
-    font-size: 1.6rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.6rem;
 }
 
 .form-head p {
-    color: white;
-    opacity: .8;
+  color: white;
+  opacity: 0.8;
 }
 
 .form-health {
-    border-radius: 50px;
-    background: #1D1D1D;
-    /* height: 94%; */
-    padding: 10%;
+  border-radius: 50px;
+  background: #1d1d1d;
+  /* height: 94%; */
+  padding: 10%;
 }
 
 .head-faq {
-    color: white;
-    font-size: 1.6rem;
-    font-weight: 700;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .health-boxes {
-    display: flex;
-    gap: 15px;
-    width: 80%
-    /* margin-top: 10%; */
+  display: flex;
+  gap: 15px;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: start;
+  /* margin-top: 10%; */
 }
 
 .health-boxes .box {
-    border-radius: 18px;
-    background: rgba(255, 217, 119, 0.14);
-    color: white;
+    flex: 0 1 calc(20% - 15px); 
+  border-radius: 18px;
+  background: rgba(255, 217, 119, 0.14);
+  color: white;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contact-form Form input::placeholder,
 textarea::placeholder {
-    color: white;
-    opacity: .6;
-    font-weight: 600;
-    font-size: .8rem;
-    /* text-align: cesnter; */
-    /* background-color: #2f2f2f45; */
+  color: white;
+  opacity: 0.6;
+  font-weight: 600;
+  font-size: 0.8rem;
+  /* text-align: cesnter; */
+  /* background-color: #2f2f2f45; */
 }
 
 .contact-form Form input {
-    border-radius: 25px;
-    background-color: rgba(75, 75, 75, 0.25);
-    margin-top: 12px;
-    padding: 3% 13% !important;
-    width: 100%;
-    padding: 2%;
-    color: white;
-    border: none;
+  border-radius: 25px;
+  background-color: rgba(75, 75, 75, 0.25);
+  margin-top: 12px;
+  padding: 3% 13% !important;
+  width: 100%;
+  padding: 2%;
+  color: white;
+  border: none;
 }
 .contact-form Form .two input {
-    border-radius: 25px;
-    background-color: rgba(75, 75, 75, 0.25);
-    margin-top: 12px;
-    padding: 6% 24% !important;
-    width: 100%;
-    padding: 5%;
-    color: white;
-    border: none;
+  border-radius: 25px;
+  background-color: rgba(75, 75, 75, 0.25);
+  margin-top: 12px;
+  padding: 6% 24% !important;
+  width: 100%;
+  padding: 5%;
+  color: white;
+  border: none;
 }
 
 .contact-form Form textarea {
-    border-radius: 25px;
-    background-color: rgba(75, 75, 75, 0.25);
-    margin-top: 12px;
-    padding: 8% 13% !important;
-    width: 100%;
-    padding: 2%;
-    border: none;
-    color: white;
-    resize: none;
+  border-radius: 25px;
+  background-color: rgba(75, 75, 75, 0.25);
+  margin-top: 12px;
+  padding: 8% 13% !important;
+  width: 100%;
+  padding: 2%;
+  border: none;
+  color: white;
+  resize: none;
 }
 
 .form-health button {
-    background-color: #f9d672 !important;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 0 3px #f9d672;
-    color: #000;
-    font-weight: 500;
-    margin-top: 15px;
-    padding: 3%;
-    width: 25%;
+  background-color: #f9d672 !important;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 3px #f9d672;
+  color: #000;
+  font-weight: 500;
+  margin-top: 15px;
+  padding: 3%;
+  width: 25%;
 }
 
 .contact-form .submit {
-    /* border-radius: 15px; */
-    /* color: black; */
-    /* background-color: #F9D672; */
-    /* box-shadow: 0px 0px 3px #F9D672; */
-    margin-top: -15px !important;
-    width: 25%;
-    /* padding: 4%;
+  /* border-radius: 15px; */
+  /* color: black; */
+  /* background-color: #F9D672; */
+  /* box-shadow: 0px 0px 3px #F9D672; */
+  margin-top: -15px !important;
+  width: 25%;
+  /* padding: 4%;
     border: none; */
 }
 
 form {
-    position: relative;
+  position: relative;
 }
 
 form .Name img {
-    position: absolute;
-    top: 5.5%;
-    left: 3%;
+  position: absolute;
+  top: 5.5%;
+  left: 3%;
 }
 
 form .email img {
-    position: absolute;
-    top: 5.5%;
-    left: 55%;
+  position: absolute;
+  top: 5.5%;
+  left: 55%;
 }
 
 form .mobileSec img {
-    position: absolute;
-    top: 42%;
-    left: 6%;
+  position: absolute;
+  top: 39%;
+  left: 6%;
 }
 
 form .message img {
-    position: absolute;
-    top:59%;
-    left: 6%;
+  position: absolute;
+  top: 59%;
+  left: 6%;
 }
-.why h5{
-    color: white;
-    font-size: 1.2rem;
-    margin: 5% 0% 2% 2%;
-    opacity: .8;
-    font-weight: 500;
+.why h5 {
+  color: white;
+  font-size: 1.2rem;
+  margin: 5% 0% 2% 2%;
+  opacity: 0.8;
+  font-weight: 500;
 }
-.why label{
-color: white;
-opacity: .8;
-margin-left: -3%;
+.why label {
+  color: white;
+  opacity: 0.8;
+  margin-left: -7%;
 }
-.why input{
-margin: 6px !important;
-background-color: black;
-display: flex;
-justify-content: start;
-align-items: start;
-width: 15% !important;
-margin-left: -4% !important;
-opacity: 0.5;
+.why input {
+  margin: 6px !important;
+  background-color: black;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 15% !important;
+  margin-left: -4% !important;
+  opacity: 0.5;
 }
+<<<<<<< HEAD
 .why input:checked{
 margin: 6px !important;
 background-color: black;
@@ -215,3 +229,20 @@ opacity: 1;
     color: #fff; /* Change text color when checked */
   }
 
+=======
+.why input:checked {
+  margin: 6px !important;
+  background-color: black;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 15% !important;
+  margin-left: -4% !important;
+  opacity: 1;
+}
+.why input[type="radio"]:checked {
+  background-color: #007bff; /* Change background color when checked */
+  border-color: #ff0000 !important; /* Change border color when checked */
+  color: #fff; /* Change text color when checked */
+}
+>>>>>>> 58836f0cae93e81988ba0c196b16850832c09ae1
