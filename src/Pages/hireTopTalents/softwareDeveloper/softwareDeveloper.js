@@ -52,6 +52,7 @@ import salestrip from "../../../assest/web-icons/global-icon/Group 1000005596 (1
 import breckW from "../../../assest/web-icons/global-icon/Group 1000005597 (1).png";
 import hobbyst from "../../../assest/web-icons/global-icon/Group 1000005603.png";
 import qrScape from "../../../assest/web-icons/global-icon/Group 1000005604.png";
+
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { render } from "react-dom";
