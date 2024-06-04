@@ -305,11 +305,11 @@ const HealthIndustriesComponent = () => {
 
                   <div className="why">
                     <h5>How Did You Hear About Us?</h5>
-                    <div className="d-flex justify-content-start">
+                    <div className="d-flex justify-content-start ">
                       <input name="why" type="radio" value="Google"
                         checked={state.why === "Google"}
                         onChange={handleInputChange} />
-                      <label> Google</label>
+                      <label> Google</label> 
                       <input name="why" type="radio" value="LinkedIn"
                         checked={state.why === "LinkedIn"}
                         onChange={handleInputChange} />

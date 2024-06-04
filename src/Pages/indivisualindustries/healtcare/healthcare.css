@@ -206,7 +206,7 @@ display: flex;
 justify-content: start;
 align-items: start;
 width: 15% !important;
-margin-left: -4% !important;
+margin-left: 1% !important;
 opacity: 1;
 }
 .why input[type="radio"]:checked{
@@ -214,3 +214,4 @@ opacity: 1;
     border-color: #ff0000 !important; /* Change border color when checked */
     color: #fff; /* Change text color when checked */
   }
+
