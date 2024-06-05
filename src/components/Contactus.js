@@ -39,10 +39,18 @@ const ContactusComponent = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
+  
+    
     setState((prevState) => ({
       ...prevState,
       [name]: value,
     }));
+  };
+  const handleKeyDown = (event) => {
+    // Disallow the character 'e' and other non-numeric characters
+    if (event.key === 'e' || event.key === 'E' || event.key === '+' || event.key === '-' || event.key === '.') {
+      event.preventDefault();
+    }
   };
   const [thankyouToggle, setthankyouToggle] = useState(false);
 
@@ -68,6 +76,7 @@ const ContactusComponent = () => {
     message: "",
     subject: "Dummy",
   })
+ 
     // if (1) {
     //   try {
     // const response = await fetch("http://localhost:3000/send_email.php", {
@@ -186,7 +195,7 @@ const ContactusComponent = () => {
                   <div className="email">
                     <img width={"6%"} src={email} alt="" />
                     <input
-                      type="email"
+               
                       swd
                       name="email"
                       value={state.email}
@@ -202,11 +211,14 @@ const ContactusComponent = () => {
                     <img width={"5%"} src={telephone} alt="" />
                     <input
                       type="number"
+                      onKeyDown={handleKeyDown}
                       name="phone"
                       value={state.phone}
                       autocomplete="off"
+                      inputMode="numeric" 
+                  
                       onChange={handleInputChange}
-                      placeholder="* Mobile Number"
+                      placeholder="* Mobile Numbers"
                       required
                     />
                     {/* {errors.phone && (

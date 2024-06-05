@@ -898,8 +898,8 @@ const HoComponent = () => {
           </div>
         </div>
         <div
-          style={{ transform: "scale(.9)" }}
-          className="grid-container web-model mb-5 "
+          style={{ transform: "scale(.7)" }}
+          className="grid-container web-model  "
         >
           <div className="ico-4">
             <a target="blank" href="https://twitter.com/VspleTech">
@@ -907,7 +907,7 @@ const HoComponent = () => {
             </a>
           </div>
           {/* hN */}
-          <div className="grid" style={{ maxWidth: "79%" }}>
+          <div className="grid " style={{ maxWidth: "70%" }}>
             {/* <div id="hN" className="item"></div>
             <div id="hN" className="item"></div>
             <div id="hN" className="item"></div>
