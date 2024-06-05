@@ -261,13 +261,13 @@
 
 .notActive h5 {
   color: #f4f4f4;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.5rem;
 }
 
 .notActive span {
   color: #f8f8f8;
-  font-weight: 650;
+  font-weight: 500;
   font-size: 1rem;
 }
 @media (max-width: 576px) {
