@@ -212,7 +212,6 @@ form .message img {
   margin-left: -4% !important;
   opacity: 0.5;
 }
-<<<<<<< HEAD
 .why input:checked{
 margin: 6px !important;
 background-color: black;
@@ -229,7 +228,6 @@ opacity: 1;
     color: #fff; /* Change text color when checked */
   }
 
-=======
 .why input:checked {
   margin: 6px !important;
   background-color: black;
@@ -245,4 +243,3 @@ opacity: 1;
   border-color: #ff0000 !important; /* Change border color when checked */
   color: #fff; /* Change text color when checked */
 }
->>>>>>> 58836f0cae93e81988ba0c196b16850832c09ae1
