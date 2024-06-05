@@ -47,12 +47,12 @@ import yoursuccess from "../../assest/web-icons/websitedevelopment/Isolation_Mod
 import designthat from "../../assest/web-icons/websitedevelopment/Isolation_Mode (3).png";
 import tailordto from "../../assest/web-icons/websitedevelopment/Isolation_Mode (4).png";
 import customercentric from "../../assest/web-icons/websitedevelopment/Layer_1.png";
-import customweblogo from "../../assest/servicesImages/customweb-icon.png";
+import customweblogo from "../../assest/icons/01.png";
 import staticlogo from "../../assest/servicesImages/staticweb-icon.png";
 import dynamiclogo from "../../assest/servicesImages/dynamicweb-icon.png";
 import ecommercelogo from "../../assest/servicesImages/ecomerce-icon.png";
-import pwalogo from "../../assest/servicesImages/pwa-icon.png";
-import spalogo from "../../assest/servicesImages/spa-icon.png";
+import pwalogo from "../../assest/icons/05.png";
+import spalogo from "../../assest/icons/Frame 1000007505.png";
 import customweb from "../../assest/servicesImages/custom-web.png";
 import staticweb from "../../assest/servicesImages/static-web.png";
 import dynamicweb from "../../assest/servicesImages/dynamic-web.png";
