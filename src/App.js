@@ -130,7 +130,7 @@ function App() {
       />
       <div className="spinner">
         <div className="design-spinner">
-          <img src={logo} width={"100%"} alt="" />
+          <img src={logo} width={"70%"} alt="" />
         </div>
       </div>
       <div className="full-website">
