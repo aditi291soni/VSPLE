@@ -628,7 +628,7 @@ const WebsiteDeveloperComponent = () => {
               className="getin-button-w text-center my-5"
               onClick={() => setIsModalOpen(true)}
             >
-              <div className="see-button" style={{marginBottom:"130px",}}>
+              <div className="see-button " style={{marginBottom:"130px",}}>
                 <a>Hire website Developers &nbsp;</a>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

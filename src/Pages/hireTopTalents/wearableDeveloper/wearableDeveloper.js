@@ -584,7 +584,7 @@ const WearableDeveloperComponent = () => {
               onClick={() => setIsModalOpen(true)}
             >
               <div className="see-button">
-                <a>Hire Wearable Developers &nbsp;</a>
+                <a className="mb-5">Hire Wearable Developers &nbsp;</a>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"

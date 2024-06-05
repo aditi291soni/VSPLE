@@ -69,14 +69,7 @@ const Testimonials = () => {
             avatar: avatar,
             selectedAvatar: selectedAvatar,
           },
-          {
-            id: 8,
-            name: "Max V.",
-            description:
-              "Vivek is efficient and available, highly recommend him! Vivek did a great job and completed the work really quickly & efficiently! Great communication, great work.",
-            avatar: avatar,
-            selectedAvatar: selectedAvatar,
-          },
+         
 
           // Add more clients here if needed
         ];

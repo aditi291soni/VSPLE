@@ -195,7 +195,7 @@ const handleMouseLeave = ()=>{
                     <div className="row mb-5">
                       <div className="col-md-4 hoverEff ">
                         <h5 className="megamenu-text">
-                          <img src={mobileApp} width={'7%'} alt="" />
+                          <img src={mobiledev} width={'7%'} alt="" />
                           &nbsp; Mobile App Development
                         </h5>
                         <p
