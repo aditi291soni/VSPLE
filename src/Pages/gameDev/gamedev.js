@@ -403,7 +403,7 @@ const GamedevComponent = () => {
       </div>
       <div className="h-journey d-flex justify-content-center text-center container">
         <div className="p-journey">
-          <img src={craft} width={"25"} className="mb-1" alt="" />
+          <img src={craft} width={"25"} className="" alt="" />
           <br />
           <span>Crafting</span>
           <h5>
@@ -417,10 +417,10 @@ const GamedevComponent = () => {
         </div>
       </div>
       <div className="container hidden text-center">
-        <div className="row">
+        <div className="row" style={{ transform: "scale(.8)" }}>
           <div className="col-md-12 col-lg-4 col-12">
             <div className="d-flex left">
-              <div>
+              <div  >
                 <img src={sketch} alt="sketch icon" width={'10%'} />
                 <h5>Sketch Design</h5>
                 <p>Transforming ideas into tangible concepts is where the magic begins. Our team sketches out comprehensive game designs, mapping the visual and structural elements to bring your vision to life.</p>
@@ -449,13 +449,13 @@ const GamedevComponent = () => {
                 <h5>Art and Graphics</h5>
                 <p>Visual appeal is key to captivating players. Our artistic team meticulously crafts captivating visuals and stunning graphics that breathe life into your game.</p>
               </div>
-              <div>
+              <div className="mt-5 mb-3">
               <img src={animation} alt="sketch icon" width={'10%'} />
                 <h5>Animation</h5>
                 <p>Animation adds depth and personality to the gaming world. Our animation specialists infuse movement, emotion, and dynamism into characters, environments, and special effects. From fluid character motions to captivating cinematic sequences</p>
               </div>
-              <div>
-              <img src={music} alt="sketch icon" width={'10%'} />
+              <div className="mt-4">
+              <img src={music} alt="sketch icon" width={'8%'} />
                 <h5>Sound and Music</h5>
                 <p>Immersive soundscapes and compelling music compositions enrich the gaming experience. We create bespoke audio elements that complement the gameplay, setting the mood, and enhancing the overall ambiance. </p>
               </div>
