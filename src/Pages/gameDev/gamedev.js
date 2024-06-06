@@ -154,7 +154,7 @@ const GamedevComponent = () => {
   return (
     <div>
       <div className="container">
-        <div className="hidden header row align-items-center">
+        <div className="hidden header row align-items-center" style={{marginTop:"40px",}}>
           <div className=" col-md-6 col-lg-6 col-sm-12 d-flex justify-content-start align-items-center">
             <div className="main-text-service">
               <h2 className="">
@@ -174,7 +174,7 @@ const GamedevComponent = () => {
             </div>
           </div>
           <div className="col-md-6 d-flex justify-content-center">
-            <img src={group2315} width={"100%"} alt="" />
+            <img src={group2315} width={"100%"} alt="" style={{ marginLeft:"-100px"}} />
           </div>
         </div>
         <div className="services-page hidden container mt-2 ">
@@ -218,8 +218,8 @@ const GamedevComponent = () => {
               </p>
             </div>
           </div>
-          <div className="hidden gameparent mx-auto mt-n5">
-            <div className="gameBox">
+          <div className="hidden gameparent mx-auto ">
+            <div className="gameBox mt-10">
               <img src={rec2424} width={"100%"} alt="" />
               <h5>Virtual Reality (VR) Game Development</h5>
               <p>

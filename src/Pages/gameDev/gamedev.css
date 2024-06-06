@@ -36,7 +36,12 @@
   @media (max-width: 869px) {
       .gameparent:nth-child(2){
     
-       margin-top: -35vmax;
+       margin-top: -22vmax;
+       
+      }
+      .gameparent:nth-child(1){
+    
+       margin-top: -7vmax;
        
       }
       /* .gameBox {
@@ -186,3 +191,5 @@
   object-fit: contain;
   height: inherit;
 }
+
+
