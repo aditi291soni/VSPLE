@@ -453,150 +453,66 @@ const HoComponent = () => {
   const handleImageClick = (img) => {
     setExpandedImg(img);
   };
+const isInViewport = (element) => {
+  const rect = element.getBoundingClientRect();
+  const containerRect = scrollAreaRef.current.getBoundingClientRect();
+  const viewportOffset = 100; // Adjust this value to make the viewport shorter
 
-  const handleSliderChange = (e) => {
-    const index = parseInt(e.target.value);
-    const rangeValueElem = document.querySelector(".input-range");
-    rangeValueElem.style.top = 16 * index + "px";
-    switch (index) {
-      case 0:
-        setExpandedImg(first);
-        break;
-      case 1:
-        setExpandedImg(second);
-        break;
-      case 2:
-        setExpandedImg(third);
-        break;
-      case 3:
-        setExpandedImg(fourth);
-        break;
-      case 4:
-        setExpandedImg(fifth);
-        break;
-      case 5:
-        setExpandedImg(sixth);
-        break;
-      case 6:
-        setExpandedImg(seventh);
-        break;
-      case 7:
-        setExpandedImg(eight);
-        break;
-      case 8:
-        setExpandedImg(nine);
-        break;
-      // case 9:
-      //   setExpandedImg(ten);
-      //   break;
-      // case 10:
-      //   setExpandedImg(eleven);
-      //   break;
-      // case 11:
-      //   setExpandedImg(twelve);
-      //   break;
-      // case 12:
-      //   setExpandedImg(thirdteen);
-      //   break;
-      // case 13:
-      //   setExpandedImg(fourteen);
-      //   break;
-      // case 14:
-      //   setExpandedImg(fifteen);
-      //   break;
-      // case 15:
-      //   setExpandedImg(sixteen);
-      //   break;
-      default:
-        break;
+  return (
+    rect.top >= containerRect.top + viewportOffset &&
+    rect.bottom <= containerRect.bottom - viewportOffset
+  );
+};
+
+const handleSliderChange = (e) => {
+  const index = parseInt(e.target.value);
+//   const rangeValueElem = document.querySelector(".input-range");
+//   rangeValueElem.style.top = 16 * index + "px";
+
+  const images = [
+    first, second, third, fourth, fifth, sixth, seventh, eight,
+    nine, ten, eleven, twelve, thirdteen, fourteen, fifteen, sixteen
+  ];
+
+  setExpandedImg(images[index]);
+
+//   const imgHeight = document.querySelector(".side-img img").offsetHeight;
+//   document.querySelector(".side-img").scrollTo(0, imgHeight * index);
+};
+
+const getImageIndex = (img) => {
+  const images = [
+    first, second, third, fourth, fifth, sixth, seventh, eight,
+    nine, ten, eleven, twelve, thirdteen, fourteen, fifteen, sixteen
+  ];
+  return images.indexOf(img);
+};
+
+const scrollAreaRef = useRef(null);
+
+const handleScroll = () => {
+  const images = scrollAreaRef.current.querySelectorAll("img");
+  let currentVisibleImage = null;
+
+  images.forEach((image, index) => {
+    if (isInViewport(image) && currentVisibleImage === null) {
+      currentVisibleImage = image;
+      handleSliderChange({ target: { value: index } });
     }
-    document
-      .querySelector(".side-img")
-      .scrollTo(
-        0,
-        document.querySelector(".side-img img").offsetHeight * index
-      );
-  };
+  });
+};
 
-  const getImageIndex = (img) => {
-    switch (img) {
-      case first:
-        return 0;
-      case second:
-        return 1;
-      case third:
-        return 2;
-      case fourth:
-        return 3;
-      case fifth:
-        return 4;
-      case sixth:
-        return 5;
-      case seventh:
-        return 6;
-      case eight:
-        return 7;
-      case nine:
-        return 8;
-      case ten:
-        return 9;
-      case eleven:
-        return 10;
-      case twelve:
-        return 11;
-      case thirdteen:
-        return 12;
-      case fourteen:
-        return 13;
-      case fifteen:
-        return 14;
-      case sixteen:
-        return 15;
-      default:
-        return 0;
-    }
-  };
+useEffect(() => {
+  const scrollArea = scrollAreaRef.current;
+  scrollArea.addEventListener("scroll", handleScroll);
 
-  const scrollAreaRef = useRef(null);
-  const isInViewport = (element) => {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= window.innerHeight &&
-      rect.right <= window.innerWidth
-    );
+  return () => {
+    scrollArea.removeEventListener("scroll", handleScroll);
   };
-  const handleScroll = () => {
-    const images = scrollAreaRef.current.querySelectorAll("img");
-    let currentVisibleImages = [];
-    images.forEach((image) => {
-      if (isInViewport(image)) {
-        currentVisibleImages.push(image.src);
-      }
-    });
-    let imgIndex = 0;
-    if (currentVisibleImages.length) {
-      if (currentVisibleImages.length >= 3) {
-        imgIndex = currentVisibleImages.length - 3;
-      } else if (currentVisibleImages.length >= 2) {
-        imgIndex = currentVisibleImages.length - 2;
-      } else {
-        imgIndex = currentVisibleImages.length - 1;
-      }
-      handleImageClick(
-        "/static" +
-          currentVisibleImages[imgIndex]
-            .split("/static")[1]
-            .replaceAll("%20", " ")
-      );
-    }
-  };
+}, []);
 
-  useEffect(() => {
-    scrollAreaRef.current.addEventListener("scroll", handleScroll);
-    handleScroll();
-  }, []);
+
+
   return (
     <>
       {/* <div id='homie'>
@@ -981,7 +897,6 @@ const HoComponent = () => {
             </svg>
           </div>
         </div>
-
         <div className="container industries mt-5 web-model">
           <div className="row">
             <div className="col-md-8 col-sm-12 col-lg-6">
@@ -993,7 +908,7 @@ const HoComponent = () => {
                         id="expandedImg"
                         width={"100%"}
                         height={500}
-                        objectfit={"cover"}
+                        objectFit={"cover"}
                         alt=""
                         src={expandedImg}
                       />
@@ -1011,7 +926,6 @@ const HoComponent = () => {
                         max="15"
                         id="myRange"
                       />
-                      {/* <span className="range-value"></span> */}
                     </div>
                   </div>
                   <div className="col-3 text-center">
@@ -1019,14 +933,16 @@ const HoComponent = () => {
                       <div
                         className="side-img showcase-scroll-area"
                         ref={scrollAreaRef}
+                        style={{ maxHeight: "500px", overflowY: "scroll" }}
                       >
                         <div>
                           <img
                             src={first}
                             width="90%"
                             alt=""
-                            srcSet=""
-                            onClick={() => handleImageClick(first)}
+                            onClick={() =>
+                              handleSliderChange({ target: { value: 0 } })
+                            }
                             style={{ opacity: expandedImg === first ? 1 : 0.4 }}
                           />
                         </div>
@@ -1035,8 +951,9 @@ const HoComponent = () => {
                             src={second}
                             width="90%"
                             alt=""
-                            srcSet=""
-                            onClick={() => handleImageClick(second)}
+                            onClick={() =>
+                              handleSliderChange({ target: { value: 1 } })
+                            }
                             style={{
                               opacity: expandedImg === second ? 1 : 0.4,
                             }}
@@ -1047,8 +964,9 @@ const HoComponent = () => {
                             src={third}
                             width="90%"
                             alt=""
-                            srcSet=""
-                            onClick={() => handleImageClick(third)}
+                            onClick={() =>
+                              handleSliderChange({ target: { value: 2 } })
+                            }
                             style={{ opacity: expandedImg === third ? 1 : 0.4 }}
                           />
                         </div>
@@ -1057,8 +975,9 @@ const HoComponent = () => {
                             src={fourth}
                             width="90%"
                             alt=""
-                            srcSet=""
-                            onClick={() => handleImageClick(fourth)}
+                            onClick={() =>
+                              handleSliderChange({ target: { value: 3 } })
+                            }
                             style={{
                               opacity: expandedImg === fourth ? 1 : 0.4,
                             }}
@@ -1069,11 +988,10 @@ const HoComponent = () => {
                             src={fifth}
                             width="90%"
                             alt=""
-                            srcSet=""
-                            onClick={() => handleImageClick(fifth)}
-                            style={{
-                              opacity: expandedImg === fifth ? 1 : 0.4,
-                            }}
+                            onClick={() =>
+                              handleSliderChange({ target: { value: 4 } })
+                            }
+                            style={{ opacity: expandedImg === fifth ? 1 : 0.4 }}
                           />
                         </div>
                         <div className="mt-3">
@@ -1081,11 +999,10 @@ const HoComponent = () => {
                             src={sixth}
                             width="90%"
                             alt=""
-                            srcSet=""
-                            onClick={() => handleImageClick(sixth)}
-                            style={{
-                              opacity: expandedImg === sixth ? 1 : 0.4,
-                            }}
+                            onClick={() =>
+                              handleSliderChange({ target: { value: 5 } })
+                            }
+                            style={{ opacity: expandedImg === sixth ? 1 : 0.4 }}
                           />
                         </div>
                         <div className="mt-3">
@@ -1093,8 +1010,9 @@ const HoComponent = () => {
                             src={seventh}
                             width="90%"
                             alt=""
-                            srcSet=""
-                            onClick={() => handleImageClick(seventh)}
+                            onClick={() =>
+                              handleSliderChange({ target: { value: 6 } })
+                            }
                             style={{
                               opacity: expandedImg === seventh ? 1 : 0.4,
                             }}
@@ -1105,23 +1023,21 @@ const HoComponent = () => {
                             src={eight}
                             width="90%"
                             alt=""
-                            srcSet=""
-                            onClick={() => handleImageClick(eight)}
-                            style={{
-                              opacity: expandedImg === eight ? 1 : 0.4,
-                            }}
+                            onClick={() =>
+                              handleSliderChange({ target: { value: 7 } })
+                            }
+                            style={{ opacity: expandedImg === eight ? 1 : 0.4 }}
                           />
                         </div>
-                        {/* <div className="mt-3">
+                        <div className="mt-3">
                           <img
                             src={nine}
                             width="90%"
                             alt=""
-                            srcSet=""
-                            onClick={() => handleImageClick(nine)}
-                            style={{
-                              opacity: expandedImg === nine ? 1 : 0.4,
-                            }}
+                            onClick={() =>
+                              handleSliderChange({ target: { value: 8 } })
+                            }
+                            style={{ opacity: expandedImg === nine ? 1 : 0.4 }}
                           />
                         </div>
                         <div className="mt-3">
@@ -1129,11 +1045,10 @@ const HoComponent = () => {
                             src={ten}
                             width="90%"
                             alt=""
-                            srcSet=""
-                            onClick={() => handleImageClick(ten)}
-                            style={{
-                              opacity: expandedImg === ten ? 1 : 0.4,
-                            }}
+                            onClick={() =>
+                              handleSliderChange({ target: { value: 9 } })
+                            }
+                            style={{ opacity: expandedImg === ten ? 1 : 0.4 }}
                           />
                         </div>
                         <div className="mt-3">
@@ -1141,8 +1056,9 @@ const HoComponent = () => {
                             src={eleven}
                             width="90%"
                             alt=""
-                            srcSet=""
-                            onClick={() => handleImageClick(eleven)}
+                            onClick={() =>
+                              handleSliderChange({ target: { value: 10 } })
+                            }
                             style={{
                               opacity: expandedImg === eleven ? 1 : 0.4,
                             }}
@@ -1153,8 +1069,9 @@ const HoComponent = () => {
                             src={twelve}
                             width="90%"
                             alt=""
-                            srcSet=""
-                            onClick={() => handleImageClick(twelve)}
+                            onClick={() =>
+                              handleSliderChange({ target: { value: 11 } })
+                            }
                             style={{
                               opacity: expandedImg === twelve ? 1 : 0.4,
                             }}
@@ -1165,8 +1082,9 @@ const HoComponent = () => {
                             src={thirdteen}
                             width="90%"
                             alt=""
-                            srcSet=""
-                            onClick={() => handleImageClick(thirdteen)}
+                            onClick={() =>
+                              handleSliderChange({ target: { value: 12 } })
+                            }
                             style={{
                               opacity: expandedImg === thirdteen ? 1 : 0.4,
                             }}
@@ -1177,8 +1095,9 @@ const HoComponent = () => {
                             src={fourteen}
                             width="90%"
                             alt=""
-                            srcSet=""
-                            onClick={() => handleImageClick(fourteen)}
+                            onClick={() =>
+                              handleSliderChange({ target: { value: 13 } })
+                            }
                             style={{
                               opacity: expandedImg === fourteen ? 1 : 0.4,
                             }}
@@ -1189,8 +1108,9 @@ const HoComponent = () => {
                             src={fifteen}
                             width="90%"
                             alt=""
-                            srcSet=""
-                            onClick={() => handleImageClick(fifteen)}
+                            onClick={() =>
+                              handleSliderChange({ target: { value: 14 } })
+                            }
                             style={{
                               opacity: expandedImg === fifteen ? 1 : 0.4,
                             }}
@@ -1201,33 +1121,27 @@ const HoComponent = () => {
                             src={sixteen}
                             width="90%"
                             alt=""
-                            srcSet=""
-                            onClick={() => handleImageClick(sixteen)}
+                            onClick={() =>
+                              handleSliderChange({ target: { value: 15 } })
+                            }
                             style={{
                               opacity: expandedImg === sixteen ? 1 : 0.4,
                             }}
                           />
                         </div>
-                        <div className="mt-3">
+                        <div style={{visibility:"hidden"}} className="mt-3">
                           <img
                             src={sixteen}
                             width="90%"
                             alt=""
-                            srcSet=""
-                            onClick={() => handleImageClick(sixteen)}
-                            
+                            onClick={() =>
+                              handleSliderChange({ target: { value: 16 } })
+                            }
+                            style={{
+                              opacity: expandedImg === sixteen ? 1 : 0.4,
+                            }}
                           />
                         </div>
-                        <div className="mt-3">
-                          <img
-                            src={sixteen}
-                            width="90%"
-                            alt=""
-                            srcSet=""
-                            onClick={() => handleImageClick(sixteen)}
-                          
-                          />
-                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -1235,7 +1149,7 @@ const HoComponent = () => {
               </div>
             </div>
             <div className="col-md-4 col-sm-12 col-lg-6 d-flex align-items-center justify-content-center">
-              <div className="service-box ">
+              <div className="service-box">
                 <img
                   width={"7%"}
                   src={premiumIcon2}
@@ -1278,6 +1192,7 @@ const HoComponent = () => {
             </div>
           </div>
         </div>
+
         <div className="container industries mobile-model">
           <div className="row">
             <div className="col-md-12 col-sm-12 col-lg-12 d-flex align-items-center justify-content-center">
@@ -1672,7 +1587,7 @@ const HoComponent = () => {
                         <img src={unbound} width={"100%"} alt="" />
                       </div>
                     </div>
-             
+
                     <div className="slideN-wearable">
                       <div className="service-box-slider-wearable p-4">
                         <img src={ooredo} width={"100%"} alt="" />
@@ -1708,7 +1623,6 @@ const HoComponent = () => {
                         <img src={unbound} width={"100%"} alt="" />
                       </div>
                     </div>
-             
                   </div>
                 </div>
               </div>
@@ -1770,7 +1684,7 @@ const HoComponent = () => {
             </div>
           </div>
         </div>
-        <Testimonials/>
+        <Testimonials />
         <div className="mobile-model mobile-swiper container">
           <Swiper
             spaceBetween={30}

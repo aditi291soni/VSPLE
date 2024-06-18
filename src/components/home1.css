@@ -918,6 +918,7 @@
 
 .testimonial .avatars {
   cursor: pointer;
+  font-size: 25px;
   /* border: 1px solid white; */
 }
 
@@ -959,7 +960,7 @@
 .testimonial .avatars :nth-child(6) {
   position: absolute;
   height: 11%;
-  bottom: 35%;
+  bottom: 14%;
   right: 22%;
 }
 
@@ -1328,6 +1329,7 @@ section .box.box2 h2 {
   /* -webkit-appearance: none; */
   height: 500px;
   width: 40px;
+  top: 100px !important;
   border-radius: 5px;
   background: #ccc;
   transform: rotate(180deg);

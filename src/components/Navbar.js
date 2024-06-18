@@ -75,7 +75,7 @@ const handleMouseLeave = ()=>{
       <nav className="navbar scrolling navbar-expand web">
         <div className="container">
           <a href="/" className="navbar-brand">
-            <img src={logo} width={'100%'} alt="logo" className="navbar-logo" />
+            <img src={logo} width={"100%"} alt="logo" className="navbar-logo" />
           </a>
           <button
             className="navbar-toggler"
@@ -102,7 +102,8 @@ const handleMouseLeave = ()=>{
                     <div className="row mb-5">
                       <div className="col-md-4 hoverEff">
                         <h5 className="megamenu-text">
-                          <img src={slogo} width={'6%'} alt="" /> &nbsp; About Us
+                          <img src={slogo} width={"6%"} alt="" /> &nbsp; About
+                          Us
                         </h5>
                         <p
                           style={{
@@ -120,7 +121,7 @@ const handleMouseLeave = ()=>{
                       </div>
                       <div className="col-md-4 hoverEff ">
                         <h5 className="megamenu-text">
-                          <img src={mission} width={'6%'} alt="" />
+                          <img src={mission} width={"6%"} alt="" />
                           &nbsp; Our Mission
                         </h5>
                         <p
@@ -133,7 +134,7 @@ const handleMouseLeave = ()=>{
                           IT solutions and deliver exceptional digital
                           experiences.
                         </p>
-                       
+
                         <div className="readMore">
                           <a href="/our-mission">READ MORE &nbsp;</a>
                           <img alt="" src={arrowRight}></img>
@@ -141,7 +142,7 @@ const handleMouseLeave = ()=>{
                       </div>
                       <div className="col-md-4 hoverEff mb-3">
                         <h5 className="megamenu-text">
-                          <img src={eye} width={'6%'} alt="" />
+                          <img src={eye} width={"6%"} alt="" />
                           &nbsp; Our Vision
                         </h5>
                         <p
@@ -162,7 +163,7 @@ const handleMouseLeave = ()=>{
                       <hr className="hr"></hr>
                       <div className="col-md-4 hoverEff pt-4 ">
                         <h5 className="megamenu-text">
-                          <img src={whatsNext} width={'6%'} alt="" />
+                          <img src={whatsNext} width={"6%"} alt="" />
                           &nbsp; What's Next
                         </h5>
                         <p
@@ -171,7 +172,9 @@ const handleMouseLeave = ()=>{
                             width: "80%",
                           }}
                         >
-                         When you choose us, you are partnering with an esteemed company. Check out what we have in plate for next couple of years.
+                          When you choose us, you are partnering with an
+                          esteemed company. Check out what we have in plate for
+                          next couple of years.
                         </p>
                         <div className="readMore">
                           <a href="/what's-next">READ MORE &nbsp;</a>
@@ -195,7 +198,7 @@ const handleMouseLeave = ()=>{
                     <div className="row mb-5">
                       <div className="col-md-4 hoverEff ">
                         <h5 className="megamenu-text">
-                          <img src={mobiledev} width={'7%'} alt="" />
+                          <img src={mobiledev} width={"7%"} alt="" />
                           &nbsp; Mobile App Development
                         </h5>
                         <p
@@ -208,13 +211,15 @@ const handleMouseLeave = ()=>{
                           users and drive your business growth together.
                         </p>
                         <div className="readMore">
-                          <a href="/mobile-app-development-services">READ MORE &nbsp;</a>
+                          <a href="/mobile-app-development-services">
+                            READ MORE &nbsp;
+                          </a>
                           <img alt="" src={arrowRight}></img>
                         </div>
                       </div>
                       <div className="col-md-4 hoverEff ">
                         <h5 className="megamenu-text">
-                          <img src={software} width={'7%'} alt="" />
+                          <img src={software} width={"7%"} alt="" />
                           &nbsp; Software Development
                         </h5>
                         <p
@@ -228,13 +233,15 @@ const handleMouseLeave = ()=>{
                           level.
                         </p>
                         <div className="readMore">
-                          <a href="/software-development-services">READ MORE &nbsp;</a>
+                          <a href="/software-development-services">
+                            READ MORE &nbsp;
+                          </a>
                           <img alt="" src={arrowRight}></img>
                         </div>
                       </div>
                       <div className="col-md-4 hoverEff ">
                         <h5 className="megamenu-text">
-                          <img src={webdev} width={'6%'} alt="" />
+                          <img src={webdev} width={"6%"} alt="" />
                           &nbsp; Website Development
                         </h5>
                         <p
@@ -247,7 +254,9 @@ const handleMouseLeave = ()=>{
                           right time in this competitive landscape.
                         </p>
                         <div className="readMore">
-                          <a href="/website-development-services">READ MORE &nbsp;</a>
+                          <a href="/website-development-services">
+                            READ MORE &nbsp;
+                          </a>
                           <img alt="" src={arrowRight}></img>
                         </div>
                       </div>
@@ -256,7 +265,7 @@ const handleMouseLeave = ()=>{
                     <div className="row mt-5">
                       <div className="col-md-4 hoverEff ">
                         <h5 className="megamenu-text">
-                          <img src={devop} width={'6%'} alt="" />
+                          <img src={devop} width={"6%"} alt="" />
                           &nbsp; Game Development
                         </h5>
                         <p
@@ -265,17 +274,20 @@ const handleMouseLeave = ()=>{
                             width: "80%",
                           }}
                         >
-                         Developing captivating and immersive gaming experiences that engage users and drive success.
+                          Developing captivating and immersive gaming
+                          experiences that engage users and drive success.
                         </p>
                         <div className="readMore">
-                          <a href="/game-development-services">READ MORE &nbsp;</a>
+                          <a href="/game-development-services">
+                            READ MORE &nbsp;
+                          </a>
                           <img alt="" src={arrowRight}></img>
                         </div>
                         <img src="./Group 468.png" alt="" srcSet="" />
                       </div>
                       <div className="col-md-4 hoverEff ">
                         <h5 className="megamenu-text">
-                          <img src={staffAug} width={'6%'} alt="" />
+                          <img src={staffAug} width={"6%"} alt="" />
                           &nbsp; UI/UX Development
                         </h5>
                         <p
@@ -284,17 +296,21 @@ const handleMouseLeave = ()=>{
                             width: "80%",
                           }}
                         >
-                         We combine creativity, strategic thinking, and user-centered design principles to craft seamless experiences.
+                          We combine creativity, strategic thinking, and
+                          user-centered design principles to craft seamless
+                          experiences.
                         </p>
                         <div className="readMore">
-                          <a href="/ui-ux-designing-services">READ MORE &nbsp;</a>
+                          <a href="/ui-ux-designing-services">
+                            READ MORE &nbsp;
+                          </a>
                           <img alt="" src={arrowRight}></img>
                         </div>
                         <img src="./Group 468.png" alt="" srcSet="" />
                       </div>
                       <div className="col-md-4 hoverEff ">
                         <h5 className="megamenu-text">
-                          <img src={testing} width={'6%'} alt="" />
+                          <img src={testing} width={"6%"} alt="" />
                           &nbsp; Quality Assurance
                         </h5>
                         <p
@@ -308,7 +324,9 @@ const handleMouseLeave = ()=>{
                           experience.
                         </p>
                         <div className="readMore">
-                          <a href="/quality-assurance-services">READ MORE &nbsp;</a>
+                          <a href="/quality-assurance-services">
+                            READ MORE &nbsp;
+                          </a>
                           <img alt="" src={arrowRight}></img>
                         </div>
                         <img src="./Group 468.png" alt="" srcSet="" />
@@ -329,7 +347,7 @@ const handleMouseLeave = ()=>{
                     <div className="row mb-4">
                       <div className="col-md-4 hoverEff ">
                         <h5 className="megamenu-text">
-                          <img src={mobiledev} width={'6%'} alt="" />
+                          <img src={mobiledev} width={"6%"} alt="" />
                           &nbsp;Mobile App Developers
                         </h5>
                         <p
@@ -342,13 +360,15 @@ const handleMouseLeave = ()=>{
                           top talents in the field of mobile app development.
                         </p>
                         <div className="readMore">
-                          <a href="/hire-mobile-application-developers">READ MORE &nbsp;</a>
+                          <a href="/hire-mobile-application-developers">
+                            READ MORE &nbsp;
+                          </a>
                           <img alt="" src={arrowRight}></img>
                         </div>
                       </div>
                       <div className="col-md-4 hoverEff hoverEff">
                         <h5 className="megamenu-text">
-                          <img src={wearable} width={'7%'} alt="" />
+                          <img src={wearable} width={"7%"} alt="" />
                           &nbsp;Wearable App Developers
                         </h5>
                         <p
@@ -361,7 +381,9 @@ const handleMouseLeave = ()=>{
                           understanding of wearable devices.
                         </p>
                         <div className="readMore">
-                          <a href="/hire-wearable-application-developers">READ MORE &nbsp;</a>
+                          <a href="/hire-wearable-application-developers">
+                            READ MORE &nbsp;
+                          </a>
                           <img alt="" src={arrowRight}></img>
                         </div>
                       </div>
@@ -369,7 +391,7 @@ const handleMouseLeave = ()=>{
                         <h5 className="megamenu-text">
                           <img
                             src={softDev}
-                            width={'7%'}
+                            width={"7%"}
                             className="mt-1"
                             alt=""
                           />
@@ -386,7 +408,9 @@ const handleMouseLeave = ()=>{
                           user-centric software apps.
                         </p>
                         <div className="readMore">
-                          <a href="/hire-software-developers">READ MORE &nbsp;</a>
+                          <a href="/hire-software-developers">
+                            READ MORE &nbsp;
+                          </a>
                           <img alt="" src={arrowRight}></img>
                         </div>
                       </div>
@@ -395,16 +419,17 @@ const handleMouseLeave = ()=>{
                     <div className="row mt-5">
                       <div className="col-md-4 hoverEff ">
                         <h5 className="megamenu-text">
-                          <img src={websitedev} width={'6%'} alt="" />
+                          <img src={websitedev} width={"6%"} alt="" />
                           &nbsp;Website Developers
                         </h5>
                         <p
                           style={{
                             opacity: 0.6000000238418579,
                             width: "80%",
-                          }} 
+                          }}
                         >
-                         We Create websites that charms the right people at the right time in this competitive landscape.
+                          We Create websites that charms the right people at the
+                          right time in this competitive landscape.
                         </p>
                         <div className="readMore">
                           <a href="/hire-web-developers">READ MORE &nbsp;</a>
@@ -413,7 +438,7 @@ const handleMouseLeave = ()=>{
                       </div>
                       <div className="col-md-4 hoverEff ">
                         <h5 className="megamenu-text">
-                          <img src={qadev} width={'6%'} alt="" />
+                          <img src={qadev} width={"6%"} alt="" />
                           &nbsp;Quality Analyst
                         </h5>
                         <p
@@ -422,10 +447,14 @@ const handleMouseLeave = ()=>{
                             width: "80%",
                           }}
                         >
-                        Our Testing services help you identify defects, optimize performance, and ensure a seamless user experience.
+                          Our Testing services help you identify defects,
+                          optimize performance, and ensure a seamless user
+                          experience.
                         </p>
                         <div className="readMore">
-                          <a href="/hire-quality-assurance-analyst">READ MORE &nbsp;</a>
+                          <a href="/hire-quality-assurance-analyst">
+                            READ MORE &nbsp;
+                          </a>
                           <img alt="" src={arrowRight}></img>
                         </div>
                       </div>
@@ -454,7 +483,7 @@ const handleMouseLeave = ()=>{
                   <img
                     src={toggleGold}
                     alt="logo"
-                    width={'30'}
+                    width={"30"}
                     className={`toggle-icon ${menuOpen ? "rotate" : ""}`}
                   />
                 </Link>
@@ -469,7 +498,10 @@ const handleMouseLeave = ()=>{
                         <li>
                           <a href="/policies">Policies</a>
                         </li>
-                        <li> <a href="/site-map">Sitemap</a></li>
+                        <li>
+                          {" "}
+                          <a href="/site-map">Sitemap</a>
+                        </li>
                         <li>
                           <a href="/industries">Industries</a>
                         </li>
@@ -490,7 +522,12 @@ const handleMouseLeave = ()=>{
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid p-2">
             <a href="/" className="navbar-brand text-primary mr-0">
-              <img width={'30%'} src={logo} alt="logo" className="navbar-logo" />
+              <img
+                width={"30%"}
+                src={logo}
+                alt="logo"
+                className="navbar-logo"
+              />
             </a>
             <div className="form-inline ml-auto">
               <div
@@ -550,23 +587,24 @@ const handleMouseLeave = ()=>{
                   <ul>
                     <li>
                       <a href="/about-us" className="sd-link2">
-                        About Us
+                        <img src={slogo} width={12} alt="" /> &nbsp; About Us
                       </a>
                     </li>
                     <li>
                       <a href="/our-mission" className="sd-link2">
-                        Our Mission
+                        <img src={mission} width={12} alt="" /> &nbsp; Our
+                        Mission
                       </a>
                     </li>
                     <li>
                       <a href="/our-vision" className="sd-link2">
-                        Our Vision
+                        <img src={eye} width={12} alt="" /> &nbsp; Our Vision
                       </a>
                     </li>
                     <li>
                       <a href="/what's-next" className="sd-link2">
-                        {/* <img src={eye} width={12} alt="" /> &nbsp; */}
-                        What’s Next
+                        <img src={whatsNext} width={12} alt="" /> &nbsp; What’s
+                        Next
                       </a>
                     </li>
                   </ul>
@@ -587,9 +625,12 @@ const handleMouseLeave = ()=>{
                 >
                   <ul>
                     <li>
-                      <a href="/hire-mobile-application-developers" className="sd-link2">
-                        <img src={mobiledev} width={12} alt="" /> &nbsp; Mobile App
-                        Development
+                      <a
+                        href="/hire-mobile-application-developers"
+                        className="sd-link2"
+                      >
+                        <img src={mobiledev} width={12} alt="" /> &nbsp; Mobile
+                        App Development
                       </a>
                     </li>
                     <li>
@@ -606,7 +647,7 @@ const handleMouseLeave = ()=>{
                     </li>
                     <li>
                       <a className="sd-link2">
-                        <img src={devop } width={12} alt="" /> &nbsp; Game
+                        <img src={devop} width={12} alt="" /> &nbsp; Game
                         Developnent
                       </a>
                     </li>
@@ -618,8 +659,8 @@ const handleMouseLeave = ()=>{
                     </li>
                     <li>
                       <a className="sd-link2">
-                        <img src={testing} width={12} alt="" /> &nbsp;
-                        Quality Assurance
+                        <img src={testing} width={12} alt="" /> &nbsp; Quality
+                        Assurance
                       </a>
                     </li>
                   </ul>
@@ -638,13 +679,19 @@ const handleMouseLeave = ()=>{
                 <div className={`sd-body2 ${isDraggedHire ? "expanded" : ""}`}>
                   <ul>
                     <li>
-                      <a href="/hire-mobile-application-developers" className="sd-link2">
+                      <a
+                        href="/hire-mobile-application-developers"
+                        className="sd-link2"
+                      >
                         <img src={slogo} width={12} alt="" /> &nbsp; Mobile App
                         Development
                       </a>
                     </li>
                     <li>
-                      <a href="/hire-wearable-application-developers" className="sd-link2">
+                      <a
+                        href="/hire-wearable-application-developers"
+                        className="sd-link2"
+                      >
                         <img src={mission} width={12} alt="" /> &nbsp; Wearable
                         App Development
                       </a>
@@ -662,7 +709,10 @@ const handleMouseLeave = ()=>{
                       </a>
                     </li>
                     <li>
-                      <a href="/hire-quality-assurance-analyst" className="sd-link2">
+                      <a
+                        href="/hire-quality-assurance-analyst"
+                        className="sd-link2"
+                      >
                         <img src={certificate} width={12} alt="" /> &nbsp;
                         Quality Analyst
                       </a>
@@ -687,7 +737,9 @@ const handleMouseLeave = ()=>{
                   ></i>
                 </a>
                 <div
-                  className={`sd-body2 ${isDraggedOthers ? "expanded" : ""} ms-5`}
+                  className={`sd-body2 ${
+                    isDraggedOthers ? "expanded" : ""
+                  } ms-5`}
                 >
                   <ul>
                     <li>
@@ -701,10 +753,14 @@ const handleMouseLeave = ()=>{
                       </a>
                     </li>
                     <li>
-                      <a href="/sitemap" className="sd-link2">Sitemap</a>
+                      <a href="/sitemap" className="sd-link2">
+                        Sitemap
+                      </a>
                     </li>
                     <li>
-                      <a href="/industries" className="sd-link2">Industries</a>
+                      <a href="/industries" className="sd-link2">
+                        Industries
+                      </a>
                     </li>
                     <li>
                       <a href="/our-portfolio" className="sd-link2">

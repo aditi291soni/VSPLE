@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import  { lazy, useEffect } from "react";
 import "./contactus.css";
+import logo from "../assest/web-icons/global-icon/Mask_group-removebg-preview 1.png";
 import Card from "react-bootstrap/Card";
 import "../common/thankyoumodal/thankyoumodal.css";
 import Modal from "../common/thankyoumodal/thankyoumodal";
@@ -36,7 +38,28 @@ const ContactusComponent = () => {
     message: "",
     subject: "Dummy",
   });
-
+ useEffect(() => {
+   const spinner = document.getElementsByClassName("spinner")[0];
+   const hideWebsite = document.getElementsByClassName("full-website")[0];
+   hideWebsite.style.display = "none";
+   setTimeout(() => {
+     spinner.style.display = "none";
+     hideWebsite.style.display = "block";
+   }, 3000);
+   const observer = new IntersectionObserver((entries) => {
+     entries.forEach((element) => {
+       if (element.isIntersecting) {
+         element.target.classList.add("show");
+       } else {
+         element.target.classList.remove("show");
+       }
+     });
+   });
+   const hiddenElements = document.querySelectorAll(".hidden");
+   hiddenElements.forEach((el) => {
+     observer.observe(el);
+   });
+ }, []);
   const handleInputChange = (e) => {
     const { name, value } = e.target;
   
@@ -195,7 +218,6 @@ const ContactusComponent = () => {
                   <div className="email">
                     <img width={"6%"} src={email} alt="" />
                     <input
-               
                       swd
                       name="email"
                       value={state.email}
@@ -215,8 +237,7 @@ const ContactusComponent = () => {
                       name="phone"
                       value={state.phone}
                       autocomplete="off"
-                      inputMode="numeric" 
-                  
+                      inputMode="numeric"
                       onChange={handleInputChange}
                       placeholder="* Mobile Numbers"
                       required
@@ -244,7 +265,9 @@ const ContactusComponent = () => {
                     )} */}
                   </div>
                   <div className="button text-right">
-                    <button type="submit">{loading? "Loading" : "Send"}</button>
+                    <button type="submit">
+                      {loading ? "Loading" : "Send"}
+                    </button>
                   </div>
                 </form>
                 {showModal && (
@@ -286,7 +309,15 @@ const ContactusComponent = () => {
         </div>
       </div>
       {/* <img className="loader" src={loader} alt="" /> */}
-      {loading ? <img className="loader" src={loader} alt="" /> : <div></div>}
+      {loading ? (
+        <div className="spinner">
+          <div className="design-spinner">
+            <img src={logo} width={"40%"} alt="" />
+          </div>
+        </div>
+      ) : (
+        <div></div>
+      )}
       <div className="contact-page container mobile">
         <div className="contact-page text-start">
           <img src={contactMail} width={"7%"} alt="" />

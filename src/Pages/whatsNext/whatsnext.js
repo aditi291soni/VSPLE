@@ -208,8 +208,8 @@ const WhatsnextComponent = () => {
         </div>
       </div>
       <div className="container  my-5">
-        <div className="gameparent mx-auto mb-5">
-          <div className="gameBox p-5">
+        <div className="gameparent mx-auto ">
+          <div className="gameBox px-5">
             <div className="text-center">
               <img src={augmentedReality} width={"60%"} alt="" />
             </div>
@@ -222,12 +222,12 @@ const WhatsnextComponent = () => {
               experiences.
             </p>
           </div>
-          <div className="gameBox p-5">
+          <div className="gameBox px-5 ">
             <div className="text-center">
               <img src={virtualReality} width={"70%"} alt="" />
             </div>
             <h5>Virtual Reality</h5>
-            <p>
+            <p className="mb-5">
               Virtual Reality is poised to reshape industries, from gaming and
               entertainment to training and simulations. Vsple Technologies is
               investing in VR solutions that will immerse users in entirely new,
@@ -235,7 +235,7 @@ const WhatsnextComponent = () => {
             </p>
           </div>
         </div>
-        <div className="gameparent mx-auto mb-n5">
+        <div className="gameparent mx-auto mb-5"  >
           <div className="gameBox p-5">
             <div className="text-center">
               <img src={cyberSecurity} width={"70%"} alt="" />

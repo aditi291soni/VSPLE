@@ -254,7 +254,7 @@ const AboutComponent = () => {
               <div className="group-106-cnt width-28">
                 <img src={group106} width={"100%"} className="" alt="" />
               </div>
-              <p className="span-cnt">
+              <p className="span-cnt one">
                 <span>
                   In the dawn of 2018, our visionary Founder embarked on a solo
                   quest, transforming his home into the incubator of dreams.

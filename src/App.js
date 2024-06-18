@@ -106,7 +106,7 @@ function App() {
     setTimeout(() => {
       spinner.style.display = "none";
       hideWebsite.style.display = "block";
-    }, 1000);
+    }, 3000);
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((element) => {
         if (element.isIntersecting) {

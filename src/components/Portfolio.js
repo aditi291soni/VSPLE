@@ -3,6 +3,9 @@
 import rec from "../assest/main-icons/Group 1000005569 (1).png";
 import web from "../assest/main-icons/Group 1000005570.png";
 import chatie from "../assest/main-icons/Group 1000004879.png";
+import new3 from "../assest/portfolio2.png";
+import new4 from "../assest/portfolio1.png";
+
 import unbounded from "../assest/main-icons/Group 1000004879 (1).png";
 import salestrip from "../assest/main-icons/Group 1000004882 (1).png";
 import hobbyist from "../assest/main-icons/Group 1000005569 (3).png";
@@ -38,7 +41,7 @@ const PortfolioComponent = () => {
           <div className="row ">
             <div className="col-md-8 col-sm-12 col-lg-5 d-flex justify-content-start align-items-start">
               <div className="main-text-service w-75 mx-auto">
-                <img className="mb-1" src={port} width={'5%'} alt='' />
+                <img className="mb-1" src={port} width={"5%"} alt="" />
                 <br />
                 <span className="portfolio">Portfolio</span>
                 <h2>
@@ -59,9 +62,15 @@ const PortfolioComponent = () => {
                     alt=""
                   />
                   <img
-                    className="new2"
-                    style={{ height: "73%" }}
-                    src={phone1}
+                    className="new3"
+                    style={{ height: "83%" }}
+                    src={new3}
+                    alt=""
+                  />
+                  <img
+                    className="new4"
+                    style={{ height: "83%" }}
+                    src={new4}
                     alt=""
                   />
                 </div>
@@ -69,10 +78,12 @@ const PortfolioComponent = () => {
             </div>
           </div>
         </div>
-        <div className="tab-content hidden text-center" style={{ margin: "5% " }}>
+        <div
+          className="tab-content hidden text-center"
+          style={{ margin: "5% " }}
+        >
           <span>Portfolio</span>
           <h4 className="mb-4" style={{ lineHeight: "35px" }}>
-
             Explore the Pinnacle of <br /> Innovation with Vsple
           </h4>
           <p className="h-tab">
@@ -103,7 +114,9 @@ const PortfolioComponent = () => {
                     <div className="tab-text1">
                       <span>Chatie</span>
                       <p>Mobile App Development</p>
-                      <a href="/chatie-app-development">Case Study <img width={'10%'} src={arrow} alt='' /></a>
+                      <a href="/chatie-app-development">
+                        Case Study <img width={"10%"} src={arrow} alt="" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -111,7 +124,12 @@ const PortfolioComponent = () => {
                   <div className="tab-cont">
                     <div className="calvary-upper-section">
                       <div className="text-end mb-4">
-                        <img className="me-2" src={website} width={"20%"} alt="" />
+                        <img
+                          className="me-2"
+                          src={website}
+                          width={"20%"}
+                          alt=""
+                        />
                         <img src={appleLogo} width={"20%"} alt="" />
                         <img
                           className="ms-2"
@@ -125,7 +143,9 @@ const PortfolioComponent = () => {
                     <div className="tab-text1">
                       <span>Calvary Temple</span>
                       <p>Complete Solution Development</p>
-                      <a href="/calvary-app-development">Case Study <img width={'10%'} src={arrow} alt='' /></a>
+                      <a href="/calvary-app-development">
+                        Case Study <img width={"10%"} src={arrow} alt="" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -151,7 +171,9 @@ const PortfolioComponent = () => {
                     <div className="tab-text1">
                       <span>Unbounded</span>
                       <p>Mobile App Development</p>
-                      <a href="/unbounded-app-development">Case Study <img width={'10%'} src={arrow} alt='' /></a>
+                      <a href="/unbounded-app-development">
+                        Case Study <img width={"10%"} src={arrow} alt="" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -172,7 +194,9 @@ const PortfolioComponent = () => {
                     <div className="tab-text1">
                       <span>Salestrip CLM</span>
                       <p>Mobile App Development</p>
-                      <a href="/salestrip-app-development">Case Study <img width={'10%'} src={arrow} alt='' /></a>
+                      <a href="/salestrip-app-development">
+                        Case Study <img width={"10%"} src={arrow} alt="" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -193,7 +217,9 @@ const PortfolioComponent = () => {
                     <div className="tab-text1">
                       <span>BreckWorld</span>
                       <p>Mobile App Development</p>
-                      <a href="/breckworld-app-development">Case Study <img width={'10%'} src={arrow} alt='' /></a>
+                      <a href="/breckworld-app-development">
+                        Case Study <img width={"10%"} src={arrow} alt="" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -214,7 +240,9 @@ const PortfolioComponent = () => {
                     <div className="tab-text1">
                       <span>Hobbyist</span>
                       <p>Mobile App Development</p>
-                      <a href="/hobbyist-app-development">Case Study <img width={'10%'} src={arrow} alt='' /></a>
+                      <a href="/hobbyist-app-development">
+                        Case Study <img width={"10%"} src={arrow} alt="" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -235,7 +263,9 @@ const PortfolioComponent = () => {
                     <div className="tab-text1">
                       <span>QRScape</span>
                       <p>Mobile App Development</p>
-                      <a href="/qrscape-app-development">Case Study <img width={'10%'} src={arrow} alt='' /></a>
+                      <a href="/qrscape-app-development">
+                        Case Study <img width={"10%"} src={arrow} alt="" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -256,7 +286,9 @@ const PortfolioComponent = () => {
                     <div className="tab-text1">
                       <span>CrossO - Tic Tac Toe</span>
                       <p>Website Development</p>
-                      <a href="/crosso-app-development">Case Study <img width={'10%'} src={arrow} alt='' /></a>
+                      <a href="/crosso-app-development">
+                        Case Study <img width={"10%"} src={arrow} alt="" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -277,7 +309,9 @@ const PortfolioComponent = () => {
                     <div className="tab-text1">
                       <span>TradeTips</span>
                       <p>Mobile App Development</p>
-                      <a href="/tradetips-app-development">Case Study <img width={'10%'} src={arrow} alt='' /> </a>
+                      <a href="/tradetips-app-development">
+                        Case Study <img width={"10%"} src={arrow} alt="" />{" "}
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -298,7 +332,9 @@ const PortfolioComponent = () => {
                     <div className="tab-text1">
                       <span>Truda - Truth or Dare</span>
                       <p>Mobile App Development</p>
-                      <a href="/truda-app-development">Case Study <img width={'10%'} src={arrow} alt='' /></a>
+                      <a href="/truda-app-development">
+                        Case Study <img width={"10%"} src={arrow} alt="" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -319,7 +355,9 @@ const PortfolioComponent = () => {
                     <div className="tab-text1">
                       <span>TradeMark Cockpit</span>
                       <p>Website Development</p>
-                      <a href="/trademark-app-development">Case Study <img width={'10%'} src={arrow} alt='' /></a>
+                      <a href="/trademark-app-development">
+                        Case Study <img width={"10%"} src={arrow} alt="" />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -337,10 +375,12 @@ const PortfolioComponent = () => {
                       </div>
                       <img src={tnumber} width={"100%"} alt="" />
                     </div>
-                    <div className="tab-text1">
+                    <div className="tab-text1 mb-4">
                       <span>Tnumber Rewards</span>
                       <p>Mobile App Development</p>
-                      <a href="/tnumber-app-development">Case Study <img width={'10%'} src={arrow} alt='' /> </a>
+                      <a href="/tnumber-app-development">
+                        Case Study <img width={"10%"} src={arrow} alt="" />{" "}
+                      </a>
                     </div>
                   </div>
                 </div>
