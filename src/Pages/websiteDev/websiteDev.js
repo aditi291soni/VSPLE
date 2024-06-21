@@ -59,6 +59,13 @@ import dynamicweb from "../../assest/servicesImages/dynamic-web.png";
 import ecomerceweb from "../../assest/servicesImages/ecomerce-web.png";
 import pwaweb from "../../assest/servicesImages/pwa-web.png";
 import spaweb from "../../assest/servicesImages/spa-web.png";
+import pwa from "../../assest/main-icons/vsple_industries_img/PWA.svg";
+import spa from "../../assest/main-icons/vsple_industries_img/SPA.svg";
+import statics from "../../assest/main-icons/vsple_industries_img/Static Website.svg";
+import custom from "../../assest/main-icons/vsple_industries_img/Custon Web.svg";
+import ecommerces from "../../assest/main-icons/vsple_industries_img/Eccomerce.svg";
+import dynamic from "../../assest/main-icons/vsple_industries_img/Dynamic Website.svg";
+
 import {
   premiumIcon,
   downarrow,
@@ -277,7 +284,11 @@ const WebsiteDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-4 text-center">
-                <img src={customweblogo} width={"60vw"} alt="" />
+                <img
+                  src={activeDiv === 0 ? custom : customweblogo}
+                  width={"50vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-8 ">
                 <h5>CUSTOM WEB</h5>
@@ -291,7 +302,11 @@ const WebsiteDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-4 text-center">
-                <img src={staticlogo} width={"60vw"} alt="" />
+                <img
+                  src={activeDiv === 1 ? statics : staticlogo}
+                  width={"50vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-8 ">
                 <h5>STATIC WEB</h5>
@@ -305,7 +320,11 @@ const WebsiteDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-4 text-center">
-                <img src={dynamiclogo} width={"60vw"} alt="" />
+                <img
+                  src={activeDiv === 2 ? dynamic : dynamiclogo}
+                  width={"50vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-8 ">
                 <h5>DYNAMIC WEB</h5>
@@ -319,7 +338,11 @@ const WebsiteDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-4 text-center">
-                <img src={ecommercelogo} width={"60vw"} alt="" />
+                <img
+                  src={activeDiv === 3 ? ecommerces : ecommercelogo}
+                  width={"50vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-8 ">
                 <h5>E-COMMERCE WEB</h5>
@@ -333,7 +356,11 @@ const WebsiteDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-4 text-center">
-                <img src={pwalogo} width={"60vw"} alt="" />
+                <img
+                  src={activeDiv === 4 ? pwa : pwalogo}
+                  width={"50vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-8 ">
                 <h5>PWAS</h5>
@@ -347,7 +374,11 @@ const WebsiteDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-4 text-center">
-                <img src={spalogo} width={"60vw"} alt="" />
+                <img
+                  src={activeDiv === 5 ? spa : spalogo}
+                  width={"50vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-8 ">
                 <h5>SPAS</h5>
@@ -361,7 +392,11 @@ const WebsiteDevComponent = () => {
           >
             <div className="flicker-content row">
               <div className="col-4 text-center">
-                <img src={customweblogo} width={"60vw"} alt="" />
+                <img
+                  src={activeDiv === 0 ?custom : customweblogo}
+                  width={"50vw"}
+                  alt=""
+                />
               </div>
               <div className="notActive col-8 ">
                 <h5>CUSTOM WEB</h5>

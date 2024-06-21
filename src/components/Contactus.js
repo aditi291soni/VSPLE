@@ -311,7 +311,7 @@ const ContactusComponent = () => {
       {/* <img className="loader" src={loader} alt="" /> */}
       {loading ? (
         <div className="spinner">
-          <div className="design-spinner">
+          <div className="design-spinner" style={{top:"40px"}}>
             <img src={logo} width={"40%"} alt="" />
           </div>
         </div>

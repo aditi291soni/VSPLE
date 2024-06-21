@@ -27,7 +27,7 @@
     place-items: center;
 }
 .choose-model-list-img img{
-    width: 50%;    
+    width: 60%;    
 }
 
 @media (min-width: 1200px) {

@@ -435,18 +435,21 @@ const AboutComponent = () => {
                 <div className="p-modules-box">
                   <div className="box-1 d-flex justify-content-center align-items-center">
                     <div className="content">
-                      <div style={{ width: "60%" }}>
+                      <div style={{ width: "100%" }}>
                         <img src={frame18} alt="" width={"100%"} />
                       </div>
-                      <span>Project Based Model</span>
+                      <span style={{ fontSize: "16px", width: "max-content" }}>
+                        Project <br />
+                        Based Model
+                      </span>
                     </div>
                   </div>
                   <div className="box-2 d-flex justify-content-center align-items-center">
                     <div className="content">
-                      <div style={{ width: "65%" }}>
+                      <div style={{ width: "100%" }}>
                         <img src={group6} alt="" width={"55%"} />
                       </div>
-                      <span>
+                      <span style={{ fontSize: "16px", width: "max-content" }}>
                         Time And <br />
                         Material Model
                       </span>
@@ -454,10 +457,10 @@ const AboutComponent = () => {
                   </div>
                   <div className="box-3 d-flex justify-content-center align-items-center">
                     <div className="content">
-                      <div style={{ width: "60%" }}>
+                      <div style={{ width: "100%" }}>
                         <img src={img2} alt="img" width={"100%"} />
                       </div>
-                      <span>
+                      <span style={{ fontSize: "16px", width: "max-content" }}>
                         Dedicated <br />
                         Team Model
                       </span>
@@ -466,19 +469,22 @@ const AboutComponent = () => {
                   <div className="box-4 d-flex justify-content-center align-items-center">
                     <div className="content">
                       <img src={frame20} alt="" width={"50%"} />
-                      <span>
+                      <span style={{ fontSize: "16px", width: "max-content" }}>
                         Managed IT <br /> Services Model
                       </span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className=" col-md-12 f col-sm-12 col-lg-6">
+              <div
+                className=" col-md-12 f col-sm-12 col-lg-6"
+                style={{ marginTop: "58px" }}
+              >
                 <div className="p-modules-name d-flex flex-column gap-2 mx-auto">
                   <div className="d-flex gap-4">
                     <div className="choose-model-list-img">
                       {" "}
-                      <img src={project_based_model} alt="" />{" "}
+                      <img src={frame18} alt="" />{" "}
                     </div>
                     <div className="d-flex flex-column gap-2">
                       <span>Project-Based Model</span>
@@ -493,7 +499,7 @@ const AboutComponent = () => {
                   </div>
                   <div className="d-flex gap-4">
                     <div className="choose-model-list-img">
-                      <img src={img3} alt="" />{" "}
+                      <img src={group6} alt="" />{" "}
                     </div>
                     <div className="d-flex flex-column gap-2">
                       <span>
@@ -509,7 +515,7 @@ const AboutComponent = () => {
                   </div>
                   <div className="d-flex gap-4">
                     <div className="choose-model-list-img">
-                      <img src={img1} alt="" />{" "}
+                      <img src={img2} alt="" />{" "}
                     </div>
                     <div className="d-flex flex-column gap-2">
                       <span>Dedicated Team Model</span>
@@ -524,7 +530,7 @@ const AboutComponent = () => {
                   </div>
                   <div className="d-flex gap-4">
                     <div className="choose-model-list-img">
-                      <img src={img2} alt="" />{" "}
+                      <img src={frame20} alt="" />{" "}
                     </div>
                     <div className="d-flex flex-column gap-2">
                       <span>Managed IT Services Model</span>
@@ -584,7 +590,9 @@ const AboutComponent = () => {
               <div className="col-md-12 col-sm-12 col-lg-6 mt-1">
                 <div className="p-modules-name d-flex flex-column gap-2 mx-auto">
                   <div className="d-flex gap-4">
-                    <div className="choose-model-list-img"><img src={img2} alt="" />{" "}</div>
+                    <div className="choose-model-list-img">
+                      <img src={img2} alt="" />{" "}
+                    </div>
                     <div className="d-flex flex-column gap-2">
                       <span>Remote/Hybrid Model</span>
                       <p>
@@ -596,7 +604,9 @@ const AboutComponent = () => {
                     </div>
                   </div>
                   <div className="d-flex gap-4">
-                    <div className="choose-model-list-img"><img src={img3} alt="" />{" "}</div>
+                    <div className="choose-model-list-img">
+                      <img src={img3} alt="" />{" "}
+                    </div>
                     <div className="d-flex flex-column gap-2">
                       <span>Just-in-Time IT Staff Augmentation Model</span>
                       <p>
@@ -608,7 +618,9 @@ const AboutComponent = () => {
                     </div>
                   </div>
                   <div className="d-flex gap-4">
-                    <div className="choose-model-list-img"><img src={img1} alt="" />{" "}</div>
+                    <div className="choose-model-list-img">
+                      <img src={img1} alt="" />{" "}
+                    </div>
                     <div className="d-flex flex-column gap-2">
                       <span>Consulting Business Model</span>
                       <p>
@@ -619,7 +631,9 @@ const AboutComponent = () => {
                     </div>
                   </div>
                   <div className="d-flex gap-4">
-                    <div className="choose-model-list-img"><img src={img2} alt="" />{" "}</div>
+                    <div className="choose-model-list-img">
+                      <img src={img2} alt="" />{" "}
+                    </div>
                     <div className="d-flex flex-column gap-2">
                       <span>Agency-Based Business Model</span>
                       <p>

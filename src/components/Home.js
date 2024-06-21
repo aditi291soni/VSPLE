@@ -18,7 +18,7 @@ import main2 from "../assest/Group 1260.png";
 import laptop from "../assest/icons/Group 350.png";
 import tech from "../assest/icons/technology 1.png";
 import inst from "../assest/icons/Group 630.png";
-import first from "../assest/icons/vsple_website_design_4/Group 833.png";
+import first from "../assest/icons/vsple website design (4)/Group 833.png";
 import second from "../assest/icons/vsple_website_design_4/Group 834.png";
 import third from "../assest/icons/vsple_website_design_4/Group 832.png";
 import fourth from "../assest/main-icons/vsple_industries_img/Group 1485.png";
@@ -470,8 +470,7 @@ const handleSliderChange = (e) => {
 //   rangeValueElem.style.top = 16 * index + "px";
 
   const images = [
-    first, second, third, fourth, fifth, sixth, seventh, eight,
-    nine, ten, eleven, twelve, thirdteen, fourteen, fifteen, sixteen
+    first, second, third, fourth, fifth, sixth, seventh, eight
   ];
 
   setExpandedImg(images[index]);
@@ -482,8 +481,7 @@ const handleSliderChange = (e) => {
 
 const getImageIndex = (img) => {
   const images = [
-    first, second, third, fourth, fifth, sixth, seventh, eight,
-    nine, ten, eleven, twelve, thirdteen, fourteen, fifteen, sixteen
+    first, second, third, fourth, fifth, sixth, seventh, eight
   ];
   return images.indexOf(img);
 };
@@ -923,7 +921,7 @@ useEffect(() => {
                         value={getImageIndex(expandedImg)}
                         onChange={handleSliderChange}
                         min="0"
-                        max="15"
+                        max="7"
                         id="myRange"
                       />
                     </div>
@@ -1029,106 +1027,8 @@ useEffect(() => {
                             style={{ opacity: expandedImg === eight ? 1 : 0.4 }}
                           />
                         </div>
-                        <div className="mt-3">
-                          <img
-                            src={nine}
-                            width="90%"
-                            alt=""
-                            onClick={() =>
-                              handleSliderChange({ target: { value: 8 } })
-                            }
-                            style={{ opacity: expandedImg === nine ? 1 : 0.4 }}
-                          />
-                        </div>
-                        <div className="mt-3">
-                          <img
-                            src={ten}
-                            width="90%"
-                            alt=""
-                            onClick={() =>
-                              handleSliderChange({ target: { value: 9 } })
-                            }
-                            style={{ opacity: expandedImg === ten ? 1 : 0.4 }}
-                          />
-                        </div>
-                        <div className="mt-3">
-                          <img
-                            src={eleven}
-                            width="90%"
-                            alt=""
-                            onClick={() =>
-                              handleSliderChange({ target: { value: 10 } })
-                            }
-                            style={{
-                              opacity: expandedImg === eleven ? 1 : 0.4,
-                            }}
-                          />
-                        </div>
-                        <div className="mt-3">
-                          <img
-                            src={twelve}
-                            width="90%"
-                            alt=""
-                            onClick={() =>
-                              handleSliderChange({ target: { value: 11 } })
-                            }
-                            style={{
-                              opacity: expandedImg === twelve ? 1 : 0.4,
-                            }}
-                          />
-                        </div>
-                        <div className="mt-3">
-                          <img
-                            src={thirdteen}
-                            width="90%"
-                            alt=""
-                            onClick={() =>
-                              handleSliderChange({ target: { value: 12 } })
-                            }
-                            style={{
-                              opacity: expandedImg === thirdteen ? 1 : 0.4,
-                            }}
-                          />
-                        </div>
-                        <div className="mt-3">
-                          <img
-                            src={fourteen}
-                            width="90%"
-                            alt=""
-                            onClick={() =>
-                              handleSliderChange({ target: { value: 13 } })
-                            }
-                            style={{
-                              opacity: expandedImg === fourteen ? 1 : 0.4,
-                            }}
-                          />
-                        </div>
-                        <div className="mt-3">
-                          <img
-                            src={fifteen}
-                            width="90%"
-                            alt=""
-                            onClick={() =>
-                              handleSliderChange({ target: { value: 14 } })
-                            }
-                            style={{
-                              opacity: expandedImg === fifteen ? 1 : 0.4,
-                            }}
-                          />
-                        </div>
-                        <div className="mt-3">
-                          <img
-                            src={sixteen}
-                            width="90%"
-                            alt=""
-                            onClick={() =>
-                              handleSliderChange({ target: { value: 15 } })
-                            }
-                            style={{
-                              opacity: expandedImg === sixteen ? 1 : 0.4,
-                            }}
-                          />
-                        </div>
+                        
+                       
                         <div style={{visibility:"hidden"}} className="mt-3">
                           <img
                             src={sixteen}

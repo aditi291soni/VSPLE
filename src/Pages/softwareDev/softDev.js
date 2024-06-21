@@ -310,7 +310,7 @@ const SoftwareDevComponent = () => {
               <div className="col-4 text-center">
                 <img
                   src={activeDiv === 1 ? APIOnClick : apilogo}
-                  width={"60vw"}
+                  width={"50vw"}
                   alt=""
                 />
               </div>
@@ -328,7 +328,7 @@ const SoftwareDevComponent = () => {
               <div className="col-4 text-center">
                 <img
                   src={activeDiv === 2 ? DatabaseOnClick : databaselogo}
-                  width={"60vw"}
+                  width={"50vw"}
                   alt=""
                 />
               </div>
@@ -346,7 +346,7 @@ const SoftwareDevComponent = () => {
               <div className="col-4 text-center">
                 <img
                   src={activeDiv === 3 ? CMSOnClick : cmslogo}
-                  width={"60vw"}
+                  width={"50vw"}
                   alt=""
                 />
               </div>
@@ -366,7 +366,7 @@ const SoftwareDevComponent = () => {
                   src={
                     activeDiv === 4 ? MicroservicesOnClick : microservicelogo
                   }
-                  width={"60vw"}
+                  width={"50vw"}
                   alt=""
                 />
               </div>
@@ -384,7 +384,7 @@ const SoftwareDevComponent = () => {
               <div className="col-4 text-center">
                 <img
                   src={activeDiv === 5 ? EccomerceOnClick : ecomercelogo}
-                  width={"60vw"}
+                  width={"50vw"}
                   alt=""
                 />
               </div>

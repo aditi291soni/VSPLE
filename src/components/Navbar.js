@@ -683,8 +683,8 @@ const handleMouseLeave = ()=>{
                         href="/hire-mobile-application-developers"
                         className="sd-link2"
                       >
-                        <img src={slogo} width={12} alt="" /> &nbsp; Mobile App
-                        Development
+                        <img src={mobiledev} width={12} alt="" /> &nbsp; Mobile
+                        App Development
                       </a>
                     </li>
                     <li>
@@ -692,19 +692,19 @@ const handleMouseLeave = ()=>{
                         href="/hire-wearable-application-developers"
                         className="sd-link2"
                       >
-                        <img src={mission} width={12} alt="" /> &nbsp; Wearable
+                        <img src={wearable} width={12} alt="" /> &nbsp; Wearable
                         App Development
                       </a>
                     </li>
                     <li>
                       <a href="/hire-software-developers" className="sd-link2">
-                        <img src={eye} width={12} alt="" /> &nbsp; Software
+                        <img src={softDev} width={12} alt="" /> &nbsp; Software
                         Developers
                       </a>
                     </li>
                     <li>
                       <a href="/hire-web-developers" className="sd-link2">
-                        <img src={interview} width={12} alt="" /> &nbsp; Website
+                        <img src={websitedev} width={12} alt="" /> &nbsp; Website
                         Developers
                       </a>
                     </li>
@@ -713,7 +713,7 @@ const handleMouseLeave = ()=>{
                         href="/hire-quality-assurance-analyst"
                         className="sd-link2"
                       >
-                        <img src={certificate} width={12} alt="" /> &nbsp;
+                        <img src={testing} width={12} alt="" /> &nbsp;
                         Quality Analyst
                       </a>
                     </li>

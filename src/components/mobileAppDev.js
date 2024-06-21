@@ -57,14 +57,14 @@ import {
   devo,
   mobiledev,
   android,
-    main,
-    account,
-    email,
-    telephone,
-    message,
-    contactMail,
-    btnsvg,
-    loader,
+  main,
+  account,
+  email,
+  telephone,
+  message,
+  contactMail,
+  btnsvg,
+  loader,
 } from "../common/images";
 import "swiper/css";
 // import FAQ from "../components/Faq";
@@ -539,39 +539,115 @@ const MobileAppDevComponent = () => {
                 </div>
               </div>
               <div className="col-md-12 col-lg-6 w-50 hireform-radio">
-              <div className="why">
-                    <h5 className="text-start">How Did You Hear About Us?</h5>
-                    <div className="ms-3 mb-4">
-                    <div className="d-flex justify-content-start">
-                      <input name="where" type="radio" value="Google"
-                        checked={state.why === "Google"}
-                        onChange={handleInputChange} />
-                      <label> Google</label>
-                      <input name="where" type="radio" value="LinkedIn"
-                        checked={state.why === "LinkedIn"}
-                        onChange={handleInputChange} />
-                      <label > LinkedIn</label>
-                      <input name="where" type="radio" value="Facebook"
-                        checked={state.why === "Facebook"}
-                        onChange={handleInputChange} />
-                      <label> Facebook</label>
-                      <input className="web-model" name="where" type="radio" value="Instagram"
-                        checked={state.why === "Instagram"}
-                        onChange={handleInputChange} />
-                      <label className="web-model" > Instagram</label>
-                    </div>
-                    <div className="d-flex justify-content-start">
-                      <input className="mobile-model" name="where" type="radio" value="Instagram"
-                        checked={state.why === "Instagram"}
-                        onChange={handleInputChange} />
-                      <label className="mobile-model" > Instagram</label>
-                      <input name="where" type="radio" value="Other"
-                        checked={state.why === "Other"}
-                        onChange={handleInputChange} />
-                      <label> Others</label>
-                    </div>
+                <div className="why">
+                  <h5 className="text-start">How Did You Hear About Us?</h5>
+                  <div className="ms-3 mb-4">
+                    <div className="d-flex flex-wrap justify-content-start">
+                      <div className="form-check d-flex align-items-center me-3 mb-2">
+                        <input
+                          id="google"
+                          name="where"
+                          type="radio"
+                          value="Google"
+                          checked={state.why === "Google"}
+                          onChange={handleInputChange}
+                          className="form-check-input"
+                        />
+                        <label
+                          htmlFor="google"
+                          className="form-check-label ms-2"
+                        >
+                          Google
+                        </label>
+                      </div>
+                      <div className="form-check d-flex align-items-center me-3 mb-2">
+                        <input
+                          id="linkedin"
+                          name="where"
+                          type="radio"
+                          value="LinkedIn"
+                          checked={state.why === "LinkedIn"}
+                          onChange={handleInputChange}
+                          className="form-check-input"
+                        />
+                        <label
+                          htmlFor="linkedin"
+                          className="form-check-label ms-2"
+                        >
+                          LinkedIn
+                        </label>
+                      </div>
+                      <div className="form-check d-flex align-items-center me-3 mb-2">
+                        <input
+                          id="facebook"
+                          name="where"
+                          type="radio"
+                          value="Facebook"
+                          checked={state.why === "Facebook"}
+                          onChange={handleInputChange}
+                          className="form-check-input"
+                        />
+                        <label
+                          htmlFor="facebook"
+                          className="form-check-label ms-2"
+                        >
+                          Facebook
+                        </label>
+                      </div>
+                      <div className="form-check d-flex align-items-center me-3 mb-2">
+                        <input
+                          id="instagram"
+                          name="where"
+                          type="radio"
+                          value="Instagram"
+                          checked={state.why === "Instagram"}
+                          onChange={handleInputChange}
+                          className="form-check-input web-model"
+                        />
+                        <label
+                          htmlFor="instagram"
+                          className="form-check-label ms-2 web-model"
+                        >
+                          Instagram
+                        </label>
+                      </div>
+                      <div className="form-check d-flex align-items-center me-3 mb-2">
+                        <input
+                          id="instagram-mobile"
+                          name="where"
+                          type="radio"
+                          value="Instagram"
+                          checked={state.why === "Instagram"}
+                          onChange={handleInputChange}
+                          className="form-check-input mobile-model"
+                        />
+                        <label
+                          htmlFor="instagram-mobile"
+                          className="form-check-label ms-2 mobile-model"
+                        >
+                          Instagram
+                        </label>
+                      </div>
+                      <div className="form-check d-flex align-items-center mb-2">
+                        <input
+                          id="other"
+                          name="where"
+                          type="radio"
+                          value="Other"
+                          checked={state.why === "Other"}
+                          onChange={handleInputChange}
+                          className="form-check-input"
+                        />
+                        <label
+                          htmlFor="other"
+                          className="form-check-label ms-2"
+                        >
+                          Others
+                        </label>
+                      </div>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
             <div className="message">
@@ -616,18 +692,23 @@ const MobileAppDevComponent = () => {
       <div className="hire-developer container mt-5 hidden">
         <div className="row">
           <div className="col-md-6 col-lg-6 col-sm-12">
-            <div className={`lang-con-b p-4 hire-section`} onClick={(e) => {
-              const element = e.currentTarget;
-              const isHovered = element.classList.contains('hover');
-              
-              document.querySelectorAll('.hire-section').forEach(element => {
-                element.classList.remove('hover');
-              });
-              
-              if (!isHovered) {
-                element.classList.add('hover');
-              }
-            }}>
+            <div
+              className={`lang-con-b p-4 hire-section`}
+              onClick={(e) => {
+                const element = e.currentTarget;
+                const isHovered = element.classList.contains("hover");
+
+                document
+                  .querySelectorAll(".hire-section")
+                  .forEach((element) => {
+                    element.classList.remove("hover");
+                  });
+
+                if (!isHovered) {
+                  element.classList.add("hover");
+                }
+              }}
+            >
               <div className="flicker-content row">
                 <div className="col-2">
                   {/* <div className="rouded-content-b"></div> */}
@@ -695,16 +776,23 @@ const MobileAppDevComponent = () => {
               </div>
             </div>
 
-            <div className={`lang-con-b p-4 hire-section`} onClick={(e) => { const element = e.currentTarget;
-              const isHovered = element.classList.contains('hover');
-              
-              document.querySelectorAll('.hire-section').forEach(element => {
-                element.classList.remove('hover');
-              });
-              
-              if (!isHovered) {
-                element.classList.add('hover');
-              } }}>
+            <div
+              className={`lang-con-b p-4 hire-section`}
+              onClick={(e) => {
+                const element = e.currentTarget;
+                const isHovered = element.classList.contains("hover");
+
+                document
+                  .querySelectorAll(".hire-section")
+                  .forEach((element) => {
+                    element.classList.remove("hover");
+                  });
+
+                if (!isHovered) {
+                  element.classList.add("hover");
+                }
+              }}
+            >
               <div className="flicker-content row">
                 <div className="col-2">
                   {/* <div className="rouded-content-b"></div> */}
@@ -773,16 +861,23 @@ const MobileAppDevComponent = () => {
             </div>
           </div>
           <div className="col-md-6 col-lg-6 col-sm-12">
-            <div className={`lang-con-b p-4 hire-section`} onClick={(e) => { const element = e.currentTarget;
-              const isHovered = element.classList.contains('hover');
-              
-              document.querySelectorAll('.hire-section').forEach(element => {
-                element.classList.remove('hover');
-              });
-              
-              if (!isHovered) {
-                element.classList.add('hover');
-              } }}>
+            <div
+              className={`lang-con-b p-4 hire-section`}
+              onClick={(e) => {
+                const element = e.currentTarget;
+                const isHovered = element.classList.contains("hover");
+
+                document
+                  .querySelectorAll(".hire-section")
+                  .forEach((element) => {
+                    element.classList.remove("hover");
+                  });
+
+                if (!isHovered) {
+                  element.classList.add("hover");
+                }
+              }}
+            >
               <div className="flicker-content row">
                 <div className="col-2">
                   {/* <div className="rouded-content-b"></div> */}
@@ -850,16 +945,23 @@ const MobileAppDevComponent = () => {
               </div>
             </div>
 
-            <div className={`lang-con-b p-4 hire-section`} onClick={(e) => { const element = e.currentTarget;
-              const isHovered = element.classList.contains('hover');
-              
-              document.querySelectorAll('.hire-section').forEach(element => {
-                element.classList.remove('hover');
-              });
-              
-              if (!isHovered) {
-                element.classList.add('hover');
-              }}}>
+            <div
+              className={`lang-con-b p-4 hire-section`}
+              onClick={(e) => {
+                const element = e.currentTarget;
+                const isHovered = element.classList.contains("hover");
+
+                document
+                  .querySelectorAll(".hire-section")
+                  .forEach((element) => {
+                    element.classList.remove("hover");
+                  });
+
+                if (!isHovered) {
+                  element.classList.add("hover");
+                }
+              }}
+            >
               <div className="flicker-content row">
                 <div className="col-2">
                   {/* <div className="rouded-content-b"></div> */}
@@ -1035,7 +1137,7 @@ const MobileAppDevComponent = () => {
                 src={ccc1}
                 alt=""
                 width={"100%"}
-                style={{ marginLeft: '10%' }}
+                style={{ marginLeft: "10%" }}
                 // height={"100%"}
               />
             </div>
@@ -1050,7 +1152,9 @@ const MobileAppDevComponent = () => {
           <div className="col-md-12 col-sm-12 col-lg-6 d-flex justify-content-start align-items-center mt-2 container">
             <div className="main-text-service">
               <h2 className="">
-                Key Reasons to Hire<br/>Mobile app Developers
+                Key Reasons to Hire
+                <br />
+                Mobile app Developers
               </h2>
               <ul>
                 <li>
@@ -1183,24 +1287,26 @@ const MobileAppDevComponent = () => {
                     Why choose Team <br /> Vsple?
                   </h3>
                   <p>
-                  Mobile app developers bring specialized skills in programming languages
+                    Mobile app developers bring specialized skills in
+                    programming languages
                   </p>
                   <div className="text-start">
                     <div className="see-button">
-                      <a href="/contact-us">Connect Today &nbsp;
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="30"
-                        height="30"
-                        viewBox="0 0 37 37"
-                        fill="none"
-                      >
-                        <circle cx="18.5" cy="18.5" r="18" stroke="#FAE29E" />
-                        <path
-                          d="M19.9933 18.522C19.5878 18.8827 19.1938 19.2394 18.7997 19.5961C17.9581 20.3455 17.1203 21.099 16.2825 21.8524C16.1065 22.0088 16.007 22.1971 16.0338 22.4416C16.0606 22.6901 16.1868 22.8704 16.4125 22.9666C16.6421 23.0628 16.8563 23.0227 17.0438 22.8584C17.3537 22.5859 17.6635 22.3053 17.9696 22.0288C19.0714 21.0429 20.1693 20.053 21.2711 19.0671C21.4739 18.8827 21.6039 18.6663 21.5274 18.3857C21.4892 18.2495 21.4088 18.1052 21.3094 18.013C19.8786 16.7225 18.4478 15.4441 17.017 14.1616C16.7492 13.9211 16.3628 13.9532 16.1448 14.2297C15.919 14.5143 15.9611 14.895 16.2442 15.1515C17.4569 16.2416 18.6697 17.3277 19.8824 18.4178C19.9168 18.4499 19.9513 18.4819 19.9933 18.522Z"
-                          fill="#FAE29E"
-                        />
-                      </svg>
+                      <a href="/contact-us">
+                        Connect Today &nbsp;
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="30"
+                          viewBox="0 0 37 37"
+                          fill="none"
+                        >
+                          <circle cx="18.5" cy="18.5" r="18" stroke="#FAE29E" />
+                          <path
+                            d="M19.9933 18.522C19.5878 18.8827 19.1938 19.2394 18.7997 19.5961C17.9581 20.3455 17.1203 21.099 16.2825 21.8524C16.1065 22.0088 16.007 22.1971 16.0338 22.4416C16.0606 22.6901 16.1868 22.8704 16.4125 22.9666C16.6421 23.0628 16.8563 23.0227 17.0438 22.8584C17.3537 22.5859 17.6635 22.3053 17.9696 22.0288C19.0714 21.0429 20.1693 20.053 21.2711 19.0671C21.4739 18.8827 21.6039 18.6663 21.5274 18.3857C21.4892 18.2495 21.4088 18.1052 21.3094 18.013C19.8786 16.7225 18.4478 15.4441 17.017 14.1616C16.7492 13.9211 16.3628 13.9532 16.1448 14.2297C15.919 14.5143 15.9611 14.895 16.2442 15.1515C17.4569 16.2416 18.6697 17.3277 19.8824 18.4178C19.9168 18.4499 19.9513 18.4819 19.9933 18.522Z"
+                            fill="#FAE29E"
+                          />
+                        </svg>
                       </a>
                     </div>
                   </div>
@@ -1270,117 +1376,117 @@ const MobileAppDevComponent = () => {
         <hr />
       </div>
       <div className="slider-div hidden">
-          <div className="sliderS-wearable container-fluid">
-            <div className="slide-trackN-wearable">
-              <div className="slideN-wearable">
-                <div className="service-box-slider-wearable p-4">
-                  <img src={ooredo} width={"100%"} alt="" />
-                </div>
-              </div>
-              <div className="slideN-wearable">
-                <div className="service-box-slider-wearable p-4">
-                  <img src={calvaryLogo} width={"100%"} alt="" />
-                </div>
-              </div>
-              <div className="slideN-wearable">
-                <div className="service-box-slider-wearable p-4">
-                  <img src={tradeTips} width={"100%"} alt="" />
-                </div>
-              </div>
-              <div className="slideN-wearable">
-                <div className="service-box-slider-wearable p-4">
-                  <img src={chatie} width={"100%"} alt="" />
-                </div>
-              </div>
-              <div className="slideN-wearable">
-                <div className="service-box-slider-wearable p-4">
-                  <img src={tnumber} width={"100%"} alt="" />
-                </div>
-              </div>
-              <div className="slideN-wearable">
-                <div className="service-box-slider-wearable p-4">
-                  <img src={jupieter} width={"100%"} alt="" />
-                </div>
-              </div>
-              <div className="slideN-wearable">
-                <div className="service-box-slider-wearable">
-                  <img src={trademarkC} width={"100%"} alt="" />
-                </div>
-              </div>
-              <div className="slideN-wearable">
-                <div className="service-box-slider-wearable p-4">
-                  <img src={unbound} width={"100%"} alt="" />
-                </div>
-              </div>
-              <div className="slideN-wearable">
-                <div className="service-box-slider-wearable">
-                  <img src={salestrip} width={"100%"} alt="" />
-                </div>
-              </div>
-              <div className="slideN-wearable p-4">
-                <div className="service-box-slider-wearable">
-                  <img src={breckW} width={"100%"} alt="" />
-                </div>
-              </div>
-              <div className="slideN-wearable p-4">
-                <div className="service-box-slider-wearable">
-                  <img src={qrScape} width={"100%"} alt="" />
-                </div>
-              </div>
-              <div className="slideN-wearable p-4">
-                <div className="service-box-slider-wearable">
-                  <img src={hobbyst} width={"100%"} alt="" />
-                </div>
-              </div>
-
-              {/* <div className="slideN-wearable">
+        <div className="sliderS-wearable container-fluid">
+          <div className="slide-trackN-wearable">
+            <div className="slideN-wearable">
               <div className="service-box-slider-wearable p-4">
-                <img src={sf} width={"100%"} alt="" />
+                <img src={ooredo} width={"100%"} alt="" />
               </div>
-            </div> */}
-              <div className="slideN-wearable">
-                <div className="service-box-slider-wearable p-4">
-                  <img src={ooredo} width={"100%"} alt="" />
-                </div>
-              </div>
-              <div className="slideN-wearable">
-                <div className="service-box-slider-wearable p-4">
-                  <img src={calvaryLogo} width={"100%"} alt="" />
-                </div>
-              </div>
-              <div className="slideN-wearable">
-                <div className="service-box-slider-wearable p-4">
-                  <img src={tradeTips} width={"100%"} alt="" />
-                </div>
-              </div>
-              <div className="slideN-wearable">
-                <div className="service-box-slider-wearable p-4">
-                  <img src={chatie} width={"100%"} alt="" />
-                </div>
-              </div>
-              <div className="slideN-wearable">
-                <div className="service-box-slider-wearable p-4">
-                  <img src={tnumber} width={"100%"} alt="" />
-                </div>
-              </div>
-              <div className="slideN-wearable">
-                <div className="service-box-slider-wearable p-4">
-                  <img src={jupieter} width={"100%"} alt="" />
-                </div>
-              </div>
-              <div className="slideN-wearable">
-                <div className="service-box-slider-wearable p-4">
-                  <img src={unbound} width={"100%"} alt="" />
-                </div>
-              </div>
-              {/* <div className="slideN-wearable">
-              <div className="service-box-slider-wearable p-4">
-                <img src={sf} width={"100%"} alt="" />
-              </div>
-            </div> */}
             </div>
+            <div className="slideN-wearable">
+              <div className="service-box-slider-wearable p-4">
+                <img src={calvaryLogo} width={"100%"} alt="" />
+              </div>
+            </div>
+            <div className="slideN-wearable">
+              <div className="service-box-slider-wearable p-4">
+                <img src={tradeTips} width={"100%"} alt="" />
+              </div>
+            </div>
+            <div className="slideN-wearable">
+              <div className="service-box-slider-wearable p-4">
+                <img src={chatie} width={"100%"} alt="" />
+              </div>
+            </div>
+            <div className="slideN-wearable">
+              <div className="service-box-slider-wearable p-4">
+                <img src={tnumber} width={"100%"} alt="" />
+              </div>
+            </div>
+            <div className="slideN-wearable">
+              <div className="service-box-slider-wearable p-4">
+                <img src={jupieter} width={"100%"} alt="" />
+              </div>
+            </div>
+            <div className="slideN-wearable">
+              <div className="service-box-slider-wearable">
+                <img src={trademarkC} width={"100%"} alt="" />
+              </div>
+            </div>
+            <div className="slideN-wearable">
+              <div className="service-box-slider-wearable p-4">
+                <img src={unbound} width={"100%"} alt="" />
+              </div>
+            </div>
+            <div className="slideN-wearable">
+              <div className="service-box-slider-wearable">
+                <img src={salestrip} width={"100%"} alt="" />
+              </div>
+            </div>
+            <div className="slideN-wearable p-4">
+              <div className="service-box-slider-wearable">
+                <img src={breckW} width={"100%"} alt="" />
+              </div>
+            </div>
+            <div className="slideN-wearable p-4">
+              <div className="service-box-slider-wearable">
+                <img src={qrScape} width={"100%"} alt="" />
+              </div>
+            </div>
+            <div className="slideN-wearable p-4">
+              <div className="service-box-slider-wearable">
+                <img src={hobbyst} width={"100%"} alt="" />
+              </div>
+            </div>
+
+            {/* <div className="slideN-wearable">
+              <div className="service-box-slider-wearable p-4">
+                <img src={sf} width={"100%"} alt="" />
+              </div>
+            </div> */}
+            <div className="slideN-wearable">
+              <div className="service-box-slider-wearable p-4">
+                <img src={ooredo} width={"100%"} alt="" />
+              </div>
+            </div>
+            <div className="slideN-wearable">
+              <div className="service-box-slider-wearable p-4">
+                <img src={calvaryLogo} width={"100%"} alt="" />
+              </div>
+            </div>
+            <div className="slideN-wearable">
+              <div className="service-box-slider-wearable p-4">
+                <img src={tradeTips} width={"100%"} alt="" />
+              </div>
+            </div>
+            <div className="slideN-wearable">
+              <div className="service-box-slider-wearable p-4">
+                <img src={chatie} width={"100%"} alt="" />
+              </div>
+            </div>
+            <div className="slideN-wearable">
+              <div className="service-box-slider-wearable p-4">
+                <img src={tnumber} width={"100%"} alt="" />
+              </div>
+            </div>
+            <div className="slideN-wearable">
+              <div className="service-box-slider-wearable p-4">
+                <img src={jupieter} width={"100%"} alt="" />
+              </div>
+            </div>
+            <div className="slideN-wearable">
+              <div className="service-box-slider-wearable p-4">
+                <img src={unbound} width={"100%"} alt="" />
+              </div>
+            </div>
+            {/* <div className="slideN-wearable">
+              <div className="service-box-slider-wearable p-4">
+                <img src={sf} width={"100%"} alt="" />
+              </div>
+            </div> */}
           </div>
         </div>
+      </div>
       <div className="faqs my-5 hidden">
         <h5 className="text-center  abc">FAQ'S</h5>
         {faqs.map((faq, index) => (

@@ -30,6 +30,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import mobileApp from "../../../assest/main-icons/Mask group (6).png";
 import watach2 from "../../../assest/main-icons/Group 1000005568.png";
+
+import cms from "../../../assest/main-icons/services/websiteSevices/Isolation_Mode.png";
 // import appleLogo from "../../../assest/main-icons/Group 1410.png";
 import ooredo from "../../../assest/main-icons/Ooredoo logo white@3x  1 (2).png";
 import calvaryLogo from "../../../assest/main-icons/Group 1000004560.png";
@@ -120,8 +122,8 @@ const WebsiteDeveloperComponent = () => {
       arrow: downArroForHire,
       beforeArrow: downArroForHire,
       afterArrow: upArroForHire,
-      beforelogo: frontendDev,
-      afterdLogo: frontendDev,
+      beforelogo: cms,
+      afterdLogo: cms,
       para: "If content management is your priority, our...",
       para2:
         "If content management is your priority, our CMS specialists excel in customizing and optimizing various content management systems like WordPress, Drupal, Joomla, and more. They ensure streamlined content workflows, user-friendly interfaces, and robust website management solutions tailored to your requirements.",

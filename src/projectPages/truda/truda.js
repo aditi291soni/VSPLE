@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./truda.css";
 import mainimg from "../../assest/web-icons/truda/Group 1000005584.png";
+import truda from "../../assest/gif/tuaba.mp4";
 import vector from "../../assest/web-icons/truda/Group 58 4.png";
 import desktop from "../../assest/main-icons/image 24843.png";
 import tepmle from "../../assest/main-icons/Group 1000002047.png";
@@ -23,7 +24,7 @@ import hobbyist from "../../assest/main-icons/Group 1000005569 (3).png";
 import QRscape from "../../assest/main-icons/Group 1000004879 (2).png";
 import trade from "../../assest/main-icons/Group 1000004879 (5).png";
 import tnumber from "../../assest/main-icons/Group 1000004879 (6).png";
-import truda from "../../assest/web-icons/Group 1000004879.png";
+import trudas from "../../assest/gif/tuaba.mp4";
 import tictac from "../../assest/main-icons/Group 1000004879 (3).png";
 import tradeTips from "../../assest/main-icons/Group 1000004879 (4).png";
 import breckworld from "../../assest/main-icons/Group 1000005569 (2).png";
@@ -70,7 +71,8 @@ const TrudaComponent = () => {
               </div>
               <a
                 target="_blank"
-                href="https://apps.apple.com/in/app/calvary-temple-india/id1661280048" rel="noreferrer"
+                href="https://apps.apple.com/in/app/calvary-temple-india/id1661280048"
+                rel="noreferrer"
               >
                 <img className="ms-2" src={appStoreIcon} width={"12%"} alt="" />
               </a>
@@ -111,7 +113,13 @@ const TrudaComponent = () => {
               The Problem <img src={sad} width={"10%"} alt="" />
             </h4>
             <p>
-            Users faced limitations in adapting the game to different group sizes and experienced monotony in challenges. Manual user management, task repetition, and a lack of visual engagement were common issues. The app resolves these challenges by providing dynamic user management, personalized tasks, an attractive UI with spinning bottle animation, and real-time score tracking, offering a more engaging and versatile Truth and Dare experience.
+              Users faced limitations in adapting the game to different group
+              sizes and experienced monotony in challenges. Manual user
+              management, task repetition, and a lack of visual engagement were
+              common issues. The app resolves these challenges by providing
+              dynamic user management, personalized tasks, an attractive UI with
+              spinning bottle animation, and real-time score tracking, offering
+              a more engaging and versatile Truth and Dare experience.
             </p>
           </div>
           <div className="col-md-12 col-lg-6 p-none p-lg-5">
@@ -119,7 +127,15 @@ const TrudaComponent = () => {
               The Solution <img src={happy} width={"10%"} alt="" />
             </h4>
             <p>
-            With the Truth and Dare app, users now enjoy dynamic group flexibility, easily adding or removing participants at any point. The app introduces a variety of personalized tasks, eliminating monotony, and provides an engaging visual experience with a spinning bottle animation and an attractive UI. The game's real-time score tracking, social sharing options, and accessibility features address challenges, creating a more enjoyable, interactive, and adaptable Truth and Dare experience for users.
+              With the Truth and Dare app, users now enjoy dynamic group
+              flexibility, easily adding or removing participants at any point.
+              The app introduces a variety of personalized tasks, eliminating
+              monotony, and provides an engaging visual experience with a
+              spinning bottle animation and an attractive UI. The game's
+              real-time score tracking, social sharing options, and
+              accessibility features address challenges, creating a more
+              enjoyable, interactive, and adaptable Truth and Dare experience
+              for users.
             </p>
 
             {/* <p>
@@ -139,7 +155,15 @@ const TrudaComponent = () => {
             <div className="col-md-8 col-sm-12 text-left">
               <h4>Client</h4>
               <p>
-              The Truth and Dare app boasts dynamic user management, enabling users to add or remove participants at runtime. With an engaging UI, users experience an attractive spinning bottle animation and personalized task completion challenges. Customizable truth and dare tasks, real-time score tracking, and the option for social sharing enhance the interactive and competitive aspects of the game. The app's adaptability, offline mode, and accessibility features contribute to a versatile and inclusive gaming experience.
+                The Truth and Dare app boasts dynamic user management, enabling
+                users to add or remove participants at runtime. With an engaging
+                UI, users experience an attractive spinning bottle animation and
+                personalized task completion challenges. Customizable truth and
+                dare tasks, real-time score tracking, and the option for social
+                sharing enhance the interactive and competitive aspects of the
+                game. The app's adaptability, offline mode, and accessibility
+                features contribute to a versatile and inclusive gaming
+                experience.
               </p>
             </div>
           </div>
@@ -169,7 +193,7 @@ const TrudaComponent = () => {
               </p>
             </div>
             <div className="col-md-12 col-lg-4">
-              <img className="mb-3" src={two}width={"44px"} alt="" />
+              <img className="mb-3" src={two} width={"44px"} alt="" />
               <h5>Task Completion Mechanism</h5>
               <p>
                 Integration of a task completion mechanism where users perform
@@ -181,7 +205,7 @@ const TrudaComponent = () => {
           </div>
           <div className="row ex-5 justify-content-center">
             <div className="col-md-12 col-lg-3">
-              <img className="mb-3" src={three}width={"44px"}alt="" />
+              <img className="mb-3" src={three} width={"44px"} alt="" />
               <h5>Attractive UI/UX</h5>
               <p>
                 An engaging and visually appealing user interface that enhances
@@ -202,19 +226,22 @@ const TrudaComponent = () => {
               </p>
             </div>
             <div className="col-md-12 col-lg-5">
-            <div className="my-4" style={{ height: '600px' }}>
-
-              <video muted autoPlay loop ref={videoRef} height={"100%"} style={{ borderRadius: '20px' }} >
-                <source
-                  src={breckworldViedio}
-                  type="video/webm"
-                />
-              </video>
+              <div className="my-4" style={{ height: "600px" }}>
+                <video
+                  muted
+                  autoPlay
+                  loop
+                  ref={videoRef}
+                  height={"100%"}
+                  style={{ borderRadius: "20px" }}
+                >
+                  <source src={trudas} type="video/webm" />
+                </video>
+              </div>
+              {/* <img src={mobile} width={"100%"} alt="" /> */}
             </div>
-            {/* <img src={mobile} width={"100%"} alt="" /> */}
-          </div>
             <div className="col-md-12 col-lg-3">
-              <img className="mb-3" src={four} width={"44px"}alt="" />
+              <img className="mb-3" src={four} width={"44px"} alt="" />
               <h5 className="">Bottle Spinning Animation</h5>
               <p>
                 A visually appealing animation for the spinning bottle, adding a
@@ -258,7 +285,7 @@ const TrudaComponent = () => {
         <div className="row container my-5 ">
           <div className="col-md-12 col-lg-8">
             <p style={{ textAlign: "left" }}>
-            Want to get the IT Puzzle solved?
+              Want to get the IT Puzzle solved?
               <br />
               <span className="inner-join">
                 Let’s connect to see how VSPLE can resolve your Dilemma.
@@ -367,7 +394,7 @@ const TrudaComponent = () => {
                           alt=""
                         /> */}
                 </div>
-                <img className="mt-4"  src={salestrip} width={"100%"} alt="" />
+                <img className="mt-4" src={salestrip} width={"100%"} alt="" />
               </div>
               <div className="tab-text1">
                 <span>Salestrip CLM</span>

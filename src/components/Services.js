@@ -295,9 +295,9 @@ const ServiceComponent = () => {
             <div className="flicker-content row">
               <div className="col-4 text-center">
                 {activeDiv === 0 ? (
-                  <img src={IOSOnClick} width={"60vw"} alt="" />
+                  <img src={IOSOnClick} width={"50vw"} alt="" />
                 ) : (
-                  <img src={IOS} width={"60vw"} alt="" />
+                  <img src={IOS} width={"50vw"} alt="" />
                 )}
               </div>
               <div className="notActive col-8 ">
@@ -313,9 +313,9 @@ const ServiceComponent = () => {
             <div className="flicker-content row">
               <div className="col-4 text-center">
                 {activeDiv === 1 ? (
-                  <img src={AndroidOnClick} width={"60vmax"} alt="" />
+                  <img src={AndroidOnClick} width={"50vmax"} alt="" />
                 ) : (
-                  <img src={Android} width={"60vmax"} alt="" />
+                  <img src={Android} width={"50vmax"} alt="" />
                 )}
               </div>
               <div className="notActive col-8 ">
@@ -331,9 +331,9 @@ const ServiceComponent = () => {
             <div className="flicker-content row">
               <div className="col-4 text-center">
                 {activeDiv === 2 ? (
-                  <img src={WearableOnClick} width={"60vw"} alt="" />
+                  <img src={WearableOnClick} width={"50vw"} alt="" />
                 ) : (
-                  <img src={Wearable} width={"60vw"} alt="" />
+                  <img src={Wearable} width={"50vw"} alt="" />
                 )}
               </div>
               <div className="notActive col-8 ">
@@ -349,9 +349,9 @@ const ServiceComponent = () => {
             <div className="flicker-content row">
               <div className="col-4 text-center">
                 {activeDiv === 3 ? (
-                  <img src={HybridOnClick} width={"60vw"} alt="" />
+                  <img src={HybridOnClick} width={"50vw"} alt="" />
                 ) : (
-                  <img src={Hybrid} width={"60vw"} alt="" />
+                  <img src={Hybrid} width={"50vw"} alt="" />
                 )}
               </div>
               <div className="notActive col-8 ">
@@ -367,9 +367,9 @@ const ServiceComponent = () => {
             <div className="flicker-content row">
               <div className="col-4 text-center">
                 {activeDiv === 0 ? (
-                  <img src={IOSOnClick} width={"60vw"} alt="" />
+                  <img src={IOSOnClick} width={"50vw"} alt="" />
                 ) : (
-                  <img src={IOS} width={"60vw"} alt="" />
+                  <img src={IOS} width={"50vw"} alt="" />
                 )}
               </div>
               <div className="notActive col-8 ">
@@ -385,9 +385,9 @@ const ServiceComponent = () => {
             <div className="flicker-content row">
               <div className="col-4 text-center">
                 {activeDiv === 1 ? (
-                  <img src={AndroidOnClick} width={"60vw"} alt="" />
+                  <img src={AndroidOnClick} width={"50vw"} alt="" />
                 ) : (
-                  <img src={Android} width={"60vw"} alt="" />
+                  <img src={Android} width={"50vw"} alt="" />
                 )}
               </div>
               <div className="notActive col-8 ">
@@ -404,9 +404,9 @@ const ServiceComponent = () => {
               <div className="col-4 text-center">
                 {" "}
                 {activeDiv === 2 ? (
-                  <img src={WearableOnClick} width={"60vw"} alt="" />
+                  <img src={WearableOnClick} width={"50vw"} alt="" />
                 ) : (
-                  <img src={Wearable} width={"60vw"} alt="" />
+                  <img src={Wearable} width={"50vw"} alt="" />
                 )}{" "}
               </div>
               <div className="notActive col-8 ">
@@ -422,9 +422,9 @@ const ServiceComponent = () => {
             <div className="flicker-content row">
               <div className="col-4 text-center">
                 {activeDiv === 3 ? (
-                  <img src={HybridOnClick} width={"60vw"} alt="" />
+                  <img src={HybridOnClick} width={"50vw"} alt="" />
                 ) : (
-                  <img src={Hybrid} width={"60vw"} alt="" />
+                  <img src={Hybrid} width={"50vw"} alt="" />
                 )}
               </div>
               <div className="notActive col-8 ">
@@ -440,9 +440,9 @@ const ServiceComponent = () => {
             <div className="flicker-content row">
               <div className="col-4 text-center">
                 {activeDiv === 1 ? (
-                  <img src={AndroidOnClick} width={"60vw"} alt="" />
+                  <img src={AndroidOnClick} width={"50vw"} alt="" />
                 ) : (
-                  <img src={Android} width={"60vw"} alt="" />
+                  <img src={Android} width={"50vw"} alt="" />
                 )}
               </div>
               <div className="notActive col-8 ">
@@ -458,9 +458,9 @@ const ServiceComponent = () => {
             <div className="flicker-content row">
               <div className="col-4 text-center">
                 {activeDiv === 2 ? (
-                  <img src={WearableOnClick} width={"60vw"} alt="" />
+                  <img src={WearableOnClick} width={"50vw"} alt="" />
                 ) : (
-                  <img src={Wearable} width={"60vw"} alt="" />
+                  <img src={Wearable} width={"50vw"} alt="" />
                 )}
               </div>
               <div className="notActive col-8 ">
