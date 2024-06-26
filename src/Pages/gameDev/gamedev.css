@@ -42,12 +42,16 @@ margin-top: -80px;
        margin-top: -18vmax;
        
       }
+      .scale{transform: scale(1) !important;}
+      
+
       /* .gameBox {
     margin-top: 0px;
   } */
   .--watch img {
     width: 85%;
   }
+   
   .--watch-wearable img {
     width: 100%;
   }
@@ -103,6 +107,7 @@ margin-top: -80px;
     max-height: 80px;
   }
 }
+.scale{transform: scale(.8);}
 @media (min-width: 869px) {
 
   .left {

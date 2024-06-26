@@ -1,6 +1,7 @@
 .h-100vh{
     /* height: calc(100vh - 50px); */
 }
+
 .range-value {
     position: absolute;
     background-image: url(http://localhost:5100/static/media/Group%20833.a87c5a4c3eef3f75f699.png);

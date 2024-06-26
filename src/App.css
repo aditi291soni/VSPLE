@@ -31,6 +31,10 @@ input[type=number]::-webkit-outer-spin-button {
 .spinner .design-spinner{
   animation: App-logo-spin 3s linear;
 }
+@font-face {
+    font-family: 'test';
+    src: url('/src/assest/font/BlakecotBrush-3lZ06.otf');
+}
 /* h1, h2, h3 , h4 , h5 ,span{
   font-family: 'Inter', sans-serif !important;
 } */

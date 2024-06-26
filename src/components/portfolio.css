@@ -119,6 +119,7 @@
     top: 0%;
     right: 16%;
     transform: translate(-50%, -50%);
+    
     z-index: 1;
 }
 
@@ -143,7 +144,7 @@
     position: absolute;
     top: 20.5%;
     left: -28%;
-    transform: rotate(240deg) !important;
+    transform: rotate(280deg) !important;
     transform: translate(-50%, -50%);
 }
 

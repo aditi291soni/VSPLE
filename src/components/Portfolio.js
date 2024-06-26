@@ -19,7 +19,7 @@ import breckworld from "../assest/main-icons/Group 1000005569 (2).png";
 import appleLogo from "../assest/main-icons/Group 2197 (3).png";
 import website from "../assest/web-icons/Group 1000005573.png";
 import storeLogo from "../assest/main-icons/Group 2198 (1).png";
-import arrow from "../assest/web-icons/Group 647 (1).png";
+import arrow from "../assest/icons/a.png";
 import React, { useState } from "react";
 import "./portfolio.css";
 import port from "../assest/web-icons/Group (2).png";
@@ -341,7 +341,7 @@ const PortfolioComponent = () => {
                 <div className="col-md-4 col-sm-12 col-lg-4 p-3 text-start">
                   <div className="tab-cont">
                     <div className="trade-upper-section">
-                      <div className="text-end mb-4">
+                      <div className="text-end mb-5">
                         <img src={appleLogo} width={"20%"} alt="" />
                         <img
                           className="ms-2"
@@ -353,7 +353,7 @@ const PortfolioComponent = () => {
                       <img src={trade} width={"100%"} alt="" />
                     </div>
                     <div className="tab-text1">
-                      <span>TradeMark Cockpit</span>
+                      <span className=" mb-4 ">TradeMark Cockpit</span>
                       <p>Website Development</p>
                       <a href="/trademark-app-development">
                         Case Study <img width={"10%"} src={arrow} alt="" />
@@ -364,7 +364,7 @@ const PortfolioComponent = () => {
                 <div className="col-md-4 col-sm-12 col-lg-4 p-3 text-start">
                   <div className="tab-cont">
                     <div className="tnumber-upper-section">
-                      <div className="text-end mb-4">
+                      <div className="text-end mb-5">
                         <img src={appleLogo} width={"20%"} alt="" />
                         <img
                           className="ms-2"

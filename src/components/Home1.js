@@ -193,7 +193,7 @@ const HomeComponent = () => {
   };
 
   const handleSliderChange = (e) => {
-    const index = parseInt(e.target.value);
+    const index = parseInt(e.target.value  );
     switch (index) {
       case 0:
         setExpandedImg(first);

@@ -438,7 +438,13 @@ const AboutComponent = () => {
                       <div style={{ width: "100%" }}>
                         <img src={frame18} alt="" width={"100%"} />
                       </div>
-                      <span style={{ fontSize: "16px", width: "max-content" }}>
+                      <span
+                        style={{
+                          fontSize: "16px",
+                          fontWeight: "700",
+                          width: "max-content",
+                        }}
+                      >
                         Project <br />
                         Based Model
                       </span>
@@ -449,7 +455,13 @@ const AboutComponent = () => {
                       <div style={{ width: "100%" }}>
                         <img src={group6} alt="" width={"55%"} />
                       </div>
-                      <span style={{ fontSize: "16px", width: "max-content" }}>
+                      <span
+                        style={{
+                          fontSize: "16px",
+                          fontWeight: "700",
+                          width: "max-content",
+                        }}
+                      >
                         Time And <br />
                         Material Model
                       </span>
@@ -460,7 +472,13 @@ const AboutComponent = () => {
                       <div style={{ width: "100%" }}>
                         <img src={img2} alt="img" width={"100%"} />
                       </div>
-                      <span style={{ fontSize: "16px", width: "max-content" }}>
+                      <span
+                        style={{
+                          fontSize: "16px",
+                          fontWeight: "700",
+                          width: "max-content",
+                        }}
+                      >
                         Dedicated <br />
                         Team Model
                       </span>
@@ -469,7 +487,13 @@ const AboutComponent = () => {
                   <div className="box-4 d-flex justify-content-center align-items-center">
                     <div className="content">
                       <img src={frame20} alt="" width={"50%"} />
-                      <span style={{ fontSize: "16px", width: "max-content" }}>
+                      <span
+                        style={{
+                          fontSize: "16px",
+                          fontWeight: "700",
+                          width: "max-content",
+                        }}
+                      >
                         Managed IT <br /> Services Model
                       </span>
                     </div>
@@ -556,7 +580,13 @@ const AboutComponent = () => {
                   <div className="box-1 d-flex justify-content-center align-items-center">
                     <div className="content">
                       <img src={isolationmodel1} alt="" width={"55%"} />
-                      <span>
+                      <span
+                        style={{
+                          fontSize: "16px",
+                          fontWeight: "700",
+                          width: "max-content",
+                        }}
+                      >
                         Remote/Hybrid <br /> Model
                       </span>
                     </div>
@@ -564,7 +594,13 @@ const AboutComponent = () => {
                   <div className="box-2 d-flex justify-content-center align-items-center">
                     <div className="content">
                       <img src={isolationmodel2} alt="" width={"25%"} />
-                      <span>
+                      <span
+                        style={{
+                          fontSize: "16px",
+                          fontWeight: "700",
+                          width: "max-content",
+                        }}
+                      >
                         IT Staff <br /> Augmentation Model
                       </span>
                     </div>
@@ -572,7 +608,13 @@ const AboutComponent = () => {
                   <div className="box-3 d-flex justify-content-center align-items-center">
                     <div className="content">
                       <img src={layer1} alt="" width={"55%"} />
-                      <span>
+                      <span
+                        style={{
+                          fontSize: "16px",
+                          fontWeight: "700",
+                          width: "max-content",
+                        }}
+                      >
                         Consulting <br /> Business Model
                       </span>
                     </div>
@@ -580,7 +622,13 @@ const AboutComponent = () => {
                   <div className="box-4 d-flex justify-content-center align-items-center">
                     <div className="content">
                       <img src={isolationmodel3} alt="" width={"55%"} />
-                      <span>
+                      <span
+                        style={{
+                          fontSize: "16px",
+                          fontWeight: "700",
+                          width: "max-content",
+                        }}
+                      >
                         Agency-Based <br /> Business Model
                       </span>
                     </div>
@@ -588,10 +636,13 @@ const AboutComponent = () => {
                 </div>
               </div>
               <div className="col-md-12 col-sm-12 col-lg-6 mt-1">
-                <div className="p-modules-name d-flex flex-column gap-2 mx-auto">
+                <div
+                  className="p-modules-name d-flex flex-column gap-2 mx-auto"
+                  style={{ marginTop: "58px" }}
+                >
                   <div className="d-flex gap-4">
                     <div className="choose-model-list-img">
-                      <img src={img2} alt="" />{" "}
+                      <img src={isolationmodel1} alt="" />{" "}
                     </div>
                     <div className="d-flex flex-column gap-2">
                       <span>Remote/Hybrid Model</span>
@@ -605,7 +656,7 @@ const AboutComponent = () => {
                   </div>
                   <div className="d-flex gap-4">
                     <div className="choose-model-list-img">
-                      <img src={img3} alt="" />{" "}
+                      <img src={isolationmodel2} alt="" />{" "}
                     </div>
                     <div className="d-flex flex-column gap-2">
                       <span>Just-in-Time IT Staff Augmentation Model</span>
@@ -619,7 +670,7 @@ const AboutComponent = () => {
                   </div>
                   <div className="d-flex gap-4">
                     <div className="choose-model-list-img">
-                      <img src={img1} alt="" />{" "}
+                      <img src={layer1} alt="" />{" "}
                     </div>
                     <div className="d-flex flex-column gap-2">
                       <span>Consulting Business Model</span>
@@ -632,7 +683,7 @@ const AboutComponent = () => {
                   </div>
                   <div className="d-flex gap-4">
                     <div className="choose-model-list-img">
-                      <img src={img2} alt="" />{" "}
+                      <img src={isolationmodel3} alt="" />{" "}
                     </div>
                     <div className="d-flex flex-column gap-2">
                       <span>Agency-Based Business Model</span>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+ import React, { useState } from "react";
 import "./industries.css";
 import Carousel from "react-bootstrap/Carousel";
 import main2 from "../../assest/Group 1260.png";

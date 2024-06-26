@@ -918,8 +918,9 @@
 
 .testimonial .avatars {
   cursor: pointer;
-  font-size: 25px;
-  /* border: 1px solid white; */
+  font-size: 30px;
+  font-family: 'test';
+  /* border: 1px solid white; */    
 }
 
 .testimonial .avatars :nth-child(1) {

@@ -53,6 +53,7 @@
         transform: translateY(calc(-193px * 4));
     }
 }
+
 .gradient{
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.90) 40%, transparent 90%);
     content: '';

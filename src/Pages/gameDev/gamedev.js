@@ -155,7 +155,7 @@ const GamedevComponent = () => {
     <div>
       <div className="container">
         <div className="hidden header row align-items-center">
-          <div className=" col-md-6 col-lg-6 col-sm-12 d-flex justify-content-start align-items-center">
+          <div className=" col-md-6 col-lg-5 col-sm-12 d-flex justify-content-start align-items-center">
             <div className="main-text-service">
               <h2 className="">
                 Game
@@ -173,7 +173,7 @@ const GamedevComponent = () => {
               <img className="" src={apps} width={"90%"} alt="" />
             </div>
           </div>
-          <div className="col-md-6 d-flex justify-content-center">
+          <div className="col-md-7 d-flex justify-content-center">
             <img src={group2315} width={"100%"} alt="" />
           </div>
         </div>
@@ -416,8 +416,8 @@ const GamedevComponent = () => {
           </p>
         </div>
       </div>
-      <div className="container hidden text-center">
-        <div className="row" style={{ transform: "scale(.8)" }}>
+    
+        <div className="row scale" style={{ transform: "scale(.8)" }}>
           <div className="col-md-12 col-lg-4 col-12">
             <div className="d-flex left">
               <div  >
@@ -462,7 +462,7 @@ const GamedevComponent = () => {
             </div>
           </div>
         </div>
-      </div>
+     
       <div className="miniportfolio container mt-5">
         <h5>Bytes to Brilliance: Software Development Portfolio</h5>
         <div className="parent">
